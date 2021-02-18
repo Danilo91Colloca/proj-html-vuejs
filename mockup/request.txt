@@ -1,0 +1,78 @@
+Repo proj-html-vuejs
+
+Cosa fare
+
+Riprodurre il layout proposto solo in versione Desktop
+
+Tecnologie
+HTML/SASS/VueJs
+Aggiungere Header e Footer con VueJs creando una struttura dati che consenta di inserire i link nelle navbar. Non ci sono API da interrogare, ma create i dati a mano nel vostro js.
+Deadline
+23/02 ore 18.00
+
+Supporto
+Venerdì 19 e Lunedì 22 potrete prenotare uno slot al giorno di 10 minuti con un insegnante per poter porre domande di approfondimento/chiarimento sul progetto.
+Pushate almeno 15 minuti prima del vostro appuntamento con un insegnante e preparate prima le vostre domande è importante arrivare con le idee chiare per poter ricevere il massimo supporto.
+Ricordate avete 10 minuti a testa, potrete chiedere un numero limitato di consigli. Non sarà possibile invece aprire le consuete richieste Hotwell e non avrete supporto l’ultimo giorno di progetto (il giorno della deadline, 23/02).
+
+Presentazione dei progetti
+I lavori saranno presentati il 24/02 personalmente con l’insegnante 1to1, sarà indispensabile quindi prenotare uno slot per poter parlare con un insegnante. Non si tratterà del classico Feedback, ma dovrete presentare il vostro progetto.
+Organizzazione del lavoro
+Analizzate attentamente il layout prima di partire, utilizzate sempre il metodo dei commenti per identificare le aree del layout e individuare elementi comuni riutilizzabili. Una volta analizzato il progetto create una tabella di marcia, il lavoro è divisibile in due fasi, layout / funzionalità VueJs, è indispensabile consegnare entrambe le parti del progetto. Immaginate quindi cosa vi servirà per l’aggiunta delle parti dinamiche e scrivete i commenti anche per questa parte di lavoro. Meglio un layout con header/footer e 2 o 3 sezioni complete, che un layout completo ma senza VueJs. Teniamo presente che l’ideale è sempre consegnare il lavoro completo. Procedete poi con il layout sezione per sezione raggiungendo un livello di dettaglio il più simile a quello proposto dal designer.
+Ricordate: il designer ha lavorato duramente per immaginare il layout e ha scelto certe soluzioni per ottime motivazioni, il nostro compito è rendere reale la sua creatività! Calcolate poi il momento giusto per poter passare alla parte VueJs tenendo presente la Deadline.
+
+GIT
+Create un primo commit con lo scaffolding, un secondo con i commenti, e così via all’aggiunta di ogni piccolo frammento.
+Pushare con regolarità vi consentirà:
+di non perdere versioni del vostro lavoro. Il vostro datore di lavoro mercoledì' 24 pretenderà di ricevere il lavoro commissionato, nella vita lavorativa non è possibile dire “ho perso il lavoro svolto”;
+di ricevere una migliore assistenza e valutazione da parte dei vostri insegnanti che controlleranno i vostri lavori durante tutto lo svolgimento del progetto.
+
+Come affrontare il lavoro
+Affrontate il progetto a mente serena allontanando ogni ansia, divertitevi mentre mettete in pratica i concetti imparati fino ad ora, focalizzate il vero obiettivo: domani questa sarà la vostra giornata tipo.
+Vi contatterò a breve, privatamente, per consegnarvi il file zip con tutto il necessario. Al suo interno troverete lo screenshot e le immagini della vostra landing da replicare.
+In bocca al lupo e buon divertimento!
+Daje branco! 
+
+/////////////////////////////////////////////
+Il sito  è strutturato in 11 macro-sezioni:
+1)  HEADER: row contatti circa 50px; 
+            row nav in trasparenza circa 80px con logo brand all'inizio e un button alla fine;
+
+2) JUMBOTRON: imagine in background che va sotto alla nav che lo lascia intravedere in trasparenza,
+            al centro titolo/text/2 botton affiancati 
+//TODO -----> da considerare la possibilita di accorpare header nello stesso container del jumbotron;
+
+3) SEZIONE VIDEO INTRO: background bianco/titoletto/titolo/text/preview del video con tasto play in centro
+
+4) SEZIONE RESULT: img in background/ titoletto/ titolo / 4 contenitori affiancati con i numeri che vanno da 0 a x, al di sotto il riferimento dei risultati;
+
+5) SEZIONE AREAS: titoletto/titolo/text a destra del testo un button trasparente con bordo visibile/ 2 row con 3 box per row;
+
+6) SEZIONE TEAM: due box affiancati il primo occupa circa il 70% il secondo circa il 30% della sezione,
+               BOX1-container1 titoletto/titolo/text | container2 sotto container 1 con foto e a destra foto info e contatti
+               BOX2 -container3 a destra del centro pagina con i due box precedenti affiancati a sinistra con un titolo e 3 paragrafetti;
+
+7)SEZIONE EDITORIALE: titoletto/titolo/text, un button alla agganciato a destra, sotto una sezione con tre immagini in bg quadreate e con del testo;     
+
+8) SEZIONE SUBSCRIBE: 2 box affiancati: 
+                        BOX1 contiente titoletto/titolo/text;
+                        BOX 2 contiene il form con 2 input (name, mail) e button;
+
+9) SEZIONE FORM/INFO: 2 box affiancati:
+                        BOX1/container con titoletto/titolo/testo; sotto il form su tre righe:
+                                                                            1) input name-mail
+                                                                            2) input phone-more info
+                                                                            3 input Message
+                                                                            4) sotto button submit       
+                        BOX2/container example/ titolo / 2 paragrafi / contatti con icone in before / button transparent
+
+10) SEZIONE INFO: 4box affiancati:
+                BOX 1 logo brand/ text/contatti/button
+                BOX2/3/4 elenchi di servizi
+
+11) FOOTER: motto/copyright
+//TODO ----> considerare di accorpare sezione info e footer         
+
+
+
+MILESTONE 1
