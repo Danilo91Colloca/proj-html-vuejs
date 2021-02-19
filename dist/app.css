@@ -57,3 +57,11 @@ ul {
 #app .overHead-container .boxR .social i:hover {
   color: white;
 }
+#app .nav-jumbotron-box {
+  width: 100vw;
+  height: 920px;
+  background-image: url("../images/bg-2.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,5 +1,6 @@
 @import  "partials/_commons";
 @import "partials/_colors";
+@import "partials/_bg-brand-titles";
 
 
 
@@ -32,37 +33,44 @@
                     
                     
                     &-number {
-                        cursor: pointer;
-                        margin-right: 35px;
+                        cursor : pointer;
+                        margin-right : 35px;
                         i {
-                            margin-right: 5px;
+                            margin-right : 5px;
                         }
                         &:hover {
-                            color: $font-white;
+                            color : $font-white;
                         }
                     }
                     &-mail  {
                         cursor: pointer;
                         i {
-                            margin-right: 5px;
+                            margin-right : 5px;
                         }
                         &:hover {
-                            color: $font-white;
+                            color : $font-white;
                         }
                     }
                 }
                 .social {
                     i{
                         cursor: pointer;
-                        margin-left: 35px;
+                        margin-left : 35px;
                         &:hover {
-                            color: $font-white;
+                            color  : $font-white;
                         }
                     }
                 }   
-            }
+            }// end boxR
         } //end overHead-container
     }//end overHead
+    .nav-jumbotron-box {
+        width : 100vw;
+        height : 920px;
+        @include jumbotronImg;
+
+
+    }
 
 
 
