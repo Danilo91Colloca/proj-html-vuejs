@@ -1,0 +1,76 @@
+@import  "partials/_commons";
+@import "partials/_colors";
+
+
+
+
+
+#app {
+    .overHead { 
+        width : 100vw;
+        max-width : 100%;
+        height : 50px;
+        background-color : rgb(28, 64, 85);
+
+        &-container {
+            @include pageCenter;
+            @include flex;
+            color : $font-gray;
+            line-height : 50px;
+            justify-content : space-between;
+            .boxL {
+                .workdays {
+                    i{
+                        margin-right : 8px;
+                    }
+                }
+            }
+            .boxR {
+                @include flex;
+                .contacts {
+                    @include flex;
+                    
+                    
+                    &-number {
+                        cursor: pointer;
+                        margin-right: 35px;
+                        i {
+                            margin-right: 5px;
+                        }
+                        &:hover {
+                            color: $font-white;
+                        }
+                    }
+                    &-mail  {
+                        cursor: pointer;
+                        i {
+                            margin-right: 5px;
+                        }
+                        &:hover {
+                            color: $font-white;
+                        }
+                    }
+                }
+                .social {
+                    i{
+                        cursor: pointer;
+                        margin-left: 35px;
+                        &:hover {
+                            color: $font-white;
+                        }
+                    }
+                }   
+            }
+        } //end overHead-container
+    }//end overHead
+
+
+
+
+
+
+
+
+
+
+}//end #app

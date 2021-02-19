@@ -1,1 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+ul {
+  list-style: none;
+}
+
+#app .overHead {
+  width: 100vw;
+  max-width: 100%;
+  height: 50px;
+  background-color: #1c4055;
+}
+#app .overHead-container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  color: #c0c3cf;
+  line-height: 50px;
+  justify-content: space-between;
+}
+#app .overHead-container .boxL .workdays i {
+  margin-right: 8px;
+}
+#app .overHead-container .boxR {
+  display: flex;
+}
+#app .overHead-container .boxR .contacts {
+  display: flex;
+}
+#app .overHead-container .boxR .contacts-number {
+  cursor: pointer;
+  margin-right: 35px;
+}
+#app .overHead-container .boxR .contacts-number i {
+  margin-right: 5px;
+}
+#app .overHead-container .boxR .contacts-number:hover {
+  color: white;
+}
+#app .overHead-container .boxR .contacts-mail {
+  cursor: pointer;
+}
+#app .overHead-container .boxR .contacts-mail i {
+  margin-right: 5px;
+}
+#app .overHead-container .boxR .contacts-mail:hover {
+  color: white;
+}
+#app .overHead-container .boxR .social i {
+  cursor: pointer;
+  margin-left: 35px;
+}
+#app .overHead-container .boxR .social i:hover {
+  color: white;
+}
