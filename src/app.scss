@@ -10,6 +10,7 @@
     .overHead { 
         width : 100vw;
         max-width : 100%;
+        min-width: 1200px;
         height : 50px;
         background-color : rgb(28, 64, 85);
 
@@ -24,26 +25,22 @@
                     i{
                         margin-right : 8px;
                     }
+                    &-data {
+                        display : inline-block;
+                        &-dashed::before{
+                            content : '-';
+                            margin-left: 4px;
+                        }                  
+                    }                 
                 }
             }
             .boxR {
                 @include flex;
                 .contacts {
-                    @include flex;
-                    
-                    
-                    &-number {
+                    @include flex;                
+                    &-data {
                         cursor : pointer;
                         margin-right : 35px;
-                        i {
-                            margin-right : 5px;
-                        }
-                        &:hover {
-                            color : $font-white;
-                        }
-                    }
-                    &-mail  {
-                        cursor: pointer;
                         i {
                             margin-right : 5px;
                         }
@@ -67,6 +64,7 @@
     .nav-jumbotron-box {
         width : 100vw;
         height : 920px;
+        min-width: 1200px;
         @include jumbotronImg;
 
 

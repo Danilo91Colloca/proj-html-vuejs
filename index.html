@@ -11,6 +11,7 @@
     <!-- css -->
     <link rel="stylesheet" href="dist/app.css">
     <title>Document</title>
+    <!-- VUEJS-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
@@ -20,30 +21,27 @@
         <div class="overHead">
             <div class="overHead-container">
                 <div class="boxL">
-                    <div class="workdays">
-                        <i class="fas fa-clock"></i>
-                        <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
+                    <div class="workdays" v-for="data in rotation">
+                        <i :class="rotation.faIcon"></i>
+                        <span>Open Hours:</span>
+                        <div class="workdays-data" v-for="(element, key, index) in data.dayHour">
+                            <span :class="dashClass(index)">
+                                {{element}}
+                            </span>
+                        </div>                     
                     </div>
                 </div>
                 <div class="boxR">
                     <div class="contacts">
-                        <div class="contacts-number">
-                            <i class="fas fa-phone-alt"></i>
+                        <div class="contacts-data" v-for="element in contacts">
+                            <i :class="element.faIcon"></i>
                             <span >
-                                +1(305) 1234-5678
-                            </span>
-                        </div>
-                        <div class="contacts-mail">
-                            <i class="fas fa-envelope"></i>
-                            <span>
-                                hello@example.com
+                                {{element.contact}}
                             </span>
                         </div>
                     </div>
-                    <div class="social">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
+                    <div class="social" v-for="icon in social">
+                        <i :class="icon"></i>
                     </div>
 
                 </div>

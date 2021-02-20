@@ -11,6 +11,7 @@ ul {
 #app .overHead {
   width: 100vw;
   max-width: 100%;
+  min-width: 1200px;
   height: 50px;
   background-color: #1c4055;
 }
@@ -25,29 +26,27 @@ ul {
 #app .overHead-container .boxL .workdays i {
   margin-right: 8px;
 }
+#app .overHead-container .boxL .workdays-data {
+  display: inline-block;
+}
+#app .overHead-container .boxL .workdays-data-dashed::before {
+  content: "-";
+  margin-left: 4px;
+}
 #app .overHead-container .boxR {
   display: flex;
 }
 #app .overHead-container .boxR .contacts {
   display: flex;
 }
-#app .overHead-container .boxR .contacts-number {
+#app .overHead-container .boxR .contacts-data {
   cursor: pointer;
   margin-right: 35px;
 }
-#app .overHead-container .boxR .contacts-number i {
+#app .overHead-container .boxR .contacts-data i {
   margin-right: 5px;
 }
-#app .overHead-container .boxR .contacts-number:hover {
-  color: white;
-}
-#app .overHead-container .boxR .contacts-mail {
-  cursor: pointer;
-}
-#app .overHead-container .boxR .contacts-mail i {
-  margin-right: 5px;
-}
-#app .overHead-container .boxR .contacts-mail:hover {
+#app .overHead-container .boxR .contacts-data:hover {
   color: white;
 }
 #app .overHead-container .boxR .social i {
@@ -60,6 +59,7 @@ ul {
 #app .nav-jumbotron-box {
   width: 100vw;
   height: 920px;
+  min-width: 1200px;
   background-image: url("../images/bg-2.jpg");
   background-position: top;
   background-size: cover;

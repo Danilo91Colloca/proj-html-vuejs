@@ -75,4 +75,9 @@ Il sito  è strutturato in 11 macro-sezioni:
 
 
 
-MILESTONE 1
+
+Questio:
+comportamento dei menu nav?
+comportamento nav allo scroll?
+chiedere se esiste il link per vedere il sito originale
+salvata
