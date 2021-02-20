@@ -62,8 +62,7 @@
     position : relative;
     @include jumbotronImg;
     .overbox-opacity {
-      width : 100%;
-      height : 100%;
+      @include overBoxOpacitySizer;
       background-color: rgba(0, 4, 5, 0.5);
       .navBar {
         @include pageCenter;
@@ -157,10 +156,14 @@
     @include widthSectionParam;
     height : 900px;
     background-color : rgb(250, 250, 250);
-    .center-videoSection {
+    // background-color: blue;
+    .pagecenter-videoSection {
+      position : relative;
       @include pageCenter;
-      .text-block {
-        width : 700px;
+      height : 100%;
+      .textMov-block {
+        @include centerAbsolute;
+        width : 900px;
         text-align: center;
         .top-title {
           @include topTitle;
@@ -175,9 +178,34 @@
             padding : 5px;
           }
         }
-
-      }
-    }
+        .summary {
+          color : $font-grayDark;
+          margin-bottom : 80px;
+          padding : 0px 40px;
+        }
+        .video-preview {
+          position: relative;
+          width : 900px;
+          height : 400px;
+          @include moviePreview;
+          .overbox-opacity {
+            @include overBoxOpacitySizer;
+            background-color : rgba(62, 138, 139, 0.4);
+            .playLink {
+              @include centerAbsolute;
+              font-size : 70px;
+              color : rgba(255, 255, 255, 0.712);
+              text-shadow : 0px -8px 0px rgba(22, 192, 195, 0.842);
+              &:hover {
+                font-size : 80px;
+              }
+            }
+          }
+  
+        }
+      }//end text-block
+      
+    }//end pagecenter-videoSection
   }
 
 

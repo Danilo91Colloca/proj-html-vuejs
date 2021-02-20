@@ -6,6 +6,14 @@
   background-repeat : no-repeat;
 }
 
+//VIDEO BLOCK BG-IMG
+@mixin moviePreview {
+  background-image : url("../images/video-1.jpg");
+  background-position : center;
+  background-size : cover;
+  background-repeat : no-repeat;
+}
+
 //BRAND NAME
 $brandLetterSpacing : 5px;
 $brandFontSize : 15px;
@@ -60,7 +68,6 @@ $brandWeight : 900;
     background-color : $buttonSolid-hover;
     transform: scale(1.1);
   }
-
 }
 
 //top-title 
@@ -71,7 +78,6 @@ $brandWeight : 900;
 //title right bluelagoon
 @mixin changeWordColor {
   color : $font-blueLagoon;
-  background-color: $bg-brand;
-
-  
+  background-color : $bg-brand;
+  border-radius : 5px;
 }
