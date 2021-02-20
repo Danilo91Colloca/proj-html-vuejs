@@ -3,7 +3,7 @@ new Vue({
   el:  '#app',
 
   data: {
-    
+
     rotation : [
       {
       faIcon : 'fas fa-clock',
@@ -29,8 +29,23 @@ new Vue({
       fb : 'fab fa-facebook-f',
       twitt : 'fab fa-twitter',
       linked : 'fab fa-linkedin-in'
+    },
+    navBar : [{
+      navMenu : {
+        menu1 : '',
+        menu2 : '',
+        menu3 :  '',
+        manu4 : '',
+        menu5 : ''
+      }      
+    },
+    {
+      userIcon : 'far fa-user'
     }
-    
+        
+      
+    ]
+      
   },
   methods: {
     //inserire trattino prima di un elemento generato in v-for che non si trovi in prima posizione

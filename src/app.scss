@@ -13,7 +13,6 @@
         min-width: 1200px;
         height : 50px;
         background-color : rgb(28, 64, 85);
-
         &-container {
             @include pageCenter;
             @include flex;
@@ -22,12 +21,12 @@
             justify-content : space-between;
             .boxL {
                 .workdays {
-                    i{
+                    i {
                         margin-right : 8px;
                     }
                     &-data {
                         display : inline-block;
-                        &-dashed::before{
+                        &-dashed::before {
                             content : '-';
                             margin-left: 4px;
                         }                  
@@ -61,11 +60,31 @@
             }// end boxR
         } //end overHead-container
     }//end overHead
-    .nav-jumbotron-box {
+    .navAndJumbotron-box {
         width : 100vw;
         height : 920px;
         min-width: 1200px;
         @include jumbotronImg;
+        .navBar {
+            @include pageCenter;
+            @include flex;
+            align-items: center;
+            padding: 0px 15px;
+            height : 100px;
+            background-color: black;
+            .brandLogo {
+                &-part1 {
+                    @include brandName-container-part1;
+                    .text-brandpart1 {
+                        @include brandName-part1;
+                    }
+                }
+                &-part2 {
+                    @include brandName-part2;
+                }
+
+            }
+        }
 
 
     }

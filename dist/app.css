@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 ul {
@@ -56,7 +57,7 @@ ul {
 #app .overHead-container .boxR .social i:hover {
   color: white;
 }
-#app .nav-jumbotron-box {
+#app .navAndJumbotron-box {
   width: 100vw;
   height: 920px;
   min-width: 1200px;
@@ -64,4 +65,34 @@ ul {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+}
+#app .navAndJumbotron-box .navBar {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  height: 100px;
+  background-color: black;
+}
+#app .navAndJumbotron-box .navBar .brandLogo-part1 {
+  display: inline-block;
+  background-color: rgba(56, 129, 130, 0.3);
+  padding-left: 25px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  line-height: 40px;
+}
+#app .navAndJumbotron-box .navBar .brandLogo-part1 .text-brandpart1 {
+  text-align: right;
+  color: #1d7c7e;
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-size: 15px;
+}
+#app .navAndJumbotron-box .navBar .brandLogo-part2 {
+  color: white;
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-size: 15px;
 }
