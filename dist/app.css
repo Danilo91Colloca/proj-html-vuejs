@@ -277,14 +277,14 @@ ul {
 #app .result-section .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(39, 39, 39, 0.623);
 }
 #app .result-section .overbox-opacity .textResult-block {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 900px;
+  width: 1000px;
   text-align: center;
 }
 #app .result-section .overbox-opacity .textResult-block .top-title {
@@ -293,7 +293,7 @@ ul {
   margin-bottom: 30px;
 }
 #app .result-section .overbox-opacity .textResult-block .title {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   color: white;
   font-size: 40px;
 }
@@ -302,4 +302,19 @@ ul {
   background-color: rgba(49, 109, 110, 0.6);
   border-radius: 5px;
   padding: 5px;
+}
+#app .result-section .overbox-opacity .textResult-block .result-box-container {
+  display: flex;
+  justify-content: space-between;
+}
+#app .result-section .overbox-opacity .textResult-block .result-box-container .box-result .result {
+  color: #33a6a8;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+#app .result-section .overbox-opacity .textResult-block .result-box-container .box-result .sector {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
 }
