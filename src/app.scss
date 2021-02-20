@@ -1,169 +1,184 @@
 @import  "partials/_commons";
 @import "partials/_colors";
 @import "partials/_bg-brand-titles";
-
-
-
-
-
 #app {
-    .overHead { 
-        width : 100vw;
-        max-width : 100%;
-        min-width: 1200px;
-        height : 50px;
-        background-color : rgb(28, 64, 85);
-        &-container {
-            @include pageCenter;
+  .overHead { 
+    @include widthSectionParam;
+    height : 50px;
+    background-color : rgb(28, 64, 85);
+    &-container {
+      @include pageCenter;
+      @include flex;
+      color : $font-gray;
+      line-height : 50px;
+      justify-content : space-between;
+      padding : 0px 15px;
+      .boxL {
+        .workdays {
+          i {
+            margin-right : 8px;
+          }
+          &-data {
+            display : inline-block;
+            &-dashed::before {
+              content : '-';
+              margin-left: 4px;
+            }                  
+          }                 
+        }
+      }
+      .boxR {
+        @include flex;
+        .contacts {
+          @include flex;                
+          &-data {
+            cursor : pointer;
+            margin-right : 35px;
+            i {
+              margin-right : 5px;
+            }
+            &:hover {
+              color : $font-white;
+              text-decoration: underline;
+            }
+          }
+        }
+        .social {
+          i{
+            cursor: pointer;
+            margin-left : 35px;
+            &:hover {
+              color  : $font-white;
+              transform: scale(1.1);
+            }
+          }
+        }   
+      }// end boxR
+    } //end overHead-container
+  }//end overHead
+  .navAndJumbotron-box {
+    @include widthSectionParam;
+    height : 920px;
+    position : relative;
+    @include jumbotronImg;
+    .overbox-opacity {
+      width : 100%;
+      height : 100%;
+      background-color: rgba(0, 4, 5, 0.5);
+      .navBar {
+        @include pageCenter;
+        @include flex;
+        justify-content : space-between;
+        align-items : center;
+        padding : 0px 15px;
+        height : 100px;
+        &-L {
+          .brandLogo {
+            &-part1 {
+              @include brandName-container-part1;
+              .text-brandpart1 {
+                @include brandName-part1;
+              }
+            }
+            &-part2 {
+              @include brandName-part2;
+            }  
+          }
+        }
+        &-R {
+          @include flex;
+          align-items: center;
+          .menuNav-box {
             @include flex;
-            color : $font-gray;
-            line-height : 50px;
-            justify-content : space-between;
-            padding : 0px 15px;
-            .boxL {
-                .workdays {
-                    i {
-                        margin-right : 8px;
-                    }
-                    &-data {
-                        display : inline-block;
-                        &-dashed::before {
-                            content : '-';
-                            margin-left: 4px;
-                        }                  
-                    }                 
+            font-size: 16px;
+            .navUl {
+              li {
+                text-transform : uppercase;
+                margin : 0px 25px;
+                color : rgb(200, 200, 200);
+                &:hover {
+                  color : $font-white;
+                  cursor : pointer;
+                  transform: scale(1.2);
                 }
+              }
             }
-            .boxR {
-                @include flex;
-                .contacts {
-                    @include flex;                
-                    &-data {
-                        cursor : pointer;
-                        margin-right : 35px;
-                        i {
-                            margin-right : 5px;
-                        }
-                        &:hover {
-                            color : $font-white;
-                            text-decoration: underline;
-                        }
-                    }
-                }
-                .social {
-                    i{
-                        cursor: pointer;
-                        margin-left : 35px;
-                        &:hover {
-                            color  : $font-white;
-                            transform: scale(1.1);
-                        }
-                    }
-                }   
-            }// end boxR
-        } //end overHead-container
-    }//end overHead
-    .navAndJumbotron-box {
-        width : 100vw;
-        height : 920px;
-        min-width : 1200px;
-        position: absolute;
-        @include jumbotronImg;
-        .overbox-opacity {
-            width : 100%;
-            height : 100%;
-            background-color: rgba(0, 4, 5, 0.5);
-            .navBar {
-                @include pageCenter;
-                @include flex;
-                justify-content : space-between;
-                align-items : center;
-                padding : 0px 15px;
-                height : 100px;
-                &-L {
-                    .brandLogo {
-                        &-part1 {
-                            @include brandName-container-part1;
-                            .text-brandpart1 {
-                                @include brandName-part1;
-                            }
-                        }
-                        &-part2 {
-                            @include brandName-part2;
-                        }  
-                    }
-                }
-                &-R {
-                    @include flex;
-                    align-items: center;
-                    .menuNav-box {
-                        @include flex;
-                        font-size: 16px;
-                        .navUl {
-                            li {
-                                text-transform : uppercase;
-                                margin : 0px 25px;
-                                color : rgb(200, 200, 200);
-                                &:hover {
-                                    color : $font-white;
-                                    cursor : pointer;
-                                    transform: scale(1.2);
-                                }
-                            }
-                        }
-                        .userIcon {
-                            margin-right : 25px;
-                            font-size: 20px;
-                            color : rgb(210, 210, 210);
-                                &:hover {
-                                    color : $font-white;
-                                    cursor : pointer;
-                                    transform: scale(1.1);
-                                }
-                        }
-                    }
-                    .button-solid {
-                        @include buttonSolid;
-                    }
-                }        
-            }//end navBar
-            .jumbotronTextButton-container {
-                position : absolute;
-                top : 50%;
-                left : 50%;
-                transform : translate(-50%, -50%);
-                text-align : center;
+            .userIcon {
+              margin-right : 25px;
+              font-size: 20px;
+              color : rgb(210, 210, 210);
+              &:hover {
                 color : $font-white;
-                .text-box {
-                    width : 700px;
-                    margin : 50px;
-                    h1 {
-                        font-size : 70px;
-                        font-weight : bolder;
-                        margin : 50px;
-                    }
-                    p {
-                        color : $font-gray;
-                        font-size : 20px;
-                    }
-                }
-                .button-box {
-                    .button-solid {
-                        display: inline-block;
-                        @include buttonSolid;
-                        margin-right : 15px;
-                    }
-                    .button-transparent {
-                        display: inline-block;
-
-                        @include buttonTransparent;
-                    }
-                } 
+                cursor : pointer;
+                transform: scale(1.1);
+              }
             }
+          }
+          .button-solid {
+            @include buttonSolid;
+          }
+        }        
+      }//end navBar
+      .jumbotronTextButton-container {
+        position : absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+        text-align : center;
+        color : $font-white;
+        .text-box {
+          width : 700px;
+          margin : 50px;
+          h1 {
+            font-size : 70px;
+            font-weight : bolder;
+            margin : 50px;
+          }
+          p {
+            color : $font-gray;
+            font-size : 20px;
+          }
+        }
+        .button-box {
+          .button-solid {
+            display: inline-block;
+            @include buttonSolid;
+            margin-right : 15px;
+          }
+          .button-transparent {
+            display: inline-block;
+            @include buttonTransparent;
+          }
+        } 
+      }
+    } //end overbox-opacity
+  }//end navAndJumbotron-box
+  .introVideo-box {
+    @include widthSectionParam;
+    height : 900px;
+    background-color : rgb(250, 250, 250);
+    .center-videoSection {
+      @include pageCenter;
+      .text-block {
+        width : 700px;
+        text-align: center;
+        .top-title {
+          @include topTitle;
+          margin-bottom : 30px;
+        }
+        .title {
+          margin-bottom : 30px;
+          color : $font-grayFucile;
+          font-size: 40px;
+          &-wordColorChange {
+            @include changeWordColor;
+            padding : 5px;
+          }
+        }
 
-        } //end overbox-opacity
-        
-    }//end navAndJumbotron-box
+      }
+    }
+  }
 
 
 

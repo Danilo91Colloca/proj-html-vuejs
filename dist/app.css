@@ -62,9 +62,10 @@ ul {
 }
 #app .navAndJumbotron-box {
   width: 100vw;
-  height: 920px;
+  max-width: 100%;
   min-width: 1200px;
-  position: absolute;
+  height: 920px;
+  position: relative;
   background-image: url("../images/bg-2.jpg");
   background-position: top;
   background-size: cover;
@@ -193,4 +194,34 @@ ul {
   cursor: pointer;
   background-color: #48a4a5;
   transform: scale(1.1);
+}
+#app .introVideo-box {
+  width: 100vw;
+  max-width: 100%;
+  min-width: 1200px;
+  height: 900px;
+  background-color: #fafafa;
+}
+#app .introVideo-box .center-videoSection {
+  margin: 0 auto;
+  width: 1200px;
+}
+#app .introVideo-box .center-videoSection .text-block {
+  width: 700px;
+  text-align: center;
+}
+#app .introVideo-box .center-videoSection .text-block .top-title {
+  color: #1d7c7e;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#app .introVideo-box .center-videoSection .text-block .title {
+  margin-bottom: 30px;
+  color: #1c2831;
+  font-size: 40px;
+}
+#app .introVideo-box .center-videoSection .text-block .title-wordColorChange {
+  color: #1d7c7e;
+  background-color: rgba(29, 124, 126, 0.2);
+  padding: 5px;
 }

@@ -15,6 +15,12 @@ ul {
     width : 1200px;
 }
 
+@mixin widthSectionParam {
+  width : 100vw;
+  max-width : 100%;
+  min-width : 1200px;
+}
+
 //common style
 @mixin flex {
     display : flex;
