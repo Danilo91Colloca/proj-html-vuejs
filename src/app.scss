@@ -63,7 +63,7 @@
     @include jumbotronImg;
     .overbox-opacity {
       @include overBoxOpacitySizer;
-      background-color: rgba(0, 4, 5, 0.5);
+      background-color: rgba(78, 90, 93, 0.404);
       .navBar {
         @include pageCenter;
         @include flex;
@@ -201,11 +201,38 @@
               }
             }
           }
-  
         }
       }//end text-block
-      
     }//end pagecenter-videoSection
+  }//end introVideo-box
+  .result-section {
+    @include widthSectionParam;
+    @include resultImg;
+    height : 580px;
+    position : relative;
+    .overbox-opacity {
+      @include overBoxOpacitySizer;
+      background-color : rgba(0, 0, 0, 0.5);
+      .textResult-block {
+        @include centerAbsolute;
+        width : 900px;
+        text-align: center;
+        .top-title {
+          @include topTitle;
+          margin-bottom : 30px;
+        }
+        .title {
+          margin-bottom : 30px;
+          color : $font-white;
+          font-size: 40px;
+          &-wordColorChange {
+            @include changeWordColor2;
+            padding : 5px;
+          }
+        }
+      }
+    }
+    
   }
 
 

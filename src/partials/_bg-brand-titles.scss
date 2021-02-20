@@ -14,6 +14,14 @@
   background-repeat : no-repeat;
 }
 
+//RESULT SECTION BG-img
+@mixin resultImg {
+  background-image : url("../images/bg-4.jpg");
+  background-position : center;
+  background-size : cover;
+  background-repeat : no-repeat;
+}
+
 //BRAND NAME
 $brandLetterSpacing : 5px;
 $brandFontSize : 15px;
@@ -72,12 +80,18 @@ $brandWeight : 900;
 
 //top-title 
 @mixin topTitle {
-  color : $font-blueLagoon;
+  color : $font-blueLagoonLight;
   font-weight : 600;
 }
-//title right bluelagoon
+//title change bluelagoon
 @mixin changeWordColor {
   color : $font-blueLagoon;
   background-color : $bg-brand;
+  border-radius : 5px;
+}
+//title change color white e bg bluelagoon-strong
+@mixin changeWordColor2 {
+  color : $font-white;
+  background-color : rgba(49, 109, 110, 0.6);
   border-radius : 5px;
 }
