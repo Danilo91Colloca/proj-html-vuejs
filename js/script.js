@@ -32,11 +32,11 @@ new Vue({
     },
     navBar : [{
       navMenu : {
-        menu1 : '',
-        menu2 : '',
-        menu3 :  '',
-        manu4 : '',
-        menu5 : ''
+        menu1 : 'home',
+        menu2 : 'about',
+        menu3 :  'services',
+        manu4 : 'team',
+        menu5 : 'blog'
       }      
     },
     {

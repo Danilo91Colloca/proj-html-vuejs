@@ -23,6 +23,7 @@ ul {
   color: #c0c3cf;
   line-height: 50px;
   justify-content: space-between;
+  padding: 0px 15px;
 }
 #app .overHead-container .boxL .workdays i {
   margin-right: 8px;
@@ -49,6 +50,7 @@ ul {
 }
 #app .overHead-container .boxR .contacts-data:hover {
   color: white;
+  text-decoration: underline;
 }
 #app .overHead-container .boxR .social i {
   cursor: pointer;
@@ -56,6 +58,7 @@ ul {
 }
 #app .overHead-container .boxR .social i:hover {
   color: white;
+  transform: scale(1.1);
 }
 #app .navAndJumbotron-box {
   width: 100vw;
@@ -66,33 +69,78 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#app .navAndJumbotron-box .navBar {
+#app .navAndJumbotron-box .overbox-opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 4, 5, 0.5);
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar {
   margin: 0 auto;
   width: 1200px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 15px;
   height: 100px;
-  background-color: black;
 }
-#app .navAndJumbotron-box .navBar .brandLogo-part1 {
+#app .navAndJumbotron-box .overbox-opacity .navBar-L .brandLogo-part1 {
   display: inline-block;
-  background-color: rgba(56, 129, 130, 0.3);
+  background-color: rgba(29, 124, 126, 0.2);
   padding-left: 25px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   line-height: 40px;
 }
-#app .navAndJumbotron-box .navBar .brandLogo-part1 .text-brandpart1 {
+#app .navAndJumbotron-box .overbox-opacity .navBar-L .brandLogo-part1 .text-brandpart1 {
   text-align: right;
   color: #1d7c7e;
   font-weight: 900;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   font-size: 15px;
 }
-#app .navAndJumbotron-box .navBar .brandLogo-part2 {
+#app .navAndJumbotron-box .overbox-opacity .navBar-L .brandLogo-part2 {
   color: white;
   font-weight: 900;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   font-size: 15px;
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar-R {
+  display: flex;
+  align-items: center;
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar-R .menuNav-box {
+  display: flex;
+  font-size: 16px;
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar-R .menuNav-box .navUl li {
+  text-transform: uppercase;
+  margin: 0px 25px;
+  color: #c8c8c8;
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar-R .menuNav-box .navUl li:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar-R .menuNav-box .userIcon {
+  margin-right: 25px;
+  font-size: 20px;
+  color: #d2d2d2;
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar-R .menuNav-box .userIcon:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar-R .button-solid {
+  background-color: #388182;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+#app .navAndJumbotron-box .overbox-opacity .navBar-R .button-solid:hover {
+  cursor: pointer;
+  background-color: #48a4a5;
+  transform: scale(1.1);
 }

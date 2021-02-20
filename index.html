@@ -53,20 +53,43 @@
         </div>
         <!--/CONTACTS-->
         <!--NAV IN JUMBOTRON-->
-        <div  class="navAndJumbotron-box">
-            <div class="navBar">
-                <div class="barndLogo">
-                    <div class="brandLogo-part1">
-                        <span class="text-brandpart1">
-                            NEXT
-                        </span>
-                    </div>                
-                    <span class="brandLogo-part2">
-                        GEN
-                    </span>
+        <div  class="navAndJumbotron-box">   
+            <div class="overbox-opacity">
+                <div class="navBar">
+                    <div class="navBar-L">
+                        <!-- logo Snippet-->
+                        <div class="barndLogo">
+                            <div class="brandLogo-part1">
+                                <span class="text-brandpart1">
+                                    NEX
+                                </span>
+                            </div>                
+                            <span class="brandLogo-part2">
+                                GEN
+                            </span>
+                        </div>
+                        <!-- /logo Snippet-->
+                    </div>
+                    <div class="navBar-R">
+                        <div class="menuNav-box"  v-for="element in navBar" >
+                            <ul class="navUl" v-for="item in element.navMenu">
+                                <li>
+                                    {{item}}
+                                </li>
+                            </ul>
+                            <div class="userIcon">
+                                <i :class="element.userIcon"></i>
+                            </div>
+                        </div>
+                        <div class="button-solid">
+                            <span>GET IN TOUCH</span>
+                        </div>
+    
+                    </div>                    
                 </div>
 
-            </div>
+            </div>      
+            
 
         </div>
 

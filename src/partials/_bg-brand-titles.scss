@@ -1,4 +1,4 @@
-//BACKGROUNDS
+//JUMBOTRON BG IMMAGE
 @mixin jumbotronImg {
     background-image : url("../images/bg-2.jpg");
     background-position : top;
@@ -7,26 +7,43 @@
 }
 
 //BRAND NAME
+$brandLetterSpacing : 5px;
+$brandFontSize : 15px;
+$brandWeight : 900;
 @mixin brandName-container-part1 {
-
     display : inline-block;
     background-color : $bg-brand;
     padding-left : 25px ;
     border-top-left-radius : 30px;
     border-bottom-left-radius : 30px;
     line-height: 40px;
-
 }
 @mixin brandName-part1 {
     text-align : right;
     color : $font-blueLagoon;   
-    font-weight : 900;
-    letter-spacing : 4px;
-    font-size : 15px;
+    font-weight : $brandWeight;
+    letter-spacing : $brandLetterSpacing;
+    font-size : $brandFontSize;
 }
 @mixin brandName-part2 {
     color : $font-white;
-    font-weight : 900;
-    letter-spacing : 4px;
-    font-size : 15px;
+    font-weight : $brandWeight;
+    letter-spacing : $brandLetterSpacing;
+    font-size : $brandFontSize;
+}
+
+//SOLID BUTTONS
+
+@mixin buttonSolid {
+    background-color : $bg-darkBlueLagoon;
+    color : $font-white;
+    padding : 10px;
+    border-radius : 5px;
+    font-size: 15px;
+    &:hover {
+        cursor: pointer;
+        background-color : $buttonSolid-hover;
+        transform: scale(1.1);
+    }
+
 }
