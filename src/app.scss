@@ -67,6 +67,7 @@
         width : 100vw;
         height : 920px;
         min-width : 1200px;
+        position: absolute;
         @include jumbotronImg;
         .overbox-opacity {
             width : 100%;
@@ -126,6 +127,39 @@
                     }
                 }        
             }//end navBar
+            .jumbotronTextButton-container {
+                position : absolute;
+                top : 50%;
+                left : 50%;
+                transform : translate(-50%, -50%);
+                text-align : center;
+                color : $font-white;
+                .text-box {
+                    width : 700px;
+                    margin : 50px;
+                    h1 {
+                        font-size : 70px;
+                        font-weight : bolder;
+                        margin : 50px;
+                    }
+                    p {
+                        color : $font-gray;
+                        font-size : 20px;
+                    }
+                }
+                .button-box {
+                    .button-solid {
+                        display: inline-block;
+                        @include buttonSolid;
+                        margin-right : 15px;
+                    }
+                    .button-transparent {
+                        display: inline-block;
+
+                        @include buttonTransparent;
+                    }
+                } 
+            }
 
         } //end overbox-opacity
         

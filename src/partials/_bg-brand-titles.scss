@@ -47,3 +47,19 @@ $brandWeight : 900;
     }
 
 }
+
+//TRANSPARENT BUTTON
+@mixin buttonTransparent {
+    background-color : transparent;
+    border : 1px solid $font-blueLagoon;
+    color : $font-white;
+    padding : 10px;
+    border-radius : 5px;
+    font-size: 15px;
+    &:hover {
+        cursor: pointer;
+        background-color : $buttonSolid-hover;
+        transform: scale(1.1);
+    }
+
+}

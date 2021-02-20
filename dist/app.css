@@ -64,6 +64,7 @@ ul {
   width: 100vw;
   height: 920px;
   min-width: 1200px;
+  position: absolute;
   background-image: url("../images/bg-2.jpg");
   background-position: top;
   background-size: cover;
@@ -133,13 +134,62 @@ ul {
   transform: scale(1.1);
 }
 #app .navAndJumbotron-box .overbox-opacity .navBar-R .button-solid {
-  background-color: #388182;
+  background-color: #3e8a8b;
   color: white;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
 }
 #app .navAndJumbotron-box .overbox-opacity .navBar-R .button-solid:hover {
+  cursor: pointer;
+  background-color: #48a4a5;
+  transform: scale(1.1);
+}
+#app .navAndJumbotron-box .overbox-opacity .jumbotronTextButton-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+#app .navAndJumbotron-box .overbox-opacity .jumbotronTextButton-container .text-box {
+  width: 700px;
+  margin: 50px;
+}
+#app .navAndJumbotron-box .overbox-opacity .jumbotronTextButton-container .text-box h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  margin: 50px;
+}
+#app .navAndJumbotron-box .overbox-opacity .jumbotronTextButton-container .text-box p {
+  color: #c0c3cf;
+  font-size: 20px;
+}
+#app .navAndJumbotron-box .overbox-opacity .jumbotronTextButton-container .button-box .button-solid {
+  display: inline-block;
+  background-color: #3e8a8b;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-right: 15px;
+}
+#app .navAndJumbotron-box .overbox-opacity .jumbotronTextButton-container .button-box .button-solid:hover {
+  cursor: pointer;
+  background-color: #48a4a5;
+  transform: scale(1.1);
+}
+#app .navAndJumbotron-box .overbox-opacity .jumbotronTextButton-container .button-box .button-transparent {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #1d7c7e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+#app .navAndJumbotron-box .overbox-opacity .jumbotronTextButton-container .button-box .button-transparent:hover {
   cursor: pointer;
   background-color: #48a4a5;
   transform: scale(1.1);
