@@ -319,8 +319,25 @@
               </span>
             </div>
           </div>
+          <div class="boxNews-container">
+
+            <div class="box-news" v-for="data in news">
+              <img :src="data.image" alt="">
+              <div class="overbox-opacity">
+                <div class="text">
+                  <h3>
+                    {{data.textNews}}
+                  </h3>
+                </div>
+              </div>
+    
+            </div>
+
+          </div>
+          
 
         </div>
+        
 
 
 

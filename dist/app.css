@@ -570,6 +570,7 @@ ul {
   max-width: 100%;
   min-width: 1200px;
   height: 830px;
+  position: relative;
   background-color: #c6cec5;
 }
 #app .news-section .central-box {
@@ -577,15 +578,13 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  position: relative;
   width: 1150px;
-  border: 1px solid red;
 }
 #app .news-section .central-box .titleButtonSection {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 #app .news-section .central-box .titleButtonSection .textServices-block {
   width: 820px;
@@ -615,9 +614,9 @@ ul {
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
-  width: 120px;
+  width: 100px;
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   right: 0;
   text-align: center;
 }
@@ -625,4 +624,37 @@ ul {
   cursor: pointer;
   background-color: #48a4a5;
   transform: scale(1.1);
+}
+#app .news-section .central-box .boxNews-container {
+  display: flex;
+  justify-content: space-between;
+}
+#app .news-section .central-box .boxNews-container .box-news {
+  width: 360px;
+  height: 360px;
+  border-radius: 8px;
+  position: relative;
+}
+#app .news-section .central-box .boxNews-container .box-news img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: absolute;
+}
+#app .news-section .central-box .boxNews-container .box-news .overbox-opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 39, 39, 0.623);
+  border-radius: 8px;
+  padding: 20px;
+  position: absolute;
+}
+#app .news-section .central-box .boxNews-container .box-news .overbox-opacity .text {
+  width: 200px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }

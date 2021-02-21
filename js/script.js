@@ -179,6 +179,20 @@ new Vue({
           linked : 'https://www.linkedin.com/',
           linkedIcon : 'fab fa-linkedin-in'
         }
+      }
+    ],
+    news : [
+      {
+        image : "images/news-1.jpg",
+        textNews : 'Increase creativity is possible for everyone.'
+      },
+      {
+        image : "images/news-2.jpg",
+        textNews : 'Beacause market research is part of the business plan.'
+      },
+      {
+        image : "images/news-3.jpg",
+        textNews : 'Working from home is now a trend.'
       },
     ]
 

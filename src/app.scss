@@ -479,17 +479,16 @@
   .news-section {
     @include widthSectionParam;
     height : 830px;
+    position : relative;
     background-color : $bg-greenExLight;
     .central-box {
       @include centerAbsolute;
-      @include flex;
-      position : relative;
       width : 1150px;
-      border : 1px solid red;
       .titleButtonSection {
+        position : relative;
         @include flex;
         justify-content : space-between;
-        margin-bottom : 30px;
+        margin-bottom : 50px;
         .textServices-block {
           width : 820px;
           .top-title {
@@ -511,16 +510,47 @@
         }//end text-block
         .button-solid {
           @include buttonSolid;
-          width : 120px;
+          width : 100px;
           position : absolute;
-          bottom : 30px;
+          bottom : 0;
           right : 0;
           text-align : center;
         }
-      }
-
-    }
-  }
+      } // end title button section
+      .boxNews-container {
+        @include flex;
+        justify-content : space-between;
+        .box-news {
+          width : 360px;
+          height : 360px;
+          border-radius : 8px;
+          position : relative;
+          img {
+            width : 100%;
+            height : 100%;
+            border-radius: 8px;
+            position: absolute;
+          }
+          .overbox-opacity{
+            @include overBoxOpacitySizer;
+            background-color : rgba(39, 39, 39, 0.623);
+            border-radius : 8px; 
+            padding : 20px;
+            position: absolute;
+            .text {
+              width : 200px;
+              color : $font-white;
+              text-align : center;
+              position : absolute; 
+              bottom : 30px;
+              left : 50%;
+              transform : translateX(-50%)
+            }
+          }
+        }
+      }//end boxNews-container
+    }//end central box
+  } // end news section
 
 
 

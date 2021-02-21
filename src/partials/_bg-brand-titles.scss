@@ -21,6 +21,12 @@
   background-size : cover;
   background-repeat : no-repeat;
 }
+//NEWS SECTION BG BOX IMG
+@mixin bgPosition {
+  background-position : center;
+  background-size : cover;
+  background-repeat : no-repeat;
+}
 
 //BRAND NAME
 $brandLetterSpacing : 5px;
