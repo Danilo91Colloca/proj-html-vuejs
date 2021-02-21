@@ -97,7 +97,7 @@ new Vue({
             if(num === nMax) {
               clearInterval(countIn)
             } 
-          }, 10)
+          }, 5)
         }
       });
     }
