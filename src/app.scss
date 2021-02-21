@@ -331,6 +331,9 @@
           .iconArrow {
             color : $font-blueLagoonLight;
             font-size : 18px;
+            &:hover {
+              transform : scale(1.1);
+            }
           }
         }
         .text {
@@ -341,6 +344,18 @@
           span {
             font-weight : 100;
           }
+        }
+        &:hover {
+          transform : scale(1.1);
+          .serviceSybols{
+            .iconSymbol {
+              color : $font-white
+            }
+            .iconArrow {
+
+            }
+          }   
+          
         }
       }
 

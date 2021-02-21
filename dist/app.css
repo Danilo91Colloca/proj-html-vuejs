@@ -419,6 +419,9 @@ ul {
   color: #33a6a8;
   font-size: 18px;
 }
+#app .area-services-section .services-box-container .services-box .servicesSymbols .iconArrow:hover {
+  transform: scale(1.1);
+}
 #app .area-services-section .services-box-container .services-box .text {
   color: white;
 }
@@ -427,4 +430,10 @@ ul {
 }
 #app .area-services-section .services-box-container .services-box .text span {
   font-weight: 100;
+}
+#app .area-services-section .services-box-container .services-box:hover {
+  transform: scale(1.1);
+}
+#app .area-services-section .services-box-container .services-box:hover .serviceSybols .iconSymbol {
+  color: white;
 }
