@@ -25,7 +25,7 @@ new Vue({
         contact : 'hello@example.com'
       }
     ],
-    social : {
+    socialIcons : {
       fb : 'fab fa-facebook-f',
       twitt : 'fab fa-twitter',
       linked : 'fab fa-linkedin-in'
@@ -116,46 +116,49 @@ new Vue({
     ],
     teamPersons : [
       {
+        photo : 'images/team-1.jpg',
         name : 'David',
         surname : 'Cooper',
         role : 'cto & co-founder',
         contacts : {
-          fb : 'fab fa-facebook-f',
-          twitt : 'fab fa-twitter',
-          linked : 'fab fa-linkedun-in'
+          fb : 'https://www.facebook.com/',
+          twitt : 'https://twitter.com/',
+          linked : 'https://www.linkedin.com/'
         }
       },
       {
+        photo : 'images/team-3.jpg',
         name : 'Oliver',
         surname : 'Jones',
         role : 'chief procurement',
         contacts : {
-          fb : 'fab fa-facebook-f',
-          twitt : 'fab fa-twitter',
-          linked : 'fab fa-linkedun-in'
+          fb : 'https://www.facebook.com/',
+          twitt : 'https://twitter.com/',
+          linked : 'https://www.linkedin.com/'
         }
       },
       {
+        photo : 'images/team-2.jpg',
         name : 'Emma',
         surname : 'Lopez',
         role : 'chief marketing',
         contacts : {
-          fb : 'fab fa-facebook-f',
-          twitt : 'fab fa-twitter',
-          linked : 'fab fa-linkedun-in'
+          fb : 'https://www.facebook.com/',
+          twitt : 'https://twitter.com/',
+          linked : 'https://www.linkedin.com/'
         }
       },
       {
+        photo : 'images/team-4.jpg',
         name : 'T.',
         surname : 'Johnson',
         role : 'ceo & president',
         contacts : {
-          fb : 'fab fa-facebook-f',
-          twitt : 'fab fa-twitter',
-          linked : 'fab fa-linkedun-in'
+          fb : 'https://www.facebook.com/',
+          twitt : 'https://twitter.com/',
+          linked : 'https://www.linkedin.com/'
         }
       },
-
     ]
 
   },

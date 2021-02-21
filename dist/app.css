@@ -87,7 +87,7 @@ ul {
 }
 #app .navAndJumbotron-box .overbox-opacity .navBar-L .brandLogo-part1 {
   display: inline-block;
-  background-color: rgba(29, 124, 126, 0.2);
+  background-color: rgba(29, 124, 126, 0.308);
   padding-left: 25px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -228,7 +228,7 @@ ul {
 }
 #app .introVideo-box .pagecenter-videoSection .textMov-block .title-wordColorChange {
   color: #1d7c7e;
-  background-color: rgba(29, 124, 126, 0.2);
+  background-color: rgba(29, 124, 126, 0.308);
   border-radius: 5px;
   padding: 5px;
 }
@@ -443,4 +443,88 @@ ul {
   border-radius: 50%;
   padding: 5px;
   line-height: 16px;
+}
+#app .team-section {
+  width: 100vw;
+  max-width: 100%;
+  min-width: 1200px;
+  height: 900px;
+  background-color: white;
+  position: relative;
+}
+#app .team-section .central-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1150px;
+  border: 1px solid black;
+}
+#app .team-section .central-box .textAndTeam-container {
+  width: 70%;
+  height: 100%;
+  border: 1px solid red;
+}
+#app .team-section .central-box .textAndTeam-container .textTeam-block .top-title {
+  color: #33a6a8;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#app .team-section .central-box .textAndTeam-container .textTeam-block .title {
+  margin-bottom: 30px;
+  color: #3c5664;
+  font-size: 35px;
+}
+#app .team-section .central-box .textAndTeam-container .textTeam-block .title-wordColorChange {
+  color: #1d7c7e;
+  background-color: rgba(29, 124, 126, 0.308);
+  border-radius: 5px;
+  padding: 5px;
+}
+#app .team-section .central-box .textAndTeam-container .textTeam-block .summary {
+  color: #9b9da5;
+  margin-bottom: 80px;
+}
+#app .team-section .team-container {
+  border: 1px solid yellow;
+}
+#app .team-section .team-container .team-box {
+  display: flex;
+}
+#app .team-section .team-container .team-box .photo {
+  width: 130px;
+  margin-right: 25px;
+}
+#app .team-section .team-container .team-box .photo img {
+  width: 100%;
+  border-radius: 8px;
+}
+#app .team-section .team-container .team-box .data {
+  padding: 10px;
+}
+#app .team-section .team-container .team-box .data .name {
+  color: #3c5664;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+#app .team-section .team-container .team-box .data .role {
+  color: #9b9da5;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+#app .team-section .team-container .team-box .data .social-contacts {
+  color: #1d7c7e;
+}
+#app .team-section .team-container .team-box .data .social-contacts a {
+  color: #1d7c7e;
+  text-decoration: none;
+  margin-right: 5px;
+  padding: 0px 10px;
+  line-height: 28px;
+  border-radius: 50%;
+  background-color: rgba(29, 124, 126, 0.308);
+}
+#app .team-section .team-container .team-box .data .social-contacts a:hover {
+  transform: scale(1.1);
 }

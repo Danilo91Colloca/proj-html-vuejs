@@ -362,6 +362,88 @@
 
     }
   }// end area services section
+  .team-section {
+    @include widthSectionParam;
+    height : 900px;
+    background-color : $font-white;
+    position : relative; 
+    .central-box {
+      @include centerAbsolute;
+      width : 1150px;
+      border : 1px solid black; //TEMP
+      .textAndTeam-container {
+        width : 70%;
+        height : 100%;
+        border : 1px solid red; //TEMP
+        .textTeam-block {
+          .top-title {
+            @include topTitle;
+            margin-bottom : 30px;
+          }
+          .title {
+            margin-bottom : 30px;
+            color : $font-grayFucile;
+            font-size : 35px;
+            &-wordColorChange {
+              @include changeWordColor;
+              padding : 5px;
+            }
+          }
+          .summary {
+            color : $font-grayDark;
+            margin-bottom : 80px;
+          }
+        }//end text-block
+      }
+    }// end central box
+    .team-container {
+      border: 1px solid yellow; //TEMP
+      .team-box {
+        @include flex;
+        .photo {
+          width : 130px;
+          margin-right : 25px;
+          img {
+            width : 100%;
+            border-radius : 8px;
+          }
+        }
+        .data {
+          padding : 10px;
+          .name {
+            color : $font-grayFucile;
+            font-weight : bold;
+            font-size : 28px;
+            margin-bottom : 20px;
+
+          }
+          .role {
+            color : $font-grayDark;
+            font-size : 16px;
+            margin-bottom : 20px;
+          }
+          .social-contacts {
+            color : $font-blueLagoon;
+            a {
+              color : $font-blueLagoon;
+              text-decoration : none;
+              margin-right : 5px;
+              padding : 0px 10px;
+              line-height : 28px;
+              border-radius : 50%;
+              background-color : $bg-brand;
+             
+              &:hover {
+                transform : scale(1.1);
+              }
+
+            }
+          }
+        }
+      }
+      
+    }
+  }// end team section
 
 
 
