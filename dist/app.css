@@ -330,47 +330,51 @@ ul {
   width: 100vw;
   max-width: 100%;
   min-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   height: 1090px;
   background-color: #111117;
 }
 #app .area-services-section .centralBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 1150px;
-  border: 1px solid red;
+}
+#app .area-services-section .centralBox .titleButtonSection {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
-#app .area-services-section .centralBox .textServices-block {
+#app .area-services-section .centralBox .titleButtonSection .textServices-block {
   width: 820px;
   border: 1px solid blue;
 }
-#app .area-services-section .centralBox .textServices-block .top-title {
+#app .area-services-section .centralBox .titleButtonSection .textServices-block .top-title {
   color: #33a6a8;
   font-weight: 600;
   margin-bottom: 30px;
 }
-#app .area-services-section .centralBox .textServices-block .title {
+#app .area-services-section .centralBox .titleButtonSection .textServices-block .title {
   margin-bottom: 30px;
   color: white;
   font-size: 40px;
 }
-#app .area-services-section .centralBox .textServices-block .title-wordColorChange {
+#app .area-services-section .centralBox .titleButtonSection .textServices-block .title-wordColorChange {
   color: white;
   background-color: rgba(49, 109, 110, 0.6);
   border-radius: 5px;
   padding: 5px;
 }
-#app .area-services-section .centralBox .textServices-block .summary {
+#app .area-services-section .centralBox .titleButtonSection .textServices-block .summary {
   color: white;
 }
-#app .area-services-section .centralBox .button-box {
+#app .area-services-section .centralBox .titleButtonSection .button-box {
   border: 1px solid green;
   width: calc(100% - 820px);
   position: relative;
 }
-#app .area-services-section .centralBox .button-box .button-transparent {
+#app .area-services-section .centralBox .titleButtonSection .button-box .button-transparent {
   background-color: transparent;
   border: 1px solid #1d7c7e;
   color: white;
@@ -383,8 +387,44 @@ ul {
   right: 0;
   text-align: center;
 }
-#app .area-services-section .centralBox .button-box .button-transparent:hover {
+#app .area-services-section .centralBox .titleButtonSection .button-box .button-transparent:hover {
   cursor: pointer;
   background-color: #48a4a5;
   transform: scale(1.1);
+}
+#app .area-services-section .services-box-container {
+  border: 1px solid pink;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#app .area-services-section .services-box-container .services-box {
+  width: 360px;
+  height: 270px;
+  background-color: #29292a;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+#app .area-services-section .services-box-container .services-box .servicesSymbols {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#app .area-services-section .services-box-container .services-box .servicesSymbols .iconSymbol {
+  color: #33a6a8;
+  font-size: 30px;
+}
+#app .area-services-section .services-box-container .services-box .servicesSymbols .iconArrow {
+  color: #33a6a8;
+  font-size: 18px;
+}
+#app .area-services-section .services-box-container .services-box .text {
+  color: white;
+}
+#app .area-services-section .services-box-container .services-box .text h4 {
+  margin-bottom: 20px;
+}
+#app .area-services-section .services-box-container .services-box .text span {
+  font-weight: 100;
 }

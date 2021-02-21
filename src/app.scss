@@ -261,54 +261,91 @@
   }// end result-section
   .area-services-section {
     @include widthSectionParam;
-    @include flex;
-    justify-content: center;
-    align-items: center;
+    position : relative;
     height : 1090px;
     background-color : $bg-woodsmoke; 
     .centralBox {
+      @include centerAbsolute;
       width : 1150px;
-      border: 1px solid red;
-      @include flex;
-      justify-content: space-between;
-      .textServices-block {
-        // @include centerAbsolute;
-        width : 820px;
-        // text-align: center;
-        border: 1px solid blue;
-        .top-title {
-          @include topTitle;
-          margin-bottom : 30px;
-        }
-        .title {
-          margin-bottom : 30px;
-          color : $font-white;
-          font-size: 40px;
-          &-wordColorChange {
-            @include changeWordColor2;
-            padding : 5px;
+      .titleButtonSection {
+        @include flex;
+        justify-content : space-between;
+        margin-bottom : 30px;
+        .textServices-block {
+          // @include centerAbsolute;
+          width : 820px;
+          // text-align: center;
+          border: 1px solid blue;
+          .top-title {
+            @include topTitle;
+            margin-bottom : 30px;
+          }
+          .title {
+            margin-bottom : 30px;
+            color : $font-white;
+            font-size: 40px;
+            &-wordColorChange {
+              @include changeWordColor2;
+              padding : 5px;
+            }
+          }
+          .summary {
+            color : $font-white;
+          }
+        }//end text-block
+        .button-box {
+          border : 1px solid green;
+          width: calc(100% - 820px);
+          position : relative;
+          .button-transparent {
+            @include buttonTransparent;
+            width : 120px;
+            position : absolute;
+            bottom : 0;
+            right : 0;
+            text-align : center;
           }
         }
-        .summary {
-          color : $font-white;
-        }
-      }//end text-block
-      .button-box {
-        border : 1px solid green;
-        width: calc(100% - 820px);
-        position : relative;
-        .button-transparent {
-          @include buttonTransparent;
-          width : 120px;
-          position : absolute;
-          bottom : 0;
-          right : 0;
-          text-align : center;
-        }
-
       }
+    } // end central box
+    .services-box-container {
+      border: 1px solid pink;
+      @include flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .services-box {
+        width : 360px;
+        height : 270px;
+        background-color : $bg-darkGray;
+        border-radius : 8px;
+        margin-bottom : 30px;
+        padding : 40px;
+        .servicesSymbols {
+          @include flex;
+          justify-content : space-between;
+          margin-bottom : 20px;
+          .iconSymbol {
+            color : $font-blueLagoonLight;
+            font-size : 30px;
+          }
+          .iconArrow {
+            color : $font-blueLagoonLight;
+            font-size : 18px;
+          }
+        }
+        .text {
+          color : $font-white;
+          h4 {
+            margin-bottom : 20px;
+          }
+          span {
+            font-weight : 100;
+          }
+        }
+      }
+
     }
-  }
+  }// end area services section
 
 
 
