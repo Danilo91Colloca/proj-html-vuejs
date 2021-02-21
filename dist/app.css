@@ -314,7 +314,6 @@ ul {
   font-size: 35px;
   font-weight: bolder;
   margin-bottom: 30px;
-  display: inline-block;
   float: left;
   width: calc((100% / 12) * 3);
 }
@@ -323,7 +322,6 @@ ul {
   font-size: 20px;
   font-weight: bolder;
   text-transform: capitalize;
-  display: inline-block;
   float: left;
   width: calc((100% / 12) * 3);
   padding: 50px 0px;
@@ -332,6 +330,61 @@ ul {
   width: 100vw;
   max-width: 100%;
   min-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 1090px;
   background-color: #111117;
+}
+#app .area-services-section .centralBox {
+  width: 1150px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+#app .area-services-section .centralBox .textServices-block {
+  width: 820px;
+  border: 1px solid blue;
+}
+#app .area-services-section .centralBox .textServices-block .top-title {
+  color: #33a6a8;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#app .area-services-section .centralBox .textServices-block .title {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 40px;
+}
+#app .area-services-section .centralBox .textServices-block .title-wordColorChange {
+  color: white;
+  background-color: rgba(49, 109, 110, 0.6);
+  border-radius: 5px;
+  padding: 5px;
+}
+#app .area-services-section .centralBox .textServices-block .summary {
+  color: white;
+}
+#app .area-services-section .centralBox .button-box {
+  border: 1px solid green;
+  width: calc(100% - 820px);
+  position: relative;
+}
+#app .area-services-section .centralBox .button-box .button-transparent {
+  background-color: transparent;
+  border: 1px solid #1d7c7e;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+#app .area-services-section .centralBox .button-box .button-transparent:hover {
+  cursor: pointer;
+  background-color: #48a4a5;
+  transform: scale(1.1);
 }

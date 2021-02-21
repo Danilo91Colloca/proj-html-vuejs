@@ -240,7 +240,6 @@
               font-size : 35px;
               font-weight : bolder;
               margin-bottom : 30px;
-              display: inline-block;
               float: left;
               width : calc((100% / 12) * 3);
             }
@@ -251,7 +250,6 @@
               font-size : 20px;
               font-weight : bolder;
               text-transform : capitalize;
-              display: inline-block;
               float: left;
               width : calc((100% / 12) * 3);
               padding : 50px 0px;
@@ -263,8 +261,53 @@
   }// end result-section
   .area-services-section {
     @include widthSectionParam;
+    @include flex;
+    justify-content: center;
+    align-items: center;
     height : 1090px;
-    background-color : $bg-woodsmoke 
+    background-color : $bg-woodsmoke; 
+    .centralBox {
+      width : 1150px;
+      border: 1px solid red;
+      @include flex;
+      justify-content: space-between;
+      .textServices-block {
+        // @include centerAbsolute;
+        width : 820px;
+        // text-align: center;
+        border: 1px solid blue;
+        .top-title {
+          @include topTitle;
+          margin-bottom : 30px;
+        }
+        .title {
+          margin-bottom : 30px;
+          color : $font-white;
+          font-size: 40px;
+          &-wordColorChange {
+            @include changeWordColor2;
+            padding : 5px;
+          }
+        }
+        .summary {
+          color : $font-white;
+        }
+      }//end text-block
+      .button-box {
+        border : 1px solid green;
+        width: calc(100% - 820px);
+        position : relative;
+        .button-transparent {
+          @include buttonTransparent;
+          width : 120px;
+          position : absolute;
+          bottom : 0;
+          right : 0;
+          text-align : center;
+        }
+
+      }
+    }
   }
 
 
