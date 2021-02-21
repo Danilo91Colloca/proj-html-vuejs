@@ -160,46 +160,19 @@
             </h1>
             <div class="result-box-container">
               <div class="box-result">
-                <div class="result">
-                  128
-                </div>
-                <div class="sector">
-                  Certifications
-                </div>
-  
+                <div class="result" v-for="number in dynamicResults" >
+                  {{number.number}}
+                 </div>
               </div>
-              <div class="box-result">
-                <div class="result">
-                  128
+              <div class="box-sector" >
+                <div class="sector" @mouseover="numGenerator(result.number, index)" 
+                v-for="(result, index) in results">
+                  {{result.sector}}
                 </div>
-                <div class="sector">
-                  Certifications
-                </div>
-  
               </div>
-              <div class="box-result">
-                <div class="result">
-                  128
-                </div>
-                <div class="sector">
-                  Certifications
-                </div>
-  
-              </div>
-              <div class="box-result">
-                <div class="result">
-                  128
-                </div>
-                <div class="sector">
-                  Certifications
-                </div>
-  
-              </div>
-  
             </div>
           </div>
           <!-- / textResult-block-->
-          
         </div>
       </div>
       <!-- RESULT SECTION-->

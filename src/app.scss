@@ -210,6 +210,7 @@
     @include resultImg;
     height : 580px;
     position : relative;
+
     .overbox-opacity {
       @include overBoxOpacitySizer;
       background-color : rgba(39, 39, 39, 0.623);
@@ -231,26 +232,35 @@
           }
         }
         .result-box-container {
-          @include flex;
-          justify-content: space-between;
+          @include clearfix;
+          width : 1000px;
           .box-result {
             .result {
               color : $font-blueLagoonLight;
               font-size : 35px;
               font-weight : bolder;
               margin-bottom : 30px;
+              display: inline-block;
+              float: left;
+              width : calc((100% / 12) * 3);
             }
+          }
+          .box-sector {
             .sector {
               color : $font-white;
               font-size : 20px;
               font-weight : bolder;
+              text-transform : capitalize;
+              display: inline-block;
+              float: left;
+              width : calc((100% / 12) * 3);
+              padding : 50px 0px;
             }
           }
-  
         }
       }// end textResult-block
      
-    }// end overbox-opacity    
+    }// end overbox-opacity 
   }// end result-section
 
 

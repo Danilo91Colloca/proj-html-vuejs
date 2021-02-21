@@ -304,17 +304,27 @@ ul {
   padding: 5px;
 }
 #app .result-section .overbox-opacity .textResult-block .result-box-container {
-  display: flex;
-  justify-content: space-between;
+  content: "";
+  display: table;
+  clear: both;
+  width: 1000px;
 }
 #app .result-section .overbox-opacity .textResult-block .result-box-container .box-result .result {
   color: #33a6a8;
   font-size: 35px;
   font-weight: bolder;
   margin-bottom: 30px;
+  display: inline-block;
+  float: left;
+  width: calc((100% / 12) * 3);
 }
-#app .result-section .overbox-opacity .textResult-block .result-box-container .box-result .sector {
+#app .result-section .overbox-opacity .textResult-block .result-box-container .box-sector .sector {
   color: white;
   font-size: 20px;
   font-weight: bolder;
+  text-transform: capitalize;
+  display: inline-block;
+  float: left;
+  width: calc((100% / 12) * 3);
+  padding: 50px 0px;
 }
