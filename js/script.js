@@ -113,6 +113,49 @@ new Vue({
         title : 'regulatory risk',
         text : 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
       }
+    ],
+    teamPersons : [
+      {
+        name : 'David',
+        surname : 'Cooper',
+        role : 'cto & co-founder',
+        contacts : {
+          fb : 'fab fa-facebook-f',
+          twitt : 'fab fa-twitter',
+          linked : 'fab fa-linkedun-in'
+        }
+      },
+      {
+        name : 'Oliver',
+        surname : 'Jones',
+        role : 'chief procurement',
+        contacts : {
+          fb : 'fab fa-facebook-f',
+          twitt : 'fab fa-twitter',
+          linked : 'fab fa-linkedun-in'
+        }
+      },
+      {
+        name : 'Emma',
+        surname : 'Lopez',
+        role : 'chief marketing',
+        contacts : {
+          fb : 'fab fa-facebook-f',
+          twitt : 'fab fa-twitter',
+          linked : 'fab fa-linkedun-in'
+        }
+      },
+      {
+        name : 'T.',
+        surname : 'Johnson',
+        role : 'ceo & president',
+        contacts : {
+          fb : 'fab fa-facebook-f',
+          twitt : 'fab fa-twitter',
+          linked : 'fab fa-linkedun-in'
+        }
+      },
+
     ]
 
   },
