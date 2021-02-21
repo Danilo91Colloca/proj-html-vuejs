@@ -244,25 +244,28 @@
             </div>
 
             <div class="team-container">
-
-              <div class="team-box">
+              
+              <div class="team-box" v-for="dataTeam in teamPersons">
                 <div class="photo">
-                  <img src="images/team-1.jpg" alt="">
+                  <img :src="dataTeam.photo" alt="">
                 </div>
                 <div class="data">
                   <div class="name">
-                    Davi Cooper
+                    {{dataTeam.name}} {{dataTeam.surname}}
                   </div>
                   <div class="role">
-                    CTO
+                    {{dataTeam.role}}
                   </div>
                   <div class="social-contacts">
-                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a :href="dataTeam.contacts.fb" :class="dataTeam.contacts.fbIcon"></a>
+                    <a :href="dataTeam.contacts.twitt" :class="dataTeam.contacts.twittIcon"></a>
+                    <a :href="dataTeam.contacts.linked" :class="dataTeam.contacts.linkedIcon"></a>
                   </div>
+                  
                 </div>
+               
               </div>
+
 
             </div>
 

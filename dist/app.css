@@ -482,14 +482,20 @@ ul {
   padding: 5px;
 }
 #app .team-section .central-box .textAndTeam-container .textTeam-block .summary {
+  width: 750px;
+  font-size: 20px;
   color: #9b9da5;
   margin-bottom: 80px;
 }
 #app .team-section .team-container {
-  border: 1px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #app .team-section .team-container .team-box {
   display: flex;
+  margin-bottom: 50px;
+  width: 400px;
 }
 #app .team-section .team-container .team-box .photo {
   width: 130px;
@@ -520,8 +526,8 @@ ul {
   color: #1d7c7e;
   text-decoration: none;
   margin-right: 5px;
-  padding: 0px 10px;
-  line-height: 28px;
+  padding: 0px 15px;
+  line-height: 41.5px;
   border-radius: 50%;
   background-color: rgba(29, 124, 126, 0.308);
 }

@@ -390,6 +390,8 @@
             }
           }
           .summary {
+            width : 750px;
+            font-size : 20px;
             color : $font-grayDark;
             margin-bottom : 80px;
           }
@@ -397,9 +399,13 @@
       }
     }// end central box
     .team-container {
-      border: 1px solid yellow; //TEMP
+      @include flex;
+      flex-wrap : wrap;
+      justify-content : space-between;
       .team-box {
         @include flex;
+        margin-bottom : 50px;
+        width : 400px;
         .photo {
           width : 130px;
           margin-right : 25px;
@@ -428,8 +434,8 @@
               color : $font-blueLagoon;
               text-decoration : none;
               margin-right : 5px;
-              padding : 0px 10px;
-              line-height : 28px;
+              padding : 0px 15px;
+              line-height : 41.5px;
               border-radius : 50%;
               background-color : $bg-brand;
              

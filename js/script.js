@@ -122,8 +122,11 @@ new Vue({
         role : 'cto & co-founder',
         contacts : {
           fb : 'https://www.facebook.com/',
+          fbIcon : 'fab fa-facebook-f', 
           twitt : 'https://twitter.com/',
-          linked : 'https://www.linkedin.com/'
+          twittIcon : 'fab fa-twitter',
+          linked : 'https://www.linkedin.com/',
+          linkedIcon : 'fab fa-linkedin-in'
         }
       },
       {
@@ -133,8 +136,11 @@ new Vue({
         role : 'chief procurement',
         contacts : {
           fb : 'https://www.facebook.com/',
+          fbIcon : 'fab fa-facebook-f', 
           twitt : 'https://twitter.com/',
-          linked : 'https://www.linkedin.com/'
+          twittIcon : 'fab fa-twitter',
+          linked : 'https://www.linkedin.com/',
+          linkedIcon : 'fab fa-linkedin-in'
         }
       },
       {
@@ -144,8 +150,11 @@ new Vue({
         role : 'chief marketing',
         contacts : {
           fb : 'https://www.facebook.com/',
+          fbIcon : 'fab fa-facebook-f', 
           twitt : 'https://twitter.com/',
-          linked : 'https://www.linkedin.com/'
+          twittIcon : 'fab fa-twitter',
+          linked : 'https://www.linkedin.com/',
+          linkedIcon : 'fab fa-linkedin-in'
         }
       },
       {
@@ -155,8 +164,11 @@ new Vue({
         role : 'ceo & president',
         contacts : {
           fb : 'https://www.facebook.com/',
+          fbIcon : 'fab fa-facebook-f', 
           twitt : 'https://twitter.com/',
-          linked : 'https://www.linkedin.com/'
+          twittIcon : 'fab fa-twitter',
+          linked : 'https://www.linkedin.com/',
+          linkedIcon : 'fab fa-linkedin-in'
         }
       },
     ]
