@@ -347,14 +347,19 @@
         }
         &:hover {
           transform : scale(1.1);
-          .serviceSybols{
             .iconSymbol {
               color : $font-white
             }
-            .iconArrow {
-
+            .iconArrow i {
+              color : $font-white;
+              background-color : $bg-darkBlueLagoon;
+              text-align : center;
+              vertical-align : middle;
+              border-radius : 50%;
+              padding : 5px;
+              line-height : 16px;
             }
-          }   
+             
           
         }
       }

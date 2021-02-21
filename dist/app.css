@@ -434,6 +434,15 @@ ul {
 #app .area-services-section .services-box-container .services-box:hover {
   transform: scale(1.1);
 }
-#app .area-services-section .services-box-container .services-box:hover .serviceSybols .iconSymbol {
+#app .area-services-section .services-box-container .services-box:hover .iconSymbol {
   color: white;
+}
+#app .area-services-section .services-box-container .services-box:hover .iconArrow i {
+  color: white;
+  background-color: #3e8a8b;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  padding: 5px;
+  line-height: 16px;
 }

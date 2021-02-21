@@ -75,6 +75,44 @@ new Vue({
       {
         number : 0
       }
+    ],
+    services : [
+      {
+        symbol : 'fas fa-network-wired',
+        arrow : 'fas fa-arrow-right',
+        title : 'audit & assurance',
+        text : 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+      },
+      {
+        symbol : 'fas fa-briefcase',
+        arrow : 'fas fa-arrow-right',
+        title : 'financial advisory',
+        text : 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+      },
+      {
+        symbol : 'far fa-chart-bar',
+        arrow : 'fas fa-arrow-right',
+        title : 'financial advisory',
+        text : 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+      },
+      {
+        symbol : 'fas fa-plane',
+        arrow : 'fas fa-arrow-right',
+        title : 'middle marketing',
+        text : 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+      },
+      {
+        symbol : 'fas fa-globe-americas',
+        arrow : 'fas fa-arrow-right',
+        title : 'legal consulting',
+        text : 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+      },
+      {
+        symbol : 'fas fa-journal-whills',
+        arrow : 'fas fa-arrow-right',
+        title : 'regulatory risk',
+        text : 'Lorem ipsum dolor sit amet consectetur adipiscing elit.'
+      }
     ]
 
   },
