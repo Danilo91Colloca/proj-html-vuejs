@@ -22,7 +22,7 @@
     <!--WARNING VUEJS-->
     <div id="app">
       <!-- CONTACTS -->
-      <div class="overHead">
+      <div class="overHead-section">
         <div class="overHead-container">
           <div class="boxL">
             <div class="workdays" v-for="data in rotation">
@@ -46,15 +46,15 @@
                 </span>
               </div>
             </div>
-            <div class="social" v-for="icon in socialIcons">
-              <i :class="icon"></i>
+            <div class="social" v-for="data in socialContacts">
+              <a :href="data.pageLink" :class="data.socialIcon"></a>
             </div>
           </div>
         </div>
       </div>
       <!--/CONTACTS-->
       <!--NAV IN JUMBOTRON-->
-      <div  class="navAndJumbotron-box">   
+      <div  class="navAndJumbotron-section">   
         <div class="overbox-opacity">
           <!--navbar-->
           <div class="navBar">
@@ -118,7 +118,7 @@
       </div>
       <!-- / NAV IN JUMBOTRON-->
       <!--INTRO VIDEO SECTION-->
-      <div class="introVideo-box">
+      <div class="introVideo-section">
         <div class="pagecenter-videoSection">
           <!-- textMov-block-->
           <div class="textMov-block">
@@ -296,6 +296,38 @@
         <!--/central box-->
       </div>
       <!--/ TEAM SECTION-->
+      <!-- LATEST NEWS SECTION-->
+      <div class="news-section">
+        <div class="central-box">
+          <div class="titleButtonSection">
+            <div class="textServices-block">
+              <div class="top-title">
+                <span>
+                  OUR EDITORIAL CONTENT
+                </span>
+              </div>
+              <h1 class="title">
+                Latest <span class="title-wordColorChange">News</span>
+              </h1>
+              <p class="summary">
+                Every week we publixh content about what is best in the business world.
+              </p>
+            </div>
+            <div class="button-solid">
+              <span>
+                SEE ALL
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <!-- LATEST NEWS SECTION-->
+
 
 
 

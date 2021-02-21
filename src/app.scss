@@ -2,11 +2,11 @@
 @import "partials/_colors";
 @import "partials/_bg-brand-titles";
 #app {
-  .overHead { 
+  .overHead-section { 
     @include widthSectionParam;
     height : 50px;
     background-color : rgb(28, 64, 85);
-    &-container {
+    .overHead-container {
       @include pageCenter;
       @include flex;
       color : $font-gray;
@@ -44,8 +44,11 @@
           }
         }
         .social {
-          i{
+         
+          a {
             cursor: pointer;
+            color : $font-gray;
+            text-decoration : none;
             margin-left : 35px;
             &:hover {
               color  : $font-white;
@@ -56,7 +59,7 @@
       }// end boxR
     } //end overHead-container
   }//end overHead
-  .navAndJumbotron-box {
+  .navAndJumbotron-section {
     @include widthSectionParam;
     height : 920px;
     position : relative;
@@ -152,7 +155,7 @@
       }
     } //end overbox-opacity
   }//end navAndJumbotron-box
-  .introVideo-box {
+  .introVideo-section {
     @include widthSectionParam;
     height : 900px;
     background-color : rgb(250, 250, 250);
@@ -303,46 +306,45 @@
           }
         }
       }
-    } // end central box
-    .services-box-container {
-      @include flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      .services-box {
-        width : 360px;
-        height : 270px;
-        background-color : $bg-darkGray;
-        border-radius : 8px;
-        margin-bottom : 32px;
-        padding : 40px;
-        .servicesSymbols {
-          @include flex;
-          justify-content : space-between;
-          margin-bottom : 20px;
-          .iconSymbol {
-            color : $font-blueLagoonLight;
-            font-size : 30px;
-          }
-          .iconArrow {
-            color : $font-blueLagoonLight;
-            font-size : 18px;
-            &:hover {
-              transform : scale(1.1);
+      .services-box-container {
+        @include flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .services-box {
+          width : 360px;
+          height : 270px;
+          background-color : $bg-darkGray;
+          border-radius : 8px;
+          margin-bottom : 32px;
+          padding : 40px;
+          .servicesSymbols {
+            @include flex;
+            justify-content : space-between;
+            margin-bottom : 20px;
+            .iconSymbol {
+              color : $font-blueLagoonLight;
+              font-size : 30px;
+            }
+            .iconArrow {
+              color : $font-blueLagoonLight;
+              font-size : 18px;
+              &:hover {
+                transform : scale(1.1);
+              }
             }
           }
-        }
-        .text {
-          color : $font-white;
-          h4 {
-            margin-bottom : 20px;
-            text-transform : capitalize;
+          .text {
+            color : $font-white;
+            h4 {
+              margin-bottom : 20px;
+              text-transform : capitalize;
+            }
+            span {
+              font-weight : 100;
+            }
           }
-          span {
-            font-weight : 100;
-          }
-        }
-        &:hover {
-          transform : scale(1.1);
+          &:hover {
+            transform : scale(1.1);
             .iconSymbol {
               color : $font-white
             }
@@ -355,12 +357,10 @@
               padding : 5px;
               line-height : 16px;
             }
-             
-          
-        }
-      }
-
-    }
+          }
+        }//end services box
+      } //end services box container
+    } // end central box
   }// end area services section
   .team-section {
     @include widthSectionParam;
@@ -429,6 +429,7 @@
               .social-contacts {
                 color : $font-blueLagoon;
                 a {
+                  display: inline-block;
                   color : $font-blueLagoon;
                   text-decoration : none;
                   margin-right : 5px;
@@ -475,6 +476,51 @@
     }// end central box
     
   }// end team section
+  .news-section {
+    @include widthSectionParam;
+    height : 830px;
+    background-color : $bg-greenExLight;
+    .central-box {
+      @include centerAbsolute;
+      @include flex;
+      position : relative;
+      width : 1150px;
+      border : 1px solid red;
+      .titleButtonSection {
+        @include flex;
+        justify-content : space-between;
+        margin-bottom : 30px;
+        .textServices-block {
+          width : 820px;
+          .top-title {
+            @include topTitle;
+            margin-bottom : 30px;
+          }
+          .title {
+            margin-bottom : 30px;
+            color : $font-grayFucile;
+            font-size: 40px;
+            &-wordColorChange {
+              @include changeWordColor2;
+              padding : 5px;
+            }
+          }
+          .summary {
+            color : $font-grayDark;
+          }
+        }//end text-block
+        .button-solid {
+          @include buttonSolid;
+          width : 120px;
+          position : absolute;
+          bottom : 30px;
+          right : 0;
+          text-align : center;
+        }
+      }
+
+    }
+  }
 
 
 

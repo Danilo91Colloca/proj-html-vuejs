@@ -25,11 +25,20 @@ new Vue({
         contact : 'hello@example.com'
       }
     ],
-    socialIcons : {
-      fb : 'fab fa-facebook-f',
-      twitt : 'fab fa-twitter',
-      linked : 'fab fa-linkedin-in'
+    socialContacts : [
+      {
+      pageLink : 'https://www.facebook.com/',
+      socialIcon : 'fab fa-facebook-f'
     },
+    {
+      pageLink : 'https://twitter.com/',
+      socialIcon : 'fab fa-twitter'
+    },
+    {  
+      pageLink : 'https://www.linkedin.com/',
+      socialIcon : 'fab fa-linkedin-in'
+    }
+  ],
     navBar : [
         {
         navMenu : {
@@ -121,7 +130,7 @@ new Vue({
         surname : 'Cooper',
         role : 'cto & co-founder',
         contacts : {
-          fb : 'https://www.facebook.com/',
+          socialLink : 'https://www.facebook.com/',
           fbIcon : 'fab fa-facebook-f', 
           twitt : 'https://twitter.com/',
           twittIcon : 'fab fa-twitter',
