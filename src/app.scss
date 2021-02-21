@@ -272,10 +272,7 @@
         justify-content : space-between;
         margin-bottom : 30px;
         .textServices-block {
-          // @include centerAbsolute;
           width : 820px;
-          // text-align: center;
-          border: 1px solid blue;
           .top-title {
             @include topTitle;
             margin-bottom : 30px;
@@ -294,7 +291,6 @@
           }
         }//end text-block
         .button-box {
-          border : 1px solid green;
           width: calc(100% - 820px);
           position : relative;
           .button-transparent {
@@ -309,7 +305,6 @@
       }
     } // end central box
     .services-box-container {
-      border: 1px solid pink;
       @include flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -318,7 +313,7 @@
         height : 270px;
         background-color : $bg-darkGray;
         border-radius : 8px;
-        margin-bottom : 30px;
+        margin-bottom : 32px;
         padding : 40px;
         .servicesSymbols {
           @include flex;
@@ -340,6 +335,7 @@
           color : $font-white;
           h4 {
             margin-bottom : 20px;
+            text-transform : capitalize;
           }
           span {
             font-weight : 100;

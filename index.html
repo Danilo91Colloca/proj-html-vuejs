@@ -201,26 +201,25 @@
               </div>
             </div>
           </div>
-          
           <div class="services-box-container">
-            
-            <div class="services-box">
+            <div class="services-box" v-for="data in services">
               <div class="servicesSymbols">
                 <div class="iconSymbol">
-                  <i class="fas fa-network-wired"></i>
+                  <i :class="data.symbol"></i>
                 </div>
                 <div class="iconArrow">
-                  <i class="fas fa-arrow-right"></i>
+                  <i :class="data.arrow"></i>
                 </div>
               </div>
               <div class="text">
-                <h4>TEST</h4>
+                <h4>
+                  {{data.title}}
+                </h4>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit.
+                  {{data.text}}
                 </span>
               </div>
             </div>
-            
           </div>  
         </div>
       </div>
