@@ -35,16 +35,16 @@ Daje branco!
 
 /////////////////////////////////////////////
 Il sito  è strutturato in 11 macro-sezioni:
-1)  HEADER: row contatti circa 50px; 
+ok-1)  HEADER: row contatti circa 50px; 
             row nav in trasparenza circa 80px con logo brand all'inizio e un button alla fine;
 
-2) JUMBOTRON: imagine in background che va sotto alla nav che lo lascia intravedere in trasparenza,
+ok-2) JUMBOTRON: imagine in background che va sotto alla nav che lo lascia intravedere in trasparenza,
             al centro titolo/text/2 botton affiancati 
 //TODO -----> da considerare la possibilita di accorpare header nello stesso container del jumbotron;
 
-3) SEZIONE VIDEO INTRO: background bianco/titoletto/titolo/text/preview del video con tasto play in centro
+ok-3) SEZIONE VIDEO INTRO: background bianco/titoletto/titolo/text/preview del video con tasto play in centro
 
-4) SEZIONE RESULT: img in background/ titoletto/ titolo / 4 contenitori affiancati con i numeri che vanno da 0 a x, al di sotto il riferimento dei risultati;
+ok-4) SEZIONE RESULT: img in background/ titoletto/ titolo / 4 contenitori affiancati con i numeri che vanno da 0 a x, al di sotto il riferimento dei risultati;
 
 5) SEZIONE AREAS: titoletto/titolo/text a destra del testo un button trasparente con bordo visibile/ 2 row con 3 box per row;
 

@@ -259,9 +259,13 @@
           }
         }
       }// end textResult-block
-     
     }// end overbox-opacity 
   }// end result-section
+  .area-services-section {
+    @include widthSectionParam;
+    height : 1090px;
+    background-color : $bg-woodsmoke 
+  }
 
 
 
