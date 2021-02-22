@@ -361,12 +361,13 @@
           </div>
           <div class="subscribeInput-section">
             <div class="input-container st">
-              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Name" 
+              v-model="subscriptName">
             </div>  
             <div class="input-container nd">  
-              <input type="text" placeholder="Email">
+              <input type="text" placeholder="Email" v-model="subscriptMail">
             </div>
-            <div class="button-solid">
+            <div class="button-solid" @click="getSubscription">
               <span>
                 SUBSCRIBE
               </span>

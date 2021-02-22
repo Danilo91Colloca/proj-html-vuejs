@@ -199,7 +199,10 @@ new Vue({
         image : "images/news-3.jpg",
         textNews : 'Working from home is now a trend.'
       },
-    ]
+    ],
+    subscriptName : '',
+    subscriptMail : '',
+    subscriptionsList : []
 
   },
   methods: {
@@ -224,6 +227,20 @@ new Vue({
           }, 5)
         }
       });
+    },
+    //funzione che salva i dati inseriti nella newsletter
+    //da implementare con delle verifiche di inserimento
+    getSubscription : function() {
+    let name = this.subscriptName;
+    let mail = this.subscriptMail;
+    this.subscriptionsList.push(
+      {
+      name : name,
+      email : mail
+      })
+      this.subscriptName = '';
+      this.subscriptMail = '';
+      
     }
   }
 })
