@@ -465,6 +465,43 @@
         <div class="central-box">
 
           <div class="footer-card brand">
+            <!-- logo Snippet-->
+            <div class="barndLogo">
+              <div class="brandLogo-part1">
+                <span class="text-brandpart1">
+                  NEX
+                </span>
+              </div>                
+              <span class="brandLogo-part2">
+                GEN
+              </span>
+            </div>
+            <!-- /logo Snippet-->
+            <div class="text-container">
+              <p class="text">
+                A functional HTML Template for Corporate & Business.
+              </p>
+            </div>
+            <div class="contacts-box" v-for="data in contacts">
+              <i :class="data.faIcon"></i>
+              <span>
+                {{data.contact}}
+              </span>
+            </div>
+            <div class="address-box">
+              <i :class="address.faIcon"></i>
+              <a href="" >
+                {{address.address}}
+              </a>
+            </div>
+            <div class="button-box">
+              <div class="button-transparent">
+                <span>
+                  GET IN TOUCH
+                </span>
+              </div>
+            </div>
+           
 
           </div>
           <div class="footer-card ">

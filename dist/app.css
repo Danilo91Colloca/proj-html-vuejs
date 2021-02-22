@@ -911,3 +911,69 @@ ul {
 #app .footer-copyr-section .central-box .footer-card.brand {
   border: 1px dotted yellow;
 }
+#app .footer-copyr-section .central-box .footer-card.brand .brandLogo-part1 {
+  display: inline-block;
+  background-color: #00a6a636;
+  padding-left: 25px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  line-height: 40px;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .brandLogo-part1 .text-brandpart1 {
+  text-align: right;
+  color: #00a6a6;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .brandLogo-part2 {
+  color: #f9f9f9;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .text-container {
+  width: 230px;
+  margin: 25px 0px;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .text-container .text {
+  color: #c0c3cf;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .contacts-box {
+  color: #c0c3cf;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .contacts-box i {
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .contacts-box span:hover {
+  text-decoration: underline;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .address-box {
+  color: #c0c3cf;
+  margin-bottom: 30px;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .address-box i {
+  margin-right: 15px;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .address-box a {
+  color: #c0c3cf;
+  text-decoration: none;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .address-box a:hover {
+  text-decoration: underline;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .button-box .button-transparent {
+  background-color: transparent;
+  border: 1px solid #058283;
+  color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 170px;
+  text-align: center;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .button-box .button-transparent:hover {
+  cursor: pointer;
+  background-color: #00a6a6;
+}

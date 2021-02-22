@@ -764,12 +764,63 @@
       .footer-card {
         width : 260px;
         height : 330px;
-        border: 1px dotted green;
+        border: 1px dotted green;//!!!TEMP!!!
         &.brand {
-          border: 1px dotted yellow;
-
-        }
-      }
+          border: 1px dotted yellow;//!!!TEMP!!!
+          .brandLogo {
+            &-part1 {
+              @include brandName-container-part1;
+              .text-brandpart1 {
+                @include brandName-part1;
+              }
+            }
+            &-part2 {
+              @include brandName-part2;
+            }  
+          }
+          .text-container {
+            width : 230px;
+            margin : 25px 0px;
+            .text {
+              color : $whiteDark;
+             
+            }
+          }
+          .contacts-box {
+            color : $whiteDark;
+            i {
+              margin-right : 15px;
+              margin-bottom : 25px;
+            }
+            span {
+              &:hover {
+                text-decoration : underline;
+              }
+            }
+          }
+          .address-box {
+            color : $whiteDark;
+            margin-bottom : 30px;
+            i {
+              margin-right : 15px;
+            }
+            a {
+              color : $whiteDark;
+              text-decoration : none;
+              &:hover {
+                text-decoration : underline;
+              }
+            }
+          }
+          .button-box {
+            .button-transparent {
+              @include buttonTransparent;
+              width : 170px;
+              text-align : center;
+            }
+          }
+        } // brand contact box
+      } //footer cards
     }
 
   } //end footer copyright section
