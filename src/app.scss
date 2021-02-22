@@ -551,6 +551,33 @@
       }//end boxNews-container
     }//end central box
   } // end news section
+  .subscribe-section {
+    @include widthSectionParam;
+    position : relative;
+    height : 460px;
+    background-color : $bg-woodsmoke;
+    .central-box {
+      @include centerAbsolute;
+      @include flex;
+      justify-content : space-between;
+      width : 950px;
+      height : 95%; //!!!TEMPORARY!!!
+      border : 1px solid red; //!!!TEMPORARY!!!
+      .title-section {
+        width : 50%;
+        height : 100%;
+        border : 3px dotted green;//!!!TEMPORARY!!!
+      }
+      .subscribeInput-section {
+        width : 50%;
+        height : 100%;
+        border : 3px dotted blue;//!!!TEMPORARY!!!
+
+      }
+
+    }
+
+  }//end subscribe section
 
 
 

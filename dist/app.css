@@ -658,3 +658,32 @@ ul {
   left: 50%;
   transform: translateX(-50%);
 }
+#app .subscribe-section {
+  width: 100vw;
+  max-width: 100%;
+  min-width: 1200px;
+  position: relative;
+  height: 460px;
+  background-color: #111117;
+}
+#app .subscribe-section .central-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+  height: 95%;
+  border: 1px solid red;
+}
+#app .subscribe-section .central-box .title-section {
+  width: 50%;
+  height: 100%;
+  border: 3px dotted green;
+}
+#app .subscribe-section .central-box .subscribeInput-section {
+  width: 50%;
+  height: 100%;
+  border: 3px dotted blue;
+}
