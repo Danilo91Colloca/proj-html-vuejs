@@ -286,7 +286,8 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
+  margin: 0 auto;
+  width: 1200px;
   text-align: center;
 }
 #app .result-section .overbox-opacity .textResult-block .top-title {
@@ -309,7 +310,8 @@ ul {
   content: "";
   display: table;
   clear: both;
-  width: 1000px;
+  margin: 0 auto;
+  width: 1200px;
 }
 #app .result-section .overbox-opacity .textResult-block .result-box-container .box-result .result {
   color: #33a6a8;
@@ -341,9 +343,10 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1150px;
 }
 #app .area-services-section .centralBox .titleButtonSection {
+  margin: 0 auto;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
@@ -402,7 +405,7 @@ ul {
   height: 270px;
   background-color: #29292a;
   border-radius: 8px;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
   padding: 40px;
 }
 #app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols {
@@ -414,11 +417,12 @@ ul {
   color: #33a6a8;
   font-size: 30px;
 }
-#app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconArrow {
+#app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconArrow a {
+  text-decoration: none;
   color: #33a6a8;
   font-size: 18px;
 }
-#app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconArrow:hover {
+#app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconArrow a:hover {
   transform: scale(1.1);
 }
 #app .area-services-section .centralBox .services-box-container .services-box .text {
@@ -437,7 +441,7 @@ ul {
 #app .area-services-section .centralBox .services-box-container .services-box:hover .iconSymbol {
   color: white;
 }
-#app .area-services-section .centralBox .services-box-container .services-box:hover .iconArrow i {
+#app .area-services-section .centralBox .services-box-container .services-box:hover .iconArrow a {
   color: white;
   background-color: #3e8a8b;
   text-align: center;
@@ -452,16 +456,14 @@ ul {
   min-width: 1200px;
   height: 900px;
   background-color: white;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #app .team-section .central-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
+  margin: 0 auto;
+  width: 1200px;
   position: relative;
-  width: 1150px;
 }
 #app .team-section .central-box .textAndTeam-container {
   width: 70%;
@@ -574,11 +576,8 @@ ul {
   background-color: #c6cec5;
 }
 #app .news-section .central-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1150px;
+  margin: 0 auto;
+  width: 1200px;
 }
 #app .news-section .central-box .titleButtonSection {
   position: relative;
@@ -730,6 +729,35 @@ ul {
   cursor: pointer;
   background-color: #48a4a5;
   transform: scale(1.1);
+}
+#app .form-section {
+  width: 100vw;
+  max-width: 100%;
+  min-width: 1200px;
+  background-color: white;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app .form-section .central-box {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  border: 1px solid red;
+}
+#app .form-section .central-box .containerL {
+  width: 60%;
+  height: 90%;
+  border: 1px dotted blue;
+}
+#app .form-section .central-box .containerR {
+  width: 40%;
+  height: 90%;
+  border: 1px dotted green;
 }
 
 .textSub-block {
