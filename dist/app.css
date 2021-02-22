@@ -713,6 +713,7 @@ ul {
   border-radius: 8px;
   padding-left: 10px;
   background-color: rgba(90, 86, 86, 0.582);
+  color: #c0c3cf;
 }
 #app .subscribe-section .central-box .subscribeInput-section .button-solid {
   background-color: #3e8a8b;
