@@ -23,8 +23,13 @@ new Vue({
       {
         faIcon : 'fas fa-envelope',
         contact : 'hello@example.com'
-      }
+      },
+      
     ],
+    address : {
+      faIcon : 'fas fa-map-marker-alt',
+      address : 'main avenue, 987'
+    },
     socialContacts : [
       {
       pageLink : 'https://www.facebook.com/',

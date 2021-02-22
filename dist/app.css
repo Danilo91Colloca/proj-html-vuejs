@@ -673,17 +673,41 @@ ul {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 950px;
   height: 95%;
   border: 1px solid red;
 }
-#app .subscribe-section .central-box .title-section {
+#app .subscribe-section .central-box .textTitle-section {
   width: 50%;
-  height: 100%;
   border: 3px dotted green;
+}
+#app .subscribe-section .central-box .textTitle-section .top-title {
+  color: #33a6a8;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#app .subscribe-section .central-box .textTitle-section .title {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 40px;
+}
+#app .subscribe-section .central-box .textTitle-section .title-wordColorChange {
+  color: white;
+  background-color: rgba(49, 109, 110, 0.6);
+  border-radius: 5px;
+  padding: 5px;
+}
+#app .subscribe-section .central-box .textTitle-section .summary {
+  width: 400px;
+  color: #9b9da5;
 }
 #app .subscribe-section .central-box .subscribeInput-section {
   width: 50%;
   height: 100%;
   border: 3px dotted blue;
+}
+
+.textSub-block {
+  width: 820px;
 }

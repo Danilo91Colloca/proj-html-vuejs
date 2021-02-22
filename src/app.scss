@@ -560,13 +560,31 @@
       @include centerAbsolute;
       @include flex;
       justify-content : space-between;
+      align-items : center;
       width : 950px;
       height : 95%; //!!!TEMPORARY!!!
       border : 1px solid red; //!!!TEMPORARY!!!
-      .title-section {
+      .textTitle-section {
         width : 50%;
-        height : 100%;
         border : 3px dotted green;//!!!TEMPORARY!!!
+        .top-title {
+          @include topTitle;
+          margin-bottom : 30px;
+        }
+        .title {
+          margin-bottom : 30px;
+          color : $font-white;
+          font-size: 40px;
+          &-wordColorChange {
+            @include changeWordColor2;
+            padding : 5px;
+          }
+        }
+        .summary {
+          width : 400px;
+          color : $font-grayDark;
+        }
+
       }
       .subscribeInput-section {
         width : 50%;
@@ -589,3 +607,7 @@
 
 
 }//end #app
+.textSub-block {
+  width : 820px;
+  
+}//end text-block
