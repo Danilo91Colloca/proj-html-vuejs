@@ -34,7 +34,7 @@ $brandFontSize : 15px;
 $brandWeight : 900;
 @mixin brandName-container-part1 {
   display : inline-block;
-  background-color : $bg-brand;
+  background-color : $brandColorTransparency;
   padding-left : 25px ;
   border-top-left-radius : 30px;
   border-bottom-left-radius : 30px;
@@ -42,13 +42,13 @@ $brandWeight : 900;
 }
 @mixin brandName-part1 {
   text-align : right;
-  color : $font-blueLagoon;   
+  color : $brandColorLight;   
   font-weight : $brandWeight;
   letter-spacing : $brandLetterSpacing;
   font-size : $brandFontSize;
 }
 @mixin brandName-part2 {
-  color : $font-white;
+  color : $white;
   font-weight : $brandWeight;
   letter-spacing : $brandLetterSpacing;
   font-size : $brandFontSize;
@@ -56,15 +56,14 @@ $brandWeight : 900;
 
 //SOLID BUTTONS
 @mixin buttonSolid {
-  background-color : $bg-darkBlueLagoon;
-  color : $font-white;
+  background-color : $brandColorDark;
+  color : $white;
   padding : 10px;
   border-radius : 5px;
   font-size: 15px;
   &:hover {
     cursor: pointer;
-    background-color : $buttonSolid-hover;
-    transform: scale(1.1);
+    background-color : $brandColorLight;
   }
 
 }
@@ -72,32 +71,31 @@ $brandWeight : 900;
 //TRANSPARENT BUTTON
 @mixin buttonTransparent {
   background-color : transparent;
-  border : 1px solid $font-blueLagoon;
-  color : $font-white;
+  border : 1px solid $brandColorDark;
+  color : $white;
   padding : 10px;
   border-radius : 5px;
   font-size: 15px;
   &:hover {
     cursor: pointer;
-    background-color : $buttonSolid-hover;
-    transform: scale(1.1);
+    background-color : $brandColorLight;
   }
 }
 
 //top-title 
 @mixin topTitle {
-  color : $font-blueLagoonLight;
+  color : $brandColorLight;
   font-weight : 600;
 }
 //title change bluelagoon
 @mixin changeWordColor {
-  color : $font-blueLagoon;
-  background-color : $bg-brand;
+  color : $brandColorDark;
+  background-color : $brandColorTransparency;
   border-radius : 5px;
 }
 //title change color white e bg bluelagoon-strong
 @mixin changeWordColor2 {
-  color : $font-white;
-  background-color : rgba(49, 109, 110, 0.6);
+  color : $white;
+  background-color : $brandColorTransparency;
   border-radius : 5px;
 }

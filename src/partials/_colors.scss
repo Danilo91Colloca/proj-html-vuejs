@@ -1,21 +1,23 @@
-//FONT COLORS PALETTE
-$font-white :rgb(255, 255, 255);
-$font-gray : rgb(192, 195, 207);
-$font-grayDark : rgb(155, 157, 165);
-$font-grayFucile : rgb(60, 86, 100);
-$font-blueLagoon : rgb(29, 124, 126);
-$font-blueLagoonLight : rgb(51, 166, 168);
+// COLORS PALETTE
+$cyanBlue : #24333d; 
+$white :#f9f9f9;
+$whiteDark : #c0c3cf;
+$whiteTransparency :#f9f9f9a1;
 
-//BACK-GROUNDS PALETTE 
-$bg-nav : rgb(28, 64, 85);
-$bg-woodsmoke : rgb(17, 17, 23);
-$bg-greenExLight : rgb(198, 206, 197);
-$bg-brand : rgba(29, 124, 126, 0.308);
-$bg-darkBlueLagoon : rgb(62, 138, 139);
-$bg-darkGray : rgb(41, 41, 42);
+$yellowOcre : #eff4ee; //bg latest news
 
-//BUTTON COLORS
-$transparent : transparent;
-$buttonSolid-hover : rgb(72, 164, 165);
+$bg-woodsmoke : #111117;
+$brandColorDark : #058283; //text bg-button
+$brandColorLight :#00a6a6; //brand color buttonHover 
+$blueMagenta : #19191e; //boxes-bg services 
+$brandColorTransparency :#00a6a681; //brand trasparency
+$footerBgColor : #070a0c;
 
+
+$opacity : #00000050;
+
+
+//da sostituire A con B
+$coloreA : #00a6a6;
+$coloreB : #41c457;
 

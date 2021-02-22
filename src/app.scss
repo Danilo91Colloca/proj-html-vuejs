@@ -4,13 +4,13 @@
 #app {
   .overHead-section { 
     @include widthSectionParam;
-    height : 50px;
-    background-color : rgb(28, 64, 85);
+    height : 45px;
+    background-color : $cyanBlue;
     .overHead-container {
       @include pageCenter;
       @include flex;
-      color : $font-gray;
-      line-height : 50px;
+      color : $whiteDark;
+      line-height : 45px;
       justify-content : space-between;
       padding : 0px 15px;
       .boxL {
@@ -38,7 +38,6 @@
               margin-right : 5px;
             }
             &:hover {
-              color : $font-white;
               text-decoration: underline;
             }
           }
@@ -46,11 +45,10 @@
         .social {
           a {
             cursor: pointer;
-            color : $font-gray;
+            color : $white;
             text-decoration : none;
             margin-left : 35px;
             &:hover {
-              color  : $font-white;
               transform: scale(1.1);
             }
           }
@@ -65,7 +63,7 @@
     @include jumbotronImg;
     .overbox-opacity {
       @include overBoxOpacitySizer;
-      background-color: rgba(78, 90, 93, 0.404);
+      background-color: $opacity;
       .navBar {
         @include pageCenter;
         @include flex;
@@ -96,9 +94,9 @@
               li {
                 text-transform : uppercase;
                 margin : 0px 25px;
-                color : rgb(200, 200, 200);
+                color : $white;
                 &:hover {
-                  color : $font-white;
+                  
                   cursor : pointer;
                   transform: scale(1.2);
                 }
@@ -107,9 +105,8 @@
             .userIcon {
               margin-right : 25px;
               font-size: 20px;
-              color : rgb(210, 210, 210);
+              color : $white;
               &:hover {
-                color : $font-white;
                 cursor : pointer;
                 transform: scale(1.1);
               }
@@ -126,7 +123,7 @@
         left : 50%;
         transform : translate(-50%, -50%);
         text-align : center;
-        color : $font-white;
+        color : $white;
         .text-box {
           width : 700px;
           margin : 50px;
@@ -136,7 +133,7 @@
             margin : 50px;
           }
           p {
-            color : $font-gray;
+            color : $whiteDark;
             font-size : 20px;
           }
         }
@@ -157,8 +154,7 @@
   .introVideo-section {
     @include widthSectionParam;
     height : 900px;
-    background-color : rgb(250, 250, 250);
-    // background-color: blue;
+    background-color : $white;
     .pagecenter-videoSection {
       position : relative;
       @include pageCenter;
@@ -173,7 +169,7 @@
         }
         .title {
           margin-bottom : 30px;
-          color : $font-grayFucile;
+          color : $cyanBlue;
           font-size: 40px;
           &-wordColorChange {
             @include changeWordColor;
@@ -181,7 +177,7 @@
           }
         }
         .summary {
-          color : $font-grayDark;
+          color : $whiteDark;
           margin-bottom : 80px;
           padding : 0px 40px;
         }
@@ -192,12 +188,12 @@
           @include moviePreview;
           .overbox-opacity {
             @include overBoxOpacitySizer;
-            background-color : rgba(62, 138, 139, 0.4);
+            background-color : $opacity;
             .playLink {
               @include centerAbsolute;
               font-size : 70px;
-              color : rgba(255, 255, 255, 0.712);
-              text-shadow : 0px -8px 0px rgba(22, 192, 195, 0.842);
+              color : $whiteTransparency;
+              text-shadow : 0px -8px 0px $brandColorTransparency;
               &:hover {
                 font-size : 80px;
               }
@@ -214,7 +210,7 @@
     position : relative;
     .overbox-opacity {
       @include overBoxOpacitySizer;
-      background-color : rgba(39, 39, 39, 0.623);
+      background-color : $opacity;
       .textResult-block {
         @include centerAbsolute;
         @include pageCenter;
@@ -225,7 +221,7 @@
         }
         .title {
           margin-bottom : 80px;
-          color : $font-white;
+          color : $white;
           font-size: 40px;
           &-wordColorChange {
             @include changeWordColor2;
@@ -237,7 +233,7 @@
           @include pageCenter;
           .box-result {
             .result {
-              color : $font-blueLagoonLight;
+              color : $brandColorLight;
               font-size : 35px;
               font-weight : bolder;
               margin-bottom : 30px;
@@ -247,7 +243,7 @@
           }
           .box-sector {
             .sector {
-              color : $font-white;
+              color : $white;
               font-size : 20px;
               font-weight : bolder;
               text-transform : capitalize;
@@ -281,7 +277,7 @@
           }
           .title {
             margin-bottom : 30px;
-            color : $font-white;
+            color : $white;
             font-size: 40px;
             &-wordColorChange {
               @include changeWordColor2;
@@ -289,7 +285,7 @@
             }
           }
           .summary {
-            color : $font-white;
+            color : $white;
           }
         }//end text-block
         .button-box {
@@ -312,7 +308,7 @@
         .services-box {
           width : 360px;
           height : 270px;
-          background-color : $bg-darkGray;
+          background-color : $blueMagenta;
           border-radius : 8px;
           margin-bottom : 50px;
           padding : 40px;
@@ -321,12 +317,12 @@
             justify-content : space-between;
             margin-bottom : 20px;
             .iconSymbol {
-              color : $font-blueLagoonLight;
+              color : $brandColorLight;
               font-size : 30px;
             }
             .iconArrow a{
               text-decoration : none;
-              color : $font-blueLagoonLight;
+              color : $brandColorLight;
               font-size : 18px;
               &:hover {
                 transform : scale(1.1);
@@ -334,7 +330,7 @@
             }
           }
           .text {
-            color : $font-white;
+            color : $white;
             h4 {
               margin-bottom : 20px;
               text-transform : capitalize;
@@ -346,11 +342,11 @@
           &:hover {
             transform : scale(1.1);
             .iconSymbol {
-              color : $font-white
+              color : $white;
             }
             .iconArrow a {
-              color : $font-white;
-              background-color : $bg-darkBlueLagoon;
+              color : $white;
+              background-color : $brandColorDark;
               text-align : center;
               vertical-align : middle;
               border-radius : 50%;
@@ -365,7 +361,7 @@
   .team-section {
     @include widthSectionParam;
     height : 900px;
-    background-color : $font-white;
+    background-color : $white;
     @include flex;
     align-items: center;
     justify-content: center;
@@ -382,7 +378,7 @@
           }
           .title {
             margin-bottom : 30px;
-            color : $font-grayFucile;
+            color : $cyanBlue;
             font-size : 35px;
             &-wordColorChange {
               @include changeWordColor;
@@ -392,7 +388,7 @@
           .summary {
             width : 750px;
             font-size : 20px;
-            color : $font-grayDark;
+            color : $whiteDark;
             margin-bottom : 80px;
           }
         }//end text-block
@@ -415,29 +411,32 @@
             .data {
               padding : 10px;
               .name {
-                color : $font-grayFucile;
+                color : $cyanBlue;
                 font-weight : bold;
                 font-size : 28px;
                 margin-bottom : 20px;
     
               }
               .role {
-                color : $font-grayDark;
+                color : $whiteDark;
                 font-size : 16px;
                 margin-bottom : 20px;
               }
               .social-contacts {
-                color : $font-blueLagoon;
+                color : $brandColorDark;
                 a {
                   display: inline-block;
-                  color : $font-blueLagoon;
+                  color : $brandColorDark;
                   text-decoration : none;
                   margin-right : 5px;
                   padding : 0px 15px;
                   line-height : 41.5px;
                   border-radius : 50%;
-                  background-color : $bg-brand;
+                  background-color : $brandColorTransparency;
                   &:hover {
+                    color : $brandColorLight;
+                    background-color : $brandColorDark;
+
                     transform : scale(1.1);
                   }
                 }
@@ -450,12 +449,12 @@
       .testimonial-container {
         width : 30%;
         height : 500px;
-        background-color : $bg-darkBlueLagoon;
+        background-color : $brandColorLight;
         border-radius : 4px;
         position : absolute;
         right : 0;
         bottom : 50px;
-        color : $font-white;
+        color : $white;
         padding : 35px;
         @include clearfix;
         h2, p {
@@ -463,14 +462,14 @@
         }
         p {
           width : 290px;
-          color : $font-gray;
+          color : $whiteDark;
         }
         .quote {
           float : right;
           transform : translateY(-100%);
           font-size : 30px;
           vertical-align : middle;
-          color : $font-blueLagoon;
+          color : $brandColorDark;
         }
       }
     }// end central box
@@ -480,7 +479,10 @@
     @include widthSectionParam;
     height : 830px;
     position : relative;
-    background-color : $bg-greenExLight;
+    background-color : $yellowOcre;
+    @include flex;
+    justify-content : center;
+    align-items : center;
     .central-box {
       @include pageCenter;
       .titleButtonSection {
@@ -496,7 +498,7 @@
           }
           .title {
             margin-bottom : 30px;
-            color : $font-grayFucile;
+            color : $cyanBlue;
             font-size: 40px;
             &-wordColorChange {
               @include changeWordColor2;
@@ -504,7 +506,7 @@
             }
           }
           .summary {
-            color : $font-grayDark;
+            color : $whiteDark;
           }
         }//end text-block
         .button-solid {
@@ -532,13 +534,13 @@
           }
           .overbox-opacity{
             @include overBoxOpacitySizer;
-            background-color : rgba(39, 39, 39, 0.623);
+            background-color : $opacity;
             border-radius : 8px; 
             padding : 20px;
             position: absolute;
             .text {
               width : 200px;
-              color : $font-white;
+              color : $white;
               text-align : center;
               position : absolute; 
               bottom : 30px;
@@ -569,7 +571,7 @@
         }
         .title {
           margin-bottom : 30px;
-          color : $font-white;
+          color : $white;
           font-size: 40px;
           &-wordColorChange {
             @include changeWordColor2;
@@ -578,7 +580,7 @@
         }
         .summary {
           width : 400px;
-          color : $font-grayDark;
+          color : $whiteDark;
         }
       }
       .subscribeInput-section {
@@ -593,7 +595,7 @@
             border-radius : 8px;
             padding-left : 10px;
             background-color : rgba(90, 86, 86, 0.582);
-            color : $font-gray;
+            color : $whiteDark;
           }
         }
         .button-solid {
@@ -603,15 +605,13 @@
           right : 0;
           text-align : center;
         }
-
       }
-
     }// end central box
 
   }//end subscribe section
   .form-section {
     @include widthSectionParam;
-    background-color : $font-white;
+    background-color : $white;
     height : 850px;
     @include flex;
     justify-content : center;
@@ -634,7 +634,7 @@
           }
           .title {
             margin-bottom : 30px;
-            color : $font-grayFucile;
+            color : $cyanBlue;
             font-size: 40px;
             &-wordColorChange {
               @include changeWordColor;
@@ -643,12 +643,12 @@
           }
           .summary {
             width : 400px;
-            color : $font-grayDark;
+            color : $whiteDark;
           }
         }
-        .form-container {
+        // .form-container {
 
-        }
+        // }
         .button-solid {
           @include buttonSolid;
           width : 100px;

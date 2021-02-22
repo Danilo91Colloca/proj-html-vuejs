@@ -13,15 +13,15 @@ ul {
   width: 100vw;
   max-width: 100%;
   min-width: 1200px;
-  height: 50px;
-  background-color: #1c4055;
+  height: 45px;
+  background-color: #24333d;
 }
 #app .overHead-section .overHead-container {
   margin: 0 auto;
   width: 1200px;
   display: flex;
   color: #c0c3cf;
-  line-height: 50px;
+  line-height: 45px;
   justify-content: space-between;
   padding: 0px 15px;
 }
@@ -49,17 +49,15 @@ ul {
   margin-right: 5px;
 }
 #app .overHead-section .overHead-container .boxR .contacts-data:hover {
-  color: white;
   text-decoration: underline;
 }
 #app .overHead-section .overHead-container .boxR .social a {
   cursor: pointer;
-  color: #c0c3cf;
+  color: #f9f9f9;
   text-decoration: none;
   margin-left: 35px;
 }
 #app .overHead-section .overHead-container .boxR .social a:hover {
-  color: white;
   transform: scale(1.1);
 }
 #app .navAndJumbotron-section {
@@ -76,7 +74,7 @@ ul {
 #app .navAndJumbotron-section .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: rgba(78, 90, 93, 0.404);
+  background-color: #00000050;
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar {
   margin: 0 auto;
@@ -89,7 +87,7 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-L .brandLogo-part1 {
   display: inline-block;
-  background-color: rgba(29, 124, 126, 0.308);
+  background-color: #00a6a681;
   padding-left: 25px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -97,13 +95,13 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-L .brandLogo-part1 .text-brandpart1 {
   text-align: right;
-  color: #1d7c7e;
+  color: #00a6a6;
   font-weight: 900;
   letter-spacing: 5px;
   font-size: 15px;
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-L .brandLogo-part2 {
-  color: white;
+  color: #f9f9f9;
   font-weight: 900;
   letter-spacing: 5px;
   font-size: 15px;
@@ -119,34 +117,31 @@ ul {
 #app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box .navUl li {
   text-transform: uppercase;
   margin: 0px 25px;
-  color: #c8c8c8;
+  color: #f9f9f9;
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box .navUl li:hover {
-  color: white;
   cursor: pointer;
   transform: scale(1.2);
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box .userIcon {
   margin-right: 25px;
   font-size: 20px;
-  color: #d2d2d2;
+  color: #f9f9f9;
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box .userIcon:hover {
-  color: white;
   cursor: pointer;
   transform: scale(1.1);
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-R .button-solid {
-  background-color: #3e8a8b;
-  color: white;
+  background-color: #058283;
+  color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-R .button-solid:hover {
   cursor: pointer;
-  background-color: #48a4a5;
-  transform: scale(1.1);
+  background-color: #00a6a6;
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container {
   position: absolute;
@@ -154,7 +149,7 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: #f9f9f9;
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .text-box {
   width: 700px;
@@ -171,8 +166,8 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-solid {
   display: inline-block;
-  background-color: #3e8a8b;
-  color: white;
+  background-color: #058283;
+  color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
@@ -180,29 +175,27 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-solid:hover {
   cursor: pointer;
-  background-color: #48a4a5;
-  transform: scale(1.1);
+  background-color: #00a6a6;
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-transparent {
   display: inline-block;
   background-color: transparent;
-  border: 1px solid #1d7c7e;
-  color: white;
+  border: 1px solid #058283;
+  color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-transparent:hover {
   cursor: pointer;
-  background-color: #48a4a5;
-  transform: scale(1.1);
+  background-color: #00a6a6;
 }
 #app .introVideo-section {
   width: 100vw;
   max-width: 100%;
   min-width: 1200px;
   height: 900px;
-  background-color: #fafafa;
+  background-color: #f9f9f9;
 }
 #app .introVideo-section .pagecenter-videoSection {
   position: relative;
@@ -219,23 +212,23 @@ ul {
   text-align: center;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .top-title {
-  color: #33a6a8;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .title {
   margin-bottom: 30px;
-  color: #3c5664;
+  color: #24333d;
   font-size: 40px;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .title-wordColorChange {
-  color: #1d7c7e;
-  background-color: rgba(29, 124, 126, 0.308);
+  color: #058283;
+  background-color: #00a6a681;
   border-radius: 5px;
   padding: 5px;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .summary {
-  color: #9b9da5;
+  color: #c0c3cf;
   margin-bottom: 80px;
   padding: 0px 40px;
 }
@@ -251,7 +244,7 @@ ul {
 #app .introVideo-section .pagecenter-videoSection .textMov-block .video-preview .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: rgba(62, 138, 139, 0.4);
+  background-color: #00000050;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .video-preview .overbox-opacity .playLink {
   position: absolute;
@@ -259,8 +252,8 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 70px;
-  color: rgba(255, 255, 255, 0.712);
-  text-shadow: 0px -8px 0px rgba(22, 192, 195, 0.842);
+  color: #f9f9f9a1;
+  text-shadow: 0px -8px 0px #00a6a681;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .video-preview .overbox-opacity .playLink:hover {
   font-size: 80px;
@@ -279,7 +272,7 @@ ul {
 #app .result-section .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: rgba(39, 39, 39, 0.623);
+  background-color: #00000050;
 }
 #app .result-section .overbox-opacity .textResult-block {
   position: absolute;
@@ -291,18 +284,18 @@ ul {
   text-align: center;
 }
 #app .result-section .overbox-opacity .textResult-block .top-title {
-  color: #33a6a8;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
 #app .result-section .overbox-opacity .textResult-block .title {
   margin-bottom: 80px;
-  color: white;
+  color: #f9f9f9;
   font-size: 40px;
 }
 #app .result-section .overbox-opacity .textResult-block .title-wordColorChange {
-  color: white;
-  background-color: rgba(49, 109, 110, 0.6);
+  color: #f9f9f9;
+  background-color: #00a6a681;
   border-radius: 5px;
   padding: 5px;
 }
@@ -314,7 +307,7 @@ ul {
   width: 1200px;
 }
 #app .result-section .overbox-opacity .textResult-block .result-box-container .box-result .result {
-  color: #33a6a8;
+  color: #00a6a6;
   font-size: 35px;
   font-weight: bolder;
   margin-bottom: 30px;
@@ -322,7 +315,7 @@ ul {
   width: calc((100% / 12) * 3);
 }
 #app .result-section .overbox-opacity .textResult-block .result-box-container .box-sector .sector {
-  color: white;
+  color: #f9f9f9;
   font-size: 20px;
   font-weight: bolder;
   text-transform: capitalize;
@@ -355,23 +348,23 @@ ul {
   width: 820px;
 }
 #app .area-services-section .centralBox .titleButtonSection .textServices-block .top-title {
-  color: #33a6a8;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
 #app .area-services-section .centralBox .titleButtonSection .textServices-block .title {
   margin-bottom: 30px;
-  color: white;
+  color: #f9f9f9;
   font-size: 40px;
 }
 #app .area-services-section .centralBox .titleButtonSection .textServices-block .title-wordColorChange {
-  color: white;
-  background-color: rgba(49, 109, 110, 0.6);
+  color: #f9f9f9;
+  background-color: #00a6a681;
   border-radius: 5px;
   padding: 5px;
 }
 #app .area-services-section .centralBox .titleButtonSection .textServices-block .summary {
-  color: white;
+  color: #f9f9f9;
 }
 #app .area-services-section .centralBox .titleButtonSection .button-box {
   width: calc(100% - 820px);
@@ -379,8 +372,8 @@ ul {
 }
 #app .area-services-section .centralBox .titleButtonSection .button-box .button-transparent {
   background-color: transparent;
-  border: 1px solid #1d7c7e;
-  color: white;
+  border: 1px solid #058283;
+  color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
@@ -392,8 +385,7 @@ ul {
 }
 #app .area-services-section .centralBox .titleButtonSection .button-box .button-transparent:hover {
   cursor: pointer;
-  background-color: #48a4a5;
-  transform: scale(1.1);
+  background-color: #00a6a6;
 }
 #app .area-services-section .centralBox .services-box-container {
   display: flex;
@@ -403,7 +395,7 @@ ul {
 #app .area-services-section .centralBox .services-box-container .services-box {
   width: 360px;
   height: 270px;
-  background-color: #29292a;
+  background-color: #19191e;
   border-radius: 8px;
   margin-bottom: 50px;
   padding: 40px;
@@ -414,19 +406,19 @@ ul {
   margin-bottom: 20px;
 }
 #app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconSymbol {
-  color: #33a6a8;
+  color: #00a6a6;
   font-size: 30px;
 }
 #app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconArrow a {
   text-decoration: none;
-  color: #33a6a8;
+  color: #00a6a6;
   font-size: 18px;
 }
 #app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconArrow a:hover {
   transform: scale(1.1);
 }
 #app .area-services-section .centralBox .services-box-container .services-box .text {
-  color: white;
+  color: #f9f9f9;
 }
 #app .area-services-section .centralBox .services-box-container .services-box .text h4 {
   margin-bottom: 20px;
@@ -439,11 +431,11 @@ ul {
   transform: scale(1.1);
 }
 #app .area-services-section .centralBox .services-box-container .services-box:hover .iconSymbol {
-  color: white;
+  color: #f9f9f9;
 }
 #app .area-services-section .centralBox .services-box-container .services-box:hover .iconArrow a {
-  color: white;
-  background-color: #3e8a8b;
+  color: #f9f9f9;
+  background-color: #058283;
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
@@ -455,7 +447,7 @@ ul {
   max-width: 100%;
   min-width: 1200px;
   height: 900px;
-  background-color: white;
+  background-color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,25 +462,25 @@ ul {
   height: 100%;
 }
 #app .team-section .central-box .textAndTeam-container .textTeam-block .top-title {
-  color: #33a6a8;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
 #app .team-section .central-box .textAndTeam-container .textTeam-block .title {
   margin-bottom: 30px;
-  color: #3c5664;
+  color: #24333d;
   font-size: 35px;
 }
 #app .team-section .central-box .textAndTeam-container .textTeam-block .title-wordColorChange {
-  color: #1d7c7e;
-  background-color: rgba(29, 124, 126, 0.308);
+  color: #058283;
+  background-color: #00a6a681;
   border-radius: 5px;
   padding: 5px;
 }
 #app .team-section .central-box .textAndTeam-container .textTeam-block .summary {
   width: 750px;
   font-size: 20px;
-  color: #9b9da5;
+  color: #c0c3cf;
   margin-bottom: 80px;
 }
 #app .team-section .central-box .textAndTeam-container .team-container {
@@ -513,41 +505,43 @@ ul {
   padding: 10px;
 }
 #app .team-section .central-box .textAndTeam-container .team-container .team-box .data .name {
-  color: #3c5664;
+  color: #24333d;
   font-weight: bold;
   font-size: 28px;
   margin-bottom: 20px;
 }
 #app .team-section .central-box .textAndTeam-container .team-container .team-box .data .role {
-  color: #9b9da5;
+  color: #c0c3cf;
   font-size: 16px;
   margin-bottom: 20px;
 }
 #app .team-section .central-box .textAndTeam-container .team-container .team-box .data .social-contacts {
-  color: #1d7c7e;
+  color: #058283;
 }
 #app .team-section .central-box .textAndTeam-container .team-container .team-box .data .social-contacts a {
   display: inline-block;
-  color: #1d7c7e;
+  color: #058283;
   text-decoration: none;
   margin-right: 5px;
   padding: 0px 15px;
   line-height: 41.5px;
   border-radius: 50%;
-  background-color: rgba(29, 124, 126, 0.308);
+  background-color: #00a6a681;
 }
 #app .team-section .central-box .textAndTeam-container .team-container .team-box .data .social-contacts a:hover {
+  color: #00a6a6;
+  background-color: #058283;
   transform: scale(1.1);
 }
 #app .team-section .central-box .testimonial-container {
   width: 30%;
   height: 500px;
-  background-color: #3e8a8b;
+  background-color: #00a6a6;
   border-radius: 4px;
   position: absolute;
   right: 0;
   bottom: 50px;
-  color: white;
+  color: #f9f9f9;
   padding: 35px;
   content: "";
   display: table;
@@ -565,7 +559,7 @@ ul {
   transform: translateY(-100%);
   font-size: 30px;
   vertical-align: middle;
-  color: #1d7c7e;
+  color: #058283;
 }
 #app .news-section {
   width: 100vw;
@@ -573,7 +567,10 @@ ul {
   min-width: 1200px;
   height: 830px;
   position: relative;
-  background-color: #c6cec5;
+  background-color: #eff4ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #app .news-section .central-box {
   margin: 0 auto;
@@ -589,27 +586,27 @@ ul {
   width: 820px;
 }
 #app .news-section .central-box .titleButtonSection .textServices-block .top-title {
-  color: #33a6a8;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
 #app .news-section .central-box .titleButtonSection .textServices-block .title {
   margin-bottom: 30px;
-  color: #3c5664;
+  color: #24333d;
   font-size: 40px;
 }
 #app .news-section .central-box .titleButtonSection .textServices-block .title-wordColorChange {
-  color: white;
-  background-color: rgba(49, 109, 110, 0.6);
+  color: #f9f9f9;
+  background-color: #00a6a681;
   border-radius: 5px;
   padding: 5px;
 }
 #app .news-section .central-box .titleButtonSection .textServices-block .summary {
-  color: #9b9da5;
+  color: #c0c3cf;
 }
 #app .news-section .central-box .titleButtonSection .button-solid {
-  background-color: #3e8a8b;
-  color: white;
+  background-color: #058283;
+  color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
@@ -621,8 +618,7 @@ ul {
 }
 #app .news-section .central-box .titleButtonSection .button-solid:hover {
   cursor: pointer;
-  background-color: #48a4a5;
-  transform: scale(1.1);
+  background-color: #00a6a6;
 }
 #app .news-section .central-box .boxNews-container {
   display: flex;
@@ -643,14 +639,14 @@ ul {
 #app .news-section .central-box .boxNews-container .box-news .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: rgba(39, 39, 39, 0.623);
+  background-color: #00000050;
   border-radius: 8px;
   padding: 20px;
   position: absolute;
 }
 #app .news-section .central-box .boxNews-container .box-news .overbox-opacity .text {
   width: 200px;
-  color: white;
+  color: #f9f9f9;
   text-align: center;
   position: absolute;
   bottom: 30px;
@@ -679,24 +675,24 @@ ul {
   width: 50%;
 }
 #app .subscribe-section .central-box .textTitle-section .top-title {
-  color: #33a6a8;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
 #app .subscribe-section .central-box .textTitle-section .title {
   margin-bottom: 30px;
-  color: white;
+  color: #f9f9f9;
   font-size: 40px;
 }
 #app .subscribe-section .central-box .textTitle-section .title-wordColorChange {
-  color: white;
-  background-color: rgba(49, 109, 110, 0.6);
+  color: #f9f9f9;
+  background-color: #00a6a681;
   border-radius: 5px;
   padding: 5px;
 }
 #app .subscribe-section .central-box .textTitle-section .summary {
   width: 400px;
-  color: #9b9da5;
+  color: #c0c3cf;
 }
 #app .subscribe-section .central-box .subscribeInput-section {
   width: 50%;
@@ -715,8 +711,8 @@ ul {
   color: #c0c3cf;
 }
 #app .subscribe-section .central-box .subscribeInput-section .button-solid {
-  background-color: #3e8a8b;
-  color: white;
+  background-color: #058283;
+  color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
@@ -727,14 +723,13 @@ ul {
 }
 #app .subscribe-section .central-box .subscribeInput-section .button-solid:hover {
   cursor: pointer;
-  background-color: #48a4a5;
-  transform: scale(1.1);
+  background-color: #00a6a6;
 }
 #app .form-section {
   width: 100vw;
   max-width: 100%;
   min-width: 1200px;
-  background-color: white;
+  background-color: #f9f9f9;
   height: 850px;
   display: flex;
   justify-content: center;
@@ -755,28 +750,28 @@ ul {
   border: 1px dotted blue;
 }
 #app .form-section .central-box .containerL .textTitle-section .top-title {
-  color: #33a6a8;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
 #app .form-section .central-box .containerL .textTitle-section .title {
   margin-bottom: 30px;
-  color: #3c5664;
+  color: #24333d;
   font-size: 40px;
 }
 #app .form-section .central-box .containerL .textTitle-section .title-wordColorChange {
-  color: #1d7c7e;
-  background-color: rgba(29, 124, 126, 0.308);
+  color: #058283;
+  background-color: #00a6a681;
   border-radius: 5px;
   padding: 5px;
 }
 #app .form-section .central-box .containerL .textTitle-section .summary {
   width: 400px;
-  color: #9b9da5;
+  color: #c0c3cf;
 }
 #app .form-section .central-box .containerL .button-solid {
-  background-color: #3e8a8b;
-  color: white;
+  background-color: #058283;
+  color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
   font-size: 15px;
@@ -787,8 +782,7 @@ ul {
 }
 #app .form-section .central-box .containerL .button-solid:hover {
   cursor: pointer;
-  background-color: #48a4a5;
-  transform: scale(1.1);
+  background-color: #00a6a6;
 }
 #app .form-section .central-box .containerR {
   width: 40%;
