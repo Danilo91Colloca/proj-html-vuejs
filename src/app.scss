@@ -745,12 +745,34 @@
             width : 120px;
             text-decoration : none;
             text-align : center;
-           
           }
         }
       } // end container R
     }// end central box
   } //end form section
+  .footer-copyr-section {
+    @include widthSectionParam;
+    height : 710px;
+    @include bgFooter;
+    .central-box {
+      @include pageCenter;
+      @include flex;
+      justify-content : space-between;
+      align-items : center;
+      height : 100%;//!!!TEMP!!!
+      border: 1px solid red; //!!!TEMP!!!
+      .footer-card {
+        width : 260px;
+        height : 330px;
+        border: 1px dotted green;
+        &.brand {
+          border: 1px dotted yellow;
+
+        }
+      }
+    }
+
+  } //end footer copyright section
 
 
 

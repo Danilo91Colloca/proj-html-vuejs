@@ -884,3 +884,30 @@ ul {
   color: #f9f9f9;
   background-color: #00a6a6;
 }
+#app .footer-copyr-section {
+  width: 100vw;
+  max-width: 100%;
+  min-width: 1200px;
+  height: 710px;
+  background-image: url("../images/bg-7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#app .footer-copyr-section .central-box {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border: 1px solid red;
+}
+#app .footer-copyr-section .central-box .footer-card {
+  width: 260px;
+  height: 330px;
+  border: 1px dotted green;
+}
+#app .footer-copyr-section .central-box .footer-card.brand {
+  border: 1px dotted yellow;
+}

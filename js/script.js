@@ -238,7 +238,6 @@ new Vue({
       });
     },
     //funzione che salva i dati inseriti nella newsletter
-    //da implementare con delle verifiche di inserimento
     postSubscription : function() {
       let name = this.subscriptName;
       let mail = this.subscriptMail;
@@ -254,7 +253,8 @@ new Vue({
         this.subscriptMail = '';
       }
     },
-    postFormMsg : function() {
+        //da implementare con delle verifiche di inserimento
+    postFormMsg : function() { 
       let name = this.userName;
       let email = this.userMail;
       let phone = this.userPhone;

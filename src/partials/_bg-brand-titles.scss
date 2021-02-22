@@ -28,6 +28,15 @@
   background-repeat : no-repeat;
 }
 
+//FOOTER BG
+@mixin  bgFooter {
+  background-image : url("../images/bg-7.jpg");
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : cover;
+  
+}
+
 //BRAND NAME
 $brandLetterSpacing : 5px;
 $brandFontSize : 15px;
