@@ -627,6 +627,36 @@
         width : 60%;
         height : 90%;//!!!TEMP!!!
         border: 1px dotted blue; //!!!TEMP!!!
+        .textTitle-section {
+          .top-title {
+            @include topTitle;
+            margin-bottom : 30px;
+          }
+          .title {
+            margin-bottom : 30px;
+            color : $font-grayFucile;
+            font-size: 40px;
+            &-wordColorChange {
+              @include changeWordColor;
+              padding : 5px;
+            }
+          }
+          .summary {
+            width : 400px;
+            color : $font-grayDark;
+          }
+        }
+        .form-container {
+
+        }
+        .button-solid {
+          @include buttonSolid;
+          width : 100px;
+          bottom : 0;
+          right : 0;
+          text-align : center;
+        }
+
       }
       .containerR {
         width : 40%;

@@ -754,6 +754,42 @@ ul {
   height: 90%;
   border: 1px dotted blue;
 }
+#app .form-section .central-box .containerL .textTitle-section .top-title {
+  color: #33a6a8;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#app .form-section .central-box .containerL .textTitle-section .title {
+  margin-bottom: 30px;
+  color: #3c5664;
+  font-size: 40px;
+}
+#app .form-section .central-box .containerL .textTitle-section .title-wordColorChange {
+  color: #1d7c7e;
+  background-color: rgba(29, 124, 126, 0.308);
+  border-radius: 5px;
+  padding: 5px;
+}
+#app .form-section .central-box .containerL .textTitle-section .summary {
+  width: 400px;
+  color: #9b9da5;
+}
+#app .form-section .central-box .containerL .button-solid {
+  background-color: #3e8a8b;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+#app .form-section .central-box .containerL .button-solid:hover {
+  cursor: pointer;
+  background-color: #48a4a5;
+  transform: scale(1.1);
+}
 #app .form-section .central-box .containerR {
   width: 40%;
   height: 90%;
