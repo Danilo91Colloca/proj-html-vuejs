@@ -675,12 +675,9 @@ ul {
   justify-content: space-between;
   align-items: center;
   width: 950px;
-  height: 95%;
-  border: 1px solid red;
 }
 #app .subscribe-section .central-box .textTitle-section {
   width: 50%;
-  border: 3px dotted green;
 }
 #app .subscribe-section .central-box .textTitle-section .top-title {
   color: #33a6a8;
@@ -704,8 +701,34 @@ ul {
 }
 #app .subscribe-section .central-box .subscribeInput-section {
   width: 50%;
-  height: 100%;
-  border: 3px dotted blue;
+}
+#app .subscribe-section .central-box .subscribeInput-section .input-container {
+  margin-bottom: 20px;
+}
+#app .subscribe-section .central-box .subscribeInput-section .input-container input {
+  width: 80%;
+  line-height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding-left: 10px;
+  background-color: rgba(90, 86, 86, 0.582);
+}
+#app .subscribe-section .central-box .subscribeInput-section .button-solid {
+  background-color: #3e8a8b;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 140px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+#app .subscribe-section .central-box .subscribeInput-section .button-solid:hover {
+  cursor: pointer;
+  background-color: #48a4a5;
+  transform: scale(1.1);
 }
 
 .textSub-block {
