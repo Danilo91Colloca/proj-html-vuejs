@@ -401,24 +401,24 @@
               <div class="input-row">
 
                 <div class="input-withIcon">
-                  <input type="text" placeholder="Name">
+                  <input type="text" placeholder="Name" v-model="userName">
                   <img src="images/image-1.png" alt="">
                 </div>
                 
-                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Email" v-model="userMail">
               </div>
               <div class="input-row">
-                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Phone" v-model="userPhone">
                 <div class="input-withIcon">
-                  <input type="text" placeholder="More info">
+                  <input type="text" placeholder="More info" v-model="userMoreInfo">
                   <i class="fas fa-chevron-down"></i>
                 </div>
               </div>
               <div class="input-message">
-                <textarea name="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <textarea name="message" class="message" cols="30" rows="10" placeholder="Message" v-model="userMsg"></textarea>
               </div>
             </div>
-            <div class="button-solid" >
+            <div class="button-solid" @click="postFormMsg()">
               <span>
                 SEND
               </span>
@@ -451,7 +451,7 @@
               </span>
             </div>
             <div class="maplink">
-              <a class="button-transparent" href="" >
+              <a class="button-transparent" :href="maps" >
                   VIEW MAP
               </a>
             </div>

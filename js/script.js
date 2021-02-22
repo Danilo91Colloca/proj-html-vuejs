@@ -3,7 +3,7 @@ new Vue({
   el:  '#app',
 
   data: {
-
+    maps : 'https://www.google.it/maps/place/Silicon+Valley,+California,+Stati+Uniti/@37.4027209, -123.1617104,8z/data=!4m5!3m4!1s0x808fb68ad0cfc739:0x7eb356b66bd4b50e!8m2!3d37.387474!4d-122.0575434',
     rotation : [
       {
       faIcon : 'fas fa-clock',
@@ -200,9 +200,18 @@ new Vue({
         textNews : 'Working from home is now a trend.'
       },
     ],
-    subscriptName : '',
+    //new data for newsletter
+    subscriptName : '', 
     subscriptMail : '',
-    subscriptionsList : []
+    subscriptionsList : [],
+    //new data from form
+    userName : '',
+    userMail : '',
+    userPhone : '',
+    userMoreInfo : '',
+    userMsg : '',
+    formUserData : []
+   
 
   },
   methods: {
@@ -245,7 +254,27 @@ new Vue({
         this.subscriptMail = '';
       }
     },
-    // postFormMsg : function() {}
+    postFormMsg : function() {
+      let name = this.userName;
+      let email = this.userMail;
+      let phone = this.userPhone;
+      let moreInfo = this.userMoreInfo;
+      let msg = this.userMsg;
+      this.formUserData.push(
+        {
+          name : name,
+          email : email,
+          phone : phone,
+          moreInfo : moreInfo,
+          message : msg
+        }
+      );
+      this.userName = '';
+      this.userMail = '';
+      this.userPhone = '';
+      this.userMoreInfo = '';
+      this.userMsg = '';
+    }
   }
 })
 
