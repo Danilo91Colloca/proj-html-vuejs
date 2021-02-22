@@ -231,21 +231,21 @@ new Vue({
     //funzione che salva i dati inseriti nella newsletter
     //da implementare con delle verifiche di inserimento
     postSubscription : function() {
-    let name = this.subscriptName;
-    let mail = this.subscriptMail;
-    if(
-      name !== "" && mail !== "" && isNaN(name) 
-      && name.length >= 3 && name.length <=18
+      let name = this.subscriptName;
+      let mail = this.subscriptMail;
+      if(
+        name !== "" && mail !== "" && isNaN(name) 
+        && name.length >= 3 && name.length <=18
       ){
-      this.subscriptionsList.push(
-        {
+        this.subscriptionsList.push({
         name : name,
         email : mail
         })
         this.subscriptName = '';
         this.subscriptMail = '';
       }
-    }
+    },
+    // postFormMsg : function() {}
   }
 })
 

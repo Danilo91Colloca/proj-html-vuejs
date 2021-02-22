@@ -619,15 +619,10 @@
     .central-box {
       @include pageCenter;
       @include flex;
-      justify-content: center;//da valutare
-      align-items: center;//da valutare
-      height : 80%; //!!!TEMP!!!
-      border: 1px solid red; //!!!TEMP!!!
       .containerL {
         width : 60%;
-        height : 90%;//!!!TEMP!!!
-        border: 1px dotted blue; //!!!TEMP!!!
         .textTitle-section {
+          margin-bottom : 60px;
           .top-title {
             @include topTitle;
             margin-bottom : 30px;
@@ -646,9 +641,56 @@
             color : $whiteDark;
           }
         }
-        // .form-container {
-
-        // }
+        .form-container {
+          .input-row {
+            input {
+              padding : 0px 25px 0px 10px;
+              width : 320px;
+              line-height : 25px;
+              margin : 0px 15px 15px 0px;
+              background-color : $bg-warmweiss;
+              border : $bg-warmweiss;
+              border-radius : 8px;
+              outline : none;
+            }
+            .input-withIcon {
+              display : inline-block;
+              position : relative;
+              img {
+                position : absolute;
+                top : 5px;
+                right : 25px;
+                &:hover {
+                  cursor : pointer;
+                }
+              }
+              i {
+                position : absolute;
+                color : $cyanBlue;
+                font-weight : 600;
+                top : 5px;
+                right : 25px;
+                font-size : 13px;
+                &:hover {
+                  cursor : pointer;
+                }
+              }
+            }
+          }
+          .input-message {
+            margin-bottom : 30px;
+            .message {
+              width : 659px;
+              height : 150px;
+              padding : 10px;
+              resize: none;
+              background-color : $bg-warmweiss;
+              border : $bg-warmweiss;
+              border-radius : 8px;
+              outline : none; 
+            }
+          }
+        }
         .button-solid {
           @include buttonSolid;
           width : 100px;
@@ -656,15 +698,59 @@
           right : 0;
           text-align : center;
         }
-
-      }
+      }// end container L
       .containerR {
         width : 40%;
-        height : 90%;//!!!TEMP!!!
-        border: 1px dotted green; //!!!TEMP!!!
-      }
-    }
-  }
+        .text {
+          h3 {
+            font-weight : 500;
+            color : $cyanBlue;
+            margin-bottom : 25px;
+          }
+          p {
+            width : 300px;
+            color : $whiteDark;
+            margin-bottom : 25px;;
+          }
+        }
+        .contacts, 
+        .address {
+          color : $brandColorDark;
+          margin-bottom : 20px;
+          i {
+            display: inline-block;
+            color : $brandColorDark;
+            text-decoration : none;
+            margin-right : 5px;
+            padding : 0px 10px;
+            line-height : 35px;
+            border-radius : 50%;
+            background-color : $brandColorTransparency;
+            
+          }
+          &:hover {
+            i {
+              color : $brandColorLight;
+              background-color : $brandColorDark;
+            }
+            span{
+              text-decoration: underline;
+            }
+          }
+        }
+        .maplink {
+          padding-top : 10px;
+          .button-transparent {
+            @include buttonTransparent2;
+            width : 120px;
+            text-decoration : none;
+            text-align : center;
+           
+          }
+        }
+      } // end container R
+    }// end central box
+  } //end form section
 
 
 
@@ -676,7 +762,3 @@
 
 
 }//end #app
-.textSub-block {
-  width : 820px;
-  
-}//end text-block

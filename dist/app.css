@@ -74,7 +74,7 @@ ul {
 #app .navAndJumbotron-section .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: #00000050;
+  background-color: #00000060;
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar {
   margin: 0 auto;
@@ -87,7 +87,7 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-L .brandLogo-part1 {
   display: inline-block;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
   padding-left: 25px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -223,7 +223,7 @@ ul {
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .title-wordColorChange {
   color: #058283;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
   border-radius: 5px;
   padding: 5px;
 }
@@ -244,7 +244,7 @@ ul {
 #app .introVideo-section .pagecenter-videoSection .textMov-block .video-preview .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: #00000050;
+  background-color: #00000060;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .video-preview .overbox-opacity .playLink {
   position: absolute;
@@ -253,7 +253,7 @@ ul {
   transform: translate(-50%, -50%);
   font-size: 70px;
   color: #f9f9f9a1;
-  text-shadow: 0px -8px 0px #00a6a681;
+  text-shadow: 0px -8px 0px #00a6a636;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .video-preview .overbox-opacity .playLink:hover {
   font-size: 80px;
@@ -272,7 +272,7 @@ ul {
 #app .result-section .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: #00000050;
+  background-color: #00000060;
 }
 #app .result-section .overbox-opacity .textResult-block {
   position: absolute;
@@ -295,7 +295,7 @@ ul {
 }
 #app .result-section .overbox-opacity .textResult-block .title-wordColorChange {
   color: #f9f9f9;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
   border-radius: 5px;
   padding: 5px;
 }
@@ -359,7 +359,7 @@ ul {
 }
 #app .area-services-section .centralBox .titleButtonSection .textServices-block .title-wordColorChange {
   color: #f9f9f9;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
   border-radius: 5px;
   padding: 5px;
 }
@@ -473,7 +473,7 @@ ul {
 }
 #app .team-section .central-box .textAndTeam-container .textTeam-block .title-wordColorChange {
   color: #058283;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
   border-radius: 5px;
   padding: 5px;
 }
@@ -526,7 +526,7 @@ ul {
   padding: 0px 15px;
   line-height: 41.5px;
   border-radius: 50%;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
 }
 #app .team-section .central-box .textAndTeam-container .team-container .team-box .data .social-contacts a:hover {
   color: #00a6a6;
@@ -597,7 +597,7 @@ ul {
 }
 #app .news-section .central-box .titleButtonSection .textServices-block .title-wordColorChange {
   color: #f9f9f9;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
   border-radius: 5px;
   padding: 5px;
 }
@@ -639,7 +639,7 @@ ul {
 #app .news-section .central-box .boxNews-container .box-news .overbox-opacity {
   width: 100%;
   height: 100%;
-  background-color: #00000050;
+  background-color: #00000060;
   border-radius: 8px;
   padding: 20px;
   position: absolute;
@@ -686,7 +686,7 @@ ul {
 }
 #app .subscribe-section .central-box .textTitle-section .title-wordColorChange {
   color: #f9f9f9;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
   border-radius: 5px;
   padding: 5px;
 }
@@ -739,15 +739,12 @@ ul {
   margin: 0 auto;
   width: 1200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80%;
-  border: 1px solid red;
 }
 #app .form-section .central-box .containerL {
   width: 60%;
-  height: 90%;
-  border: 1px dotted blue;
+}
+#app .form-section .central-box .containerL .textTitle-section {
+  margin-bottom: 60px;
 }
 #app .form-section .central-box .containerL .textTitle-section .top-title {
   color: #00a6a6;
@@ -761,13 +758,59 @@ ul {
 }
 #app .form-section .central-box .containerL .textTitle-section .title-wordColorChange {
   color: #058283;
-  background-color: #00a6a681;
+  background-color: #00a6a636;
   border-radius: 5px;
   padding: 5px;
 }
 #app .form-section .central-box .containerL .textTitle-section .summary {
   width: 400px;
   color: #c0c3cf;
+}
+#app .form-section .central-box .containerL .form-container .input-row input {
+  padding: 0px 25px 0px 10px;
+  width: 320px;
+  line-height: 25px;
+  margin: 0px 15px 15px 0px;
+  background-color: #ececec;
+  border: #ececec;
+  border-radius: 8px;
+  outline: none;
+}
+#app .form-section .central-box .containerL .form-container .input-row .input-withIcon {
+  display: inline-block;
+  position: relative;
+}
+#app .form-section .central-box .containerL .form-container .input-row .input-withIcon img {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+}
+#app .form-section .central-box .containerL .form-container .input-row .input-withIcon img:hover {
+  cursor: pointer;
+}
+#app .form-section .central-box .containerL .form-container .input-row .input-withIcon i {
+  position: absolute;
+  color: #24333d;
+  font-weight: 600;
+  top: 5px;
+  right: 25px;
+  font-size: 13px;
+}
+#app .form-section .central-box .containerL .form-container .input-row .input-withIcon i:hover {
+  cursor: pointer;
+}
+#app .form-section .central-box .containerL .form-container .input-message {
+  margin-bottom: 30px;
+}
+#app .form-section .central-box .containerL .form-container .input-message .message {
+  width: 659px;
+  height: 150px;
+  padding: 10px;
+  resize: none;
+  background-color: #ececec;
+  border: #ececec;
+  border-radius: 8px;
+  outline: none;
 }
 #app .form-section .central-box .containerL .button-solid {
   background-color: #058283;
@@ -786,10 +829,58 @@ ul {
 }
 #app .form-section .central-box .containerR {
   width: 40%;
-  height: 90%;
-  border: 1px dotted green;
 }
-
-.textSub-block {
-  width: 820px;
+#app .form-section .central-box .containerR .text h3 {
+  font-weight: 500;
+  color: #24333d;
+  margin-bottom: 25px;
+}
+#app .form-section .central-box .containerR .text p {
+  width: 300px;
+  color: #c0c3cf;
+  margin-bottom: 25px;
+}
+#app .form-section .central-box .containerR .contacts,
+#app .form-section .central-box .containerR .address {
+  color: #058283;
+  margin-bottom: 20px;
+}
+#app .form-section .central-box .containerR .contacts i,
+#app .form-section .central-box .containerR .address i {
+  display: inline-block;
+  color: #058283;
+  text-decoration: none;
+  margin-right: 5px;
+  padding: 0px 10px;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: #00a6a636;
+}
+#app .form-section .central-box .containerR .contacts:hover i,
+#app .form-section .central-box .containerR .address:hover i {
+  color: #00a6a6;
+  background-color: #058283;
+}
+#app .form-section .central-box .containerR .contacts:hover span,
+#app .form-section .central-box .containerR .address:hover span {
+  text-decoration: underline;
+}
+#app .form-section .central-box .containerR .maplink {
+  padding-top: 10px;
+}
+#app .form-section .central-box .containerR .maplink .button-transparent {
+  background-color: transparent;
+  border: 1px solid #058283;
+  color: #058283;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+}
+#app .form-section .central-box .containerR .maplink .button-transparent:hover {
+  cursor: pointer;
+  color: #f9f9f9;
+  background-color: #00a6a6;
 }

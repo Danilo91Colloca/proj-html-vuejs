@@ -379,8 +379,8 @@
       <!--FORM SECTION-->
       <div class="form-section">
         <div class="central-box">
+          <!-- containerL-->
           <div class="containerL">
-
             <div class="textTitle-section">
               <div class="textTeam-block">
                 <div class="top-title">
@@ -399,30 +399,64 @@
 
             <div class="form-container">
               <div class="input-row">
-                <input type="text" placeholder="Name">
+
+                <div class="input-withIcon">
+                  <input type="text" placeholder="Name">
+                  <img src="images/image-1.png" alt="">
+                </div>
+                
                 <input type="text" placeholder="Email">
               </div>
               <div class="input-row">
                 <input type="text" placeholder="Phone">
-                <input type="text" placeholder="More info">
+                <div class="input-withIcon">
+                  <input type="text" placeholder="More info">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
               </div>
-              <div class="input-row">
-                <input type="text" placeholder="Message">
+              <div class="input-message">
+                <textarea name="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
               </div>
-
             </div>
-            <div class="button-solid" @click="postSubscription">
+            <div class="button-solid" >
               <span>
                 SEND
               </span>
             </div>
-            
-
-
           </div>
+          <!-- /containerL-->
+          <!-- containerR-->
           <div class="containerR">
-
+            <div class="text">
+              <h3>
+                Example Inc.
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p>
+                Praesent diam lacus, dapibus sed imperdiet consectetur.
+              </p>
+            </div>
+            <div class="contacts" v-for="element in contacts">
+              <i :class="element.faIcon"></i>
+              <span>
+                {{element.contact}}
+              </span>
+            </div>
+            <div class="address">
+              <i :class="address.faIcon"></i>
+              <span>
+                {{address.address}}
+              </span>
+            </div>
+            <div class="maplink">
+              <a class="button-transparent" href="" >
+                  VIEW MAP
+              </a>
+            </div>
           </div>
+          <!-- / containerR-->
 
         </div>
 

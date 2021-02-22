@@ -81,6 +81,19 @@ $brandWeight : 900;
     background-color : $brandColorLight;
   }
 }
+@mixin buttonTransparent2 {
+  background-color : transparent;
+  border : 1px solid $brandColorDark;
+  color : $brandColorDark;
+  padding : 10px;
+  border-radius : 5px;
+  font-size: 15px;
+  &:hover {
+    cursor: pointer;
+    color : $white;
+    background-color : $brandColorLight;
+  }
+}
 
 //top-title 
 @mixin topTitle {
