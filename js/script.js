@@ -200,6 +200,41 @@ new Vue({
         textNews : 'Working from home is now a trend.'
       },
     ],
+    listServices : [
+      {
+        label : 'about',
+        item : [
+          'the company',
+          'institutional',
+          'social & events',
+          'innovation',
+          'environment',
+          'tecnology'
+        ]
+      },
+      {
+        label : 'services',
+        item : [
+          'audit & assurance',
+          'financial advisory',
+          'analystic m & a',
+          'middle marketing',
+          'legal consulting',
+          'regulatory rick'
+        ]
+      },
+      {
+        label : 'support',
+        item : [
+          'responsability',
+          'term of use',
+          'about cookies',
+          'privacy policy',
+          'accessibility',
+          'information'
+        ]
+      }
+    ],
     //new data for newsletter
     subscriptName : '', 
     subscriptMail : '',

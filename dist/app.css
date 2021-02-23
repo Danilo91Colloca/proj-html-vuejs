@@ -977,3 +977,6 @@ ul {
   cursor: pointer;
   background-color: #00a6a6;
 }
+#app .footer-copyr-section .central-box .footer-card {
+  color: red;
+}

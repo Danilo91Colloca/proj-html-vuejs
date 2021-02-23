@@ -501,24 +501,19 @@
                 </span>
               </div>
             </div>
-           
-
           </div>
-          <div class="footer-card ">
-
+          <div class="footer-card " v-for="element in listServices">
+            <span>
+              {{element.label}}
+            </span>
+            <ul>
+              <li v-for="item in element.item">
+                {{item}}
+              </li>
+            </ul>
           </div>
-          <div class="footer-card ">
-
-          </div>
-          <div class="footer-card ">
-
-          </div>
-
-
         </div>
-
       </div>
-
       <!--FOOTER & COPYRIGHT-->
 
 
