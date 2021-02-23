@@ -377,6 +377,9 @@ new Vue({
   isMenuVisible : function(idx){ //funzione di verifica condizioni v-if per i menu
     return this.active.index === idx && this.active.show;
   },
+  userSelect : function(select){
+    this.userMoreInfo = select;
+  }
   }
 })
 

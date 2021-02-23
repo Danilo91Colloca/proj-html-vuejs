@@ -692,6 +692,9 @@
                 li {
                   margin-bottom : 10px;
                   cursor : pointer;
+                  &:hover {
+                    color : $brandColorLight;
+                  }
                 }
               }
               img {

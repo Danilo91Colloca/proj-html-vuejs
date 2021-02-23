@@ -417,11 +417,11 @@
                 <input type="text" placeholder="Phone" v-model="userPhone">
 
                 <div class="input-withIcon" @click="menuVisible('moreInfo')">
-                  <input type="text" placeholder="More info" >
+                  <input type="text" placeholder="More info" :value="userMoreInfo">
                   <i class="fas fa-chevron-down"></i>
                   <div class="dropDownMenu" v-if="isMenuVisible('moreInfo')">
                     <ul>
-                      <li v-for="element in moreInfo" v-model="userMoreInfo">
+                      <li v-for="element in moreInfo" @click="userSelect(element)">
                         {{element}}
                       </li>
                     </ul>
