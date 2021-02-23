@@ -751,6 +751,7 @@
     }// end central box
   } //end form section
   .footer-copyr-section {
+    position : relative;
     @include widthSectionParam;
     height : 710px;
     @include bgFooter;
@@ -759,14 +760,40 @@
       @include flex;
       justify-content : space-between;
       align-items : center;
-      height : 100%;//!!!TEMP!!!
-      border: 1px solid red; //!!!TEMP!!!
+      height : 100%;
       .footer-card {
+        background-color : $whiteHardTransparency;
         width : 260px;
         height : 330px;
-        border: 1px dotted green;//!!!TEMP!!!
+        color : $whiteDark;
+        text-transform : capitalize;
+        border-radius : 8px;
+        padding : 40px;
+        .label-box {
+          margin-bottom : 35px;
+          .label-style {
+            font-weight : 700;
+            font-size : 25px;
+          }
+        }
+        ul {
+          li {
+            margin-bottom : 10px;
+            &::before {
+              font-family : 'Font Awesome 5 Free';
+              font-weight : 900;
+              content : '\f054';
+              margin-right : 10px;
+            }
+            &:hover {
+              cursor : pointer;
+              transform : scale(1.1);
+            }
+          }
+        }
         &.brand {
-          border: 1px dotted yellow;//!!!TEMP!!!
+          background-color : transparent;
+          padding : 10px;
           .brandLogo {
             &-part1 {
               @include brandName-container-part1;
@@ -783,11 +810,11 @@
             margin : 25px 0px;
             .text {
               color : $whiteDark;
-             
             }
           }
           .contacts-box {
             color : $whiteDark;
+            text-transform : lowercase;
             i {
               margin-right : 15px;
               margin-bottom : 25px;
@@ -819,11 +846,25 @@
               text-align : center;
             }
           }
-        } // brand contact box
-        & {
-          color:red;
-        }
+        } 
       } //footer cards
+    }//end central box
+    .copyright-section {
+      position : absolute;
+      bottom : 0px; 
+      @include widthSectionParam;
+      height : 90px;
+      background-color : $footerBgColor;
+      .central-box {
+        @include flex;
+        justify-content : space-between;
+        line-height : 90px;
+        color : $whiteDark;
+        font-size : 12px;
+        .changeColor {
+          color : $brandColorDark;
+        }
+      }
     }
 
   } //end footer copyright section

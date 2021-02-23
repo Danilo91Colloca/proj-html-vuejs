@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -885,6 +886,7 @@ ul {
   background-color: #00a6a6;
 }
 #app .footer-copyr-section {
+  position: relative;
   width: 100vw;
   max-width: 100%;
   min-width: 1200px;
@@ -901,15 +903,39 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  border: 1px solid red;
 }
 #app .footer-copyr-section .central-box .footer-card {
+  background-color: #f9f9f91a;
   width: 260px;
   height: 330px;
-  border: 1px dotted green;
+  color: #c0c3cf;
+  text-transform: capitalize;
+  border-radius: 8px;
+  padding: 40px;
+}
+#app .footer-copyr-section .central-box .footer-card .label-box {
+  margin-bottom: 35px;
+}
+#app .footer-copyr-section .central-box .footer-card .label-box .label-style {
+  font-weight: 700;
+  font-size: 25px;
+}
+#app .footer-copyr-section .central-box .footer-card ul li {
+  margin-bottom: 10px;
+}
+#app .footer-copyr-section .central-box .footer-card ul li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  margin-right: 10px;
+}
+#app .footer-copyr-section .central-box .footer-card ul li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 #app .footer-copyr-section .central-box .footer-card.brand {
-  border: 1px dotted yellow;
+  background-color: transparent;
+  padding: 10px;
 }
 #app .footer-copyr-section .central-box .footer-card.brand .brandLogo-part1 {
   display: inline-block;
@@ -941,6 +967,7 @@ ul {
 }
 #app .footer-copyr-section .central-box .footer-card.brand .contacts-box {
   color: #c0c3cf;
+  text-transform: lowercase;
 }
 #app .footer-copyr-section .central-box .footer-card.brand .contacts-box i {
   margin-right: 15px;
@@ -977,6 +1004,22 @@ ul {
   cursor: pointer;
   background-color: #00a6a6;
 }
-#app .footer-copyr-section .central-box .footer-card {
-  color: red;
+#app .footer-copyr-section .copyright-section {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  max-width: 100%;
+  min-width: 1200px;
+  height: 90px;
+  background-color: #070a0c;
+}
+#app .footer-copyr-section .copyright-section .central-box {
+  display: flex;
+  justify-content: space-between;
+  line-height: 90px;
+  color: #c0c3cf;
+  font-size: 12px;
+}
+#app .footer-copyr-section .copyright-section .central-box .changeColor {
+  color: #058283;
 }

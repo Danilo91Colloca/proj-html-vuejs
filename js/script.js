@@ -217,7 +217,7 @@ new Vue({
         item : [
           'audit & assurance',
           'financial advisory',
-          'analystic m & a',
+          'analystic m&a',
           'middle marketing',
           'legal consulting',
           'regulatory rick'

@@ -463,7 +463,6 @@
       <!--FOOTER & COPYRIGHT-->
       <div class="footer-copyr-section">
         <div class="central-box">
-
           <div class="footer-card brand">
             <!-- logo Snippet-->
             <div class="barndLogo">
@@ -503,9 +502,11 @@
             </div>
           </div>
           <div class="footer-card " v-for="element in listServices">
-            <span>
-              {{element.label}}
-            </span>
+            <div class="label-box">
+              <span class="label-style">
+                {{element.label}}
+              </span>
+            </div>
             <ul>
               <li v-for="item in element.item">
                 {{item}}
@@ -513,7 +514,28 @@
             </ul>
           </div>
         </div>
+        <div class="copyright-section">
+          <div class="central-box">
+            <div class="privacy-terms">
+              <span>
+                Enjoy the low price. We are tracking any intention of privacy.
+              </span>
+            </div>
+            <div class="copyright">
+              <span>
+                &copy; 2020 NEXGEN is Proudly Powered by 
+                <span class="changeColor">
+                  Condings
+                </span>.
+              </span>
+
+            </div>
+          </div>
+
+        </div>
       </div>
+     
+      
       <!--FOOTER & COPYRIGHT-->
 
 
