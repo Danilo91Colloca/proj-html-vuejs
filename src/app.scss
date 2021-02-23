@@ -101,14 +101,17 @@
           @include flex;
           font-size: 16px;
           .navUl {
-            li {
+            @include flex;
+            li a{
               text-transform : uppercase;
               margin : 0px 25px;
               color : $white;
+              text-decoration : none;
               &:hover {
                 cursor : pointer;
-                transform: scale(1.2);
+                color : $brandColorLight;
               }
+              
             }
           }
           .userIcon {
@@ -118,6 +121,7 @@
             &:hover {
               cursor : pointer;
               transform: scale(1.1);
+              color : $brandColorLight;
             }
           }
         }
@@ -676,6 +680,20 @@
             .input-withIcon {
               display : inline-block;
               position : relative;
+              .dropDownMenu {
+                width : 300px;
+                background-color: rgb(126, 125, 125);
+                position : absolute;
+                right : 20px;
+                top : 20px;
+                border-radius : 8px;
+                color : $whiteDark;
+                padding : 10px;
+                li {
+                  margin-bottom : 10px;
+                  cursor : pointer;
+                }
+              }
               img {
                 position : absolute;
                 top : 5px;

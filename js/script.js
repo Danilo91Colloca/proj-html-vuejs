@@ -46,13 +46,30 @@ new Vue({
   ],
     navBar : [
         {
-        navMenu : {
-          menu1 : 'home',
-          menu2 : 'about',
-          menu3 :  'services',
-          manu4 : 'team',
-          menu5 : 'blog'
-        }      
+        navMenu : [
+        {
+         menu : 'home',
+         link : '#home'
+        },
+        {
+          menu : 'about',
+          link : '#videoInfo'
+        },
+        {
+          menu :  'services',
+          link : '#areaServices',
+        },
+        {
+          menu : 'team',
+          link : '#areaTeam',
+        },
+        {
+          menu : 'blog',
+          link : '#areaNews'
+
+        }
+      
+      ]      
       },
       {
         userIcon : 'far fa-user'
@@ -235,6 +252,18 @@ new Vue({
         ]
       }
     ],
+    moreInfo : [
+      'audit & assurance',
+      'financial advisory',
+      'analystic m&a',
+      'middle marketing',
+      'legal consulting',
+      'regulatory rick'
+    ],
+    active: { //per far comparire e nascondere oggetti del DOM
+      index: false,
+      show: false
+    },
     //new data for newsletter
     subscriptName : '', 
     subscriptMail : '',
@@ -293,46 +322,61 @@ new Vue({
         name : name,
         email : mail
         })
+        // se tutto è stato caricato correttamente il form si resetta
         this.subscriptName = '';
         this.subscriptMail = '';
       }
     },
     //funzione che "salva" i dati del form
-    //da implementare con delle verifiche di inserimento
     postFormMsg : function() { 
       let name = this.userName;
       let email = this.userMail;
-      let phone = this.userPhone;
+      let phone = parseInt(this.userPhone);
       let moreInfo = this.userMoreInfo;
       let msg = this.userMsg;
-      this.formUserData.push(
-        {
-          name : name,
-          email : email,
-          phone : phone,
-          moreInfo : moreInfo,
-          message : msg
-        }
-      );
-      this.userName = '';
-      this.userMail = '';
-      this.userPhone = '';
-      this.userMoreInfo = '';
-      this.userMsg = '';
+      if(
+        name !== "" && email !== "" && isNaN(name) 
+        && name.length >= 3 && name.length <=18
+        && phone !== "" 
+        && msg !== ""  && !isNaN(phone)
+      ){
+        this.formUserData.push(
+          {
+            name : name,
+            email : email,
+            phone : phone,
+            moreInfo : moreInfo,
+            message : msg
+          }
+        );
+        // se tutto è stato caricato correttamente il form si resetta
+        this.userName = '';
+        this.userMail = '';
+        this.userPhone = '';
+        this.userMoreInfo = '';
+        this.userMsg = '';
+      }
+      
     },
     isScrolling() {
       //invia al dato scrollPosition il numero di pixell scrollati 
       this.scrollPosition = window.scrollY;
       // console.log(this.scrollPosition)
     },
-
     //funzione che attiva le animazioni dei numeri al caricamento della pagina
     resultsNumDynamic : function() {
       this.numGenerator(128, 0);
       this.numGenerator(230, 1);
       this.numGenerator(517, 2);
       this.numGenerator(94, 3);
-    }
+    },
+    menuVisible : function(idx){ //cambia i data nell'oggetto active
+    this.active.index = idx;
+    this.active.show = !this.active.show;
+  },
+  isMenuVisible : function(idx){ //funzione di verifica condizioni v-if per i menu
+    return this.active.index === idx && this.active.show;
+  },
   }
 })
 

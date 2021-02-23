@@ -124,14 +124,18 @@ ul {
   display: flex;
   font-size: 16px;
 }
-#app nav .navBar-R .menuNav-box .navUl li {
+#app nav .navBar-R .menuNav-box .navUl {
+  display: flex;
+}
+#app nav .navBar-R .menuNav-box .navUl li a {
   text-transform: uppercase;
   margin: 0px 25px;
   color: #f9f9f9;
+  text-decoration: none;
 }
-#app nav .navBar-R .menuNav-box .navUl li:hover {
+#app nav .navBar-R .menuNav-box .navUl li a:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  color: #00a6a6;
 }
 #app nav .navBar-R .menuNav-box .userIcon {
   margin-right: 25px;
@@ -141,6 +145,7 @@ ul {
 #app nav .navBar-R .menuNav-box .userIcon:hover {
   cursor: pointer;
   transform: scale(1.1);
+  color: #00a6a6;
 }
 #app nav .navBar-R .button-solid {
   text-decoration: none;
@@ -812,6 +817,20 @@ ul {
 #app .form-section .central-box .containerL .form-container .input-row .input-withIcon {
   display: inline-block;
   position: relative;
+}
+#app .form-section .central-box .containerL .form-container .input-row .input-withIcon .dropDownMenu {
+  width: 300px;
+  background-color: #7e7d7d;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 8px;
+  color: #c0c3cf;
+  padding: 10px;
+}
+#app .form-section .central-box .containerL .form-container .input-row .input-withIcon .dropDownMenu li {
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 #app .form-section .central-box .containerL .form-container .input-row .input-withIcon img {
   position: absolute;

@@ -72,9 +72,11 @@
           </a>
           <div class="navBar-R">
             <div class="menuNav-box"  v-for="element in navBar" >
-              <ul class="navUl" v-for="item in element.navMenu">
-                <li>
-                  {{item}}
+              <ul class="navUl" >
+                <li :class="item" v-for="item in element.navMenu">
+                 <a :href="item.link"> 
+                   {{item.menu}}
+                  </a>
                 </li>
               </ul>
               <div class="userIcon">
@@ -88,7 +90,6 @@
         </div>
 
       </nav>
-      
       <!-- / navbar-->
       <!--NAV IN JUMBOTRON-->
       <div  class="navAndJumbotron-section">   
@@ -182,7 +183,7 @@
       </div>
       <!-- RESULT SECTION-->
       <!--AREAS SERVICES SECTION-->
-      <div class="area-services-section">
+      <div id="areaServices" class="area-services-section">
         <div class="centralBox">
           <div class="titleButtonSection">
             <div class="textServices-block">
@@ -230,7 +231,7 @@
       </div>
       <!--AREAS SERVICES SECTION-->
       <!--TEAM SECTION-->
-      <div class="team-section">
+      <div  id="areaTeam" class="team-section">
         <!--central box-->
         <div class="central-box">
           <!-- text and team container -->
@@ -302,7 +303,7 @@
       </div>
       <!--/ TEAM SECTION-->
       <!-- LATEST NEWS SECTION-->
-      <div class="news-section">
+      <div id="areaNews" class="news-section">
         <!-- central box-->
         <div class="central-box">
           <!--title text section-->
@@ -348,6 +349,9 @@
       <!--SUBSCRIBE SECTION-->
       <div class="subscribe-section">
         <div class="central-box">
+          <div class="">
+
+          </div>
 
           <div class="textTitle-section">
             <div class="textTeam-block">
@@ -401,23 +405,30 @@
                 </p>
               </div>
             </div>
-
             <div class="form-container">
               <div class="input-row">
-
                 <div class="input-withIcon">
                   <input type="text" placeholder="Name" v-model="userName">
                   <img src="images/image-1.png" alt="">
                 </div>
-                
                 <input type="text" placeholder="Email" v-model="userMail">
               </div>
               <div class="input-row">
                 <input type="text" placeholder="Phone" v-model="userPhone">
-                <div class="input-withIcon">
-                  <input type="text" placeholder="More info" v-model="userMoreInfo">
+
+                <div class="input-withIcon" @click="menuVisible('moreInfo')">
+                  <input type="text" placeholder="More info" >
                   <i class="fas fa-chevron-down"></i>
+                  <div class="dropDownMenu" v-if="isMenuVisible('moreInfo')">
+                    <ul>
+                      <li v-for="element in moreInfo" v-model="userMoreInfo">
+                        {{element}}
+                      </li>
+                    </ul>
+
+                  </div>
                 </div>
+
               </div>
               <div class="input-message">
                 <textarea name="message" class="message" cols="30" rows="10" placeholder="Message" v-model="userMsg"></textarea>
