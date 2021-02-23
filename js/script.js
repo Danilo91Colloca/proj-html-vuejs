@@ -245,9 +245,16 @@ new Vue({
     userPhone : '',
     userMoreInfo : '',
     userMsg : '',
-    formUserData : []
+    formUserData : [],
+
+    //assume il valore che il listener in mounted manda alla funzione scroll
+    scrollPosition : 0
    
 
+  },
+  mounted () {
+    //segnala che sta avvenendo lo scroll della window del browser
+    window.addEventListener('scroll', this.isScrolling)
   },
   methods: {
     //inserire trattino prima di un elemento generato in v-for che non si trovi in prima posizione
@@ -264,7 +271,7 @@ new Vue({
           let countIn = setInterval(function(){
             num++;
             element.number = num;
-            console.log(num, index)
+            // console.log(num, index)
             if(num === nMax) {
               clearInterval(countIn)
             } 
@@ -309,6 +316,11 @@ new Vue({
       this.userPhone = '';
       this.userMoreInfo = '';
       this.userMsg = '';
+    },
+    isScrolling() {
+      //invia al dato scrollPosition il numero di pixell scrollati 
+      this.scrollPosition = window.scrollY;
+      // console.log(this.scrollPosition)
     }
   }
 })

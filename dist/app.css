@@ -66,6 +66,9 @@ ul {
   color: #00a6a6;
   transform: scale(1.1);
 }
+#app .scrollNav {
+  background-color: #24333d;
+}
 #app nav {
   width: 100vw;
   max-width: 100%;
@@ -74,7 +77,7 @@ ul {
   position: -webkit-sticky;
   position: sticky;
   padding: 20px 15px;
-  height: 100px;
+  height: 80px;
   top: 0px;
   z-index: 100;
 }

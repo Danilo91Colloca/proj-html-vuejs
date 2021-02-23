@@ -61,12 +61,16 @@
       }// end boxR
     } //end overHead-container
   }//end overHead
+  //nav-scrolling
+  .scrollNav {
+    background-color : $cyanBlue; 
+  }
   nav {
     @include widthSectionParam;
     float: left;
     position : sticky;
     padding : 20px 15px;
-    height : 100px;
+    height : 80px;
     top : 0px;
     z-index : 100;
     .navBar {
