@@ -61,6 +61,67 @@
       }// end boxR
     } //end overHead-container
   }//end overHead
+  nav {
+    @include widthSectionParam;
+    float: left;
+    position : sticky;
+    padding : 20px 15px;
+    height : 100px;
+    top : 0px;
+    z-index : 100;
+    .navBar {
+      @include pageCenter;
+      @include flex;
+      justify-content : space-between;
+      align-items : center;
+      .logo {
+        text-decoration : none;
+        .brandLogo {
+          &-part1 {
+            @include brandName-container-part1;
+            .text-brandpart1 {
+              @include brandName-part1;
+            }
+          }
+          &-part2 {
+            @include brandName-part2;
+          } 
+        }
+      }
+      &-R {
+        @include flex;
+        align-items: center;
+        .menuNav-box {
+          @include flex;
+          font-size: 16px;
+          .navUl {
+            li {
+              text-transform : uppercase;
+              margin : 0px 25px;
+              color : $white;
+              &:hover {
+                cursor : pointer;
+                transform: scale(1.2);
+              }
+            }
+          }
+          .userIcon {
+            margin-right : 25px;
+            font-size: 20px;
+            color : $white;
+            &:hover {
+              cursor : pointer;
+              transform: scale(1.1);
+            }
+          }
+        }
+        .button-solid {
+          @include buttonSolid;
+        }
+      }        
+    }
+  }
+  //end navBar
   .navAndJumbotron-section {
     @include widthSectionParam;
     height : 920px;
@@ -69,62 +130,7 @@
     .overbox-opacity {
       @include overBoxOpacitySizer;
       background-color: $opacity;
-      .navBar {
-        position : sticky;
-        top : 0px;
-        z-index : 100; 
-        @include pageCenter;
-        @include flex;
-        justify-content : space-between;
-        align-items : center;
-        padding : 0px 15px;
-        height : 100px;
-        .logo {
-          text-decoration : none;
-          .brandLogo {
-            &-part1 {
-              @include brandName-container-part1;
-              .text-brandpart1 {
-                @include brandName-part1;
-              }
-            }
-            &-part2 {
-              @include brandName-part2;
-            } 
-          }
-        }
-        &-R {
-          @include flex;
-          align-items: center;
-          .menuNav-box {
-            @include flex;
-            font-size: 16px;
-            .navUl {
-              li {
-                text-transform : uppercase;
-                margin : 0px 25px;
-                color : $white;
-                &:hover {
-                  cursor : pointer;
-                  transform: scale(1.2);
-                }
-              }
-            }
-            .userIcon {
-              margin-right : 25px;
-              font-size: 20px;
-              color : $white;
-              &:hover {
-                cursor : pointer;
-                transform: scale(1.1);
-              }
-            }
-          }
-          .button-solid {
-            @include buttonSolid;
-          }
-        }        
-      }//end navBar
+      
       .jumbotronTextButton-container {
         position : absolute;
         top : 50%;

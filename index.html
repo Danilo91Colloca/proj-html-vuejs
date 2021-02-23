@@ -53,42 +53,47 @@
         </div>
       </div>
       <!--/CONTACTS-->
+      <!--navbar-->
+      <nav>
+        <div class="navBar">
+          <a class="logo" href="#home">
+            <!-- logo Snippet-->
+            <div class="barndLogo">
+              <div class="brandLogo-part1">
+                <span class="text-brandpart1">
+                  NEX
+                </span>
+              </div>                
+              <span class="brandLogo-part2">
+                GEN
+              </span>
+            </div>
+            <!-- /logo Snippet-->
+          </a>
+          <div class="navBar-R">
+            <div class="menuNav-box"  v-for="element in navBar" >
+              <ul class="navUl" v-for="item in element.navMenu">
+                <li>
+                  {{item}}
+                </li>
+              </ul>
+              <div class="userIcon">
+                <i :class="element.userIcon"></i>
+              </div>
+            </div>
+            <a class="button-solid" href="#form">
+              <span>GET IN TOUCH</span>
+            </a>
+          </div>                    
+        </div>
+
+      </nav>
+      
+      <!-- / navbar-->
       <!--NAV IN JUMBOTRON-->
       <div  class="navAndJumbotron-section">   
         <div class="overbox-opacity">
-          <!--navbar-->
-          <div class="navBar">
-            <a class="logo" href="#home">
-              <!-- logo Snippet-->
-              <div class="barndLogo">
-                <div class="brandLogo-part1">
-                  <span class="text-brandpart1">
-                    NEX
-                  </span>
-                </div>                
-                <span class="brandLogo-part2">
-                  GEN
-                </span>
-              </div>
-              <!-- /logo Snippet-->
-            </a>
-            <div class="navBar-R">
-              <div class="menuNav-box"  v-for="element in navBar" >
-                <ul class="navUl" v-for="item in element.navMenu">
-                  <li>
-                    {{item}}
-                  </li>
-                </ul>
-                <div class="userIcon">
-                  <i :class="element.userIcon"></i>
-                </div>
-              </div>
-              <a class="button-solid" href="#form">
-                <span>GET IN TOUCH</span>
-              </a>
-            </div>                    
-          </div>
-          <!-- / navbar-->
+          
           <!-- jumboMain-->
           <div class="jumbotronTextButton-container">
             <div class="text-box">

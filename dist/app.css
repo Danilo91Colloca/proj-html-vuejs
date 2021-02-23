@@ -66,6 +66,87 @@ ul {
   color: #00a6a6;
   transform: scale(1.1);
 }
+#app nav {
+  width: 100vw;
+  max-width: 100%;
+  min-width: 1200px;
+  float: left;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 20px 15px;
+  height: 100px;
+  top: 0px;
+  z-index: 100;
+}
+#app nav .navBar {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#app nav .navBar .logo {
+  text-decoration: none;
+}
+#app nav .navBar .logo .brandLogo-part1 {
+  display: inline-block;
+  background-color: #00a6a636;
+  padding-left: 25px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  line-height: 40px;
+}
+#app nav .navBar .logo .brandLogo-part1 .text-brandpart1 {
+  text-align: right;
+  color: #00a6a6;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+#app nav .navBar .logo .brandLogo-part2 {
+  color: #f9f9f9;
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+#app nav .navBar-R {
+  display: flex;
+  align-items: center;
+}
+#app nav .navBar-R .menuNav-box {
+  display: flex;
+  font-size: 16px;
+}
+#app nav .navBar-R .menuNav-box .navUl li {
+  text-transform: uppercase;
+  margin: 0px 25px;
+  color: #f9f9f9;
+}
+#app nav .navBar-R .menuNav-box .navUl li:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+#app nav .navBar-R .menuNav-box .userIcon {
+  margin-right: 25px;
+  font-size: 20px;
+  color: #f9f9f9;
+}
+#app nav .navBar-R .menuNav-box .userIcon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#app nav .navBar-R .button-solid {
+  text-decoration: none;
+  background-color: #058283;
+  color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+#app nav .navBar-R .button-solid:hover {
+  cursor: pointer;
+  background-color: #00a6a6;
+}
 #app .navAndJumbotron-section {
   width: 100vw;
   max-width: 100%;
@@ -81,81 +162,6 @@ ul {
   width: 100%;
   height: 100%;
   background-color: #00000060;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-  margin: 0 auto;
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 15px;
-  height: 100px;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar .logo {
-  text-decoration: none;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar .logo .brandLogo-part1 {
-  display: inline-block;
-  background-color: #00a6a636;
-  padding-left: 25px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  line-height: 40px;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar .logo .brandLogo-part1 .text-brandpart1 {
-  text-align: right;
-  color: #00a6a6;
-  font-weight: 900;
-  letter-spacing: 5px;
-  font-size: 15px;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar .logo .brandLogo-part2 {
-  color: #f9f9f9;
-  font-weight: 900;
-  letter-spacing: 5px;
-  font-size: 15px;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar-R {
-  display: flex;
-  align-items: center;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box {
-  display: flex;
-  font-size: 16px;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box .navUl li {
-  text-transform: uppercase;
-  margin: 0px 25px;
-  color: #f9f9f9;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box .navUl li:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box .userIcon {
-  margin-right: 25px;
-  font-size: 20px;
-  color: #f9f9f9;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar-R .menuNav-box .userIcon:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar-R .button-solid {
-  text-decoration: none;
-  background-color: #058283;
-  color: #f9f9f9;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 15px;
-}
-#app .navAndJumbotron-section .overbox-opacity .navBar-R .button-solid:hover {
-  cursor: pointer;
-  background-color: #00a6a6;
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container {
   position: absolute;
