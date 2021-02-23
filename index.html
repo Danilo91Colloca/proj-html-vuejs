@@ -22,7 +22,7 @@
     <!--WARNING VUEJS-->
     <div id="app">
       <!-- CONTACTS -->
-      <div class="overHead-section">
+      <div id="home" class="overHead-section">
         <div class="overHead-container">
           <div class="boxL">
             <div class="workdays" v-for="data in rotation">
@@ -58,7 +58,7 @@
         <div class="overbox-opacity">
           <!--navbar-->
           <div class="navBar">
-            <div class="navBar-L">
+            <a class="logo" href="#home">
               <!-- logo Snippet-->
               <div class="barndLogo">
                 <div class="brandLogo-part1">
@@ -71,7 +71,7 @@
                 </span>
               </div>
               <!-- /logo Snippet-->
-            </div>
+            </a>
             <div class="navBar-R">
               <div class="menuNav-box"  v-for="element in navBar" >
                 <ul class="navUl" v-for="item in element.navMenu">
@@ -83,9 +83,9 @@
                   <i :class="element.userIcon"></i>
                 </div>
               </div>
-              <div class="button-solid">
+              <a class="button-solid" href="#form">
                 <span>GET IN TOUCH</span>
-              </div>
+              </a>
             </div>                    
           </div>
           <!-- / navbar-->
@@ -101,16 +101,16 @@
               </p>
             </div>
             <div class="button-box">
-              <div class="button-solid">
+              <a class="button-solid" href="#form">
                 <span>
                   GET IN TOUCH
                 </span>
-              </div>
-              <div class="button-transparent">
+              </a>
+              <a class="button-transparent" href="#videoInfo">
                 <span>
                   READ MORE
                 </span>
-              </div>
+              </a>
             </div>            
           </div>
           <!-- / jumboMain-->
@@ -118,7 +118,7 @@
       </div>
       <!-- / NAV IN JUMBOTRON-->
       <!--INTRO VIDEO SECTION-->
-      <div class="introVideo-section">
+      <div id="videoInfo" class="introVideo-section">
         <div class="pagecenter-videoSection">
           <!-- textMov-block-->
           <div class="textMov-block">
@@ -194,11 +194,11 @@
               </p>
             </div>
             <div class="button-box">
-              <div class="button-transparent">
+              <a class="button-transparent" href="#home">
                 <span>
                   SEE ALL
                 </span>
-              </div>
+              </a>
             </div>
           </div>
           <div class="services-box-container">
@@ -208,7 +208,7 @@
                   <i :class="data.symbol"></i>
                 </div>
                 <div class="iconArrow">
-                  <a href="" :class="data.arrow"></a>
+                  <a href="#home" :class="data.arrow"></a>
                 </div>
               </div>
               <div class="text">
@@ -315,11 +315,11 @@
                 Every week we publixh content about what is best in the business world.
               </p>
             </div>
-            <div class="button-solid">
+            <a class="button-solid" href="#home">
               <span>
                 SEE ALL
               </span>
-            </div>
+            </a>
           </div>
           <!-- / title text section-->
           <!-- News box section-->
@@ -377,7 +377,7 @@
       </div>
       <!--/SUBSCRIBE SECTION-->
       <!--FORM SECTION-->
-      <div class="form-section">
+      <div id="form" class="form-section">
         <div class="central-box">
           <!-- containerL-->
           <div class="containerL">
@@ -465,16 +465,18 @@
         <div class="central-box">
           <div class="footer-card brand">
             <!-- logo Snippet-->
-            <div class="barndLogo">
-              <div class="brandLogo-part1">
-                <span class="text-brandpart1">
-                  NEX
+            <a href="#home" class="logo">
+              <div class="barndLogo">
+                <div class="brandLogo-part1">
+                  <span class="text-brandpart1">
+                    NEX
+                  </span>
+                </div>                
+                <span class="brandLogo-part2">
+                  GEN
                 </span>
-              </div>                
-              <span class="brandLogo-part2">
-                GEN
-              </span>
-            </div>
+              </div>
+            </a>
             <!-- /logo Snippet-->
             <div class="text-container">
               <p class="text">
@@ -483,9 +485,9 @@
             </div>
             <div class="contacts-box" v-for="data in contacts">
               <i :class="data.faIcon"></i>
-              <span>
+              <a>
                 {{data.contact}}
-              </span>
+              </a>
             </div>
             <div class="address-box">
               <i :class="address.faIcon"></i>
@@ -494,11 +496,11 @@
               </a>
             </div>
             <div class="button-box">
-              <div class="button-transparent">
+              <a class="button-transparent" href="#form">
                 <span>
                   GET IN TOUCH
                 </span>
-              </div>
+              </a>
             </div>
           </div>
           <div class="footer-card " v-for="element in listServices">
@@ -509,7 +511,9 @@
             </div>
             <ul>
               <li v-for="item in element.item">
-                {{item}}
+                <a href="">
+                  {{item}}
+                </a>
               </li>
             </ul>
           </div>
@@ -533,15 +537,8 @@
           </div>
 
         </div>
-      </div>
-     
-      
+      </div> 
       <!--FOOTER & COPYRIGHT-->
-
-
-
-          
-
     </div>
     <!-- /WARNING VUEJS-->
     <script src="js/script.js"></script>

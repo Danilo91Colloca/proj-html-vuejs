@@ -65,6 +65,7 @@ $brandWeight : 900;
 
 //SOLID BUTTONS
 @mixin buttonSolid {
+  text-decoration : none; 
   background-color : $brandColorDark;
   color : $white;
   padding : 10px;
@@ -74,11 +75,10 @@ $brandWeight : 900;
     cursor: pointer;
     background-color : $brandColorLight;
   }
-
 }
-
 //TRANSPARENT BUTTON
 @mixin buttonTransparent {
+  text-decoration : none; 
   background-color : transparent;
   border : 1px solid $brandColorDark;
   color : $white;
@@ -91,6 +91,7 @@ $brandWeight : 900;
   }
 }
 @mixin buttonTransparent2 {
+  text-decoration : none; 
   background-color : transparent;
   border : 1px solid $brandColorDark;
   color : $brandColorDark;

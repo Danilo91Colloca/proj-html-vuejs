@@ -36,6 +36,10 @@ ul {
   content: "-";
   margin-left: 4px;
 }
+#app .overHead-section .overHead-container .boxL .workdays:hover {
+  color: #00a6a6;
+  cursor: pointer;
+}
 #app .overHead-section .overHead-container .boxR {
   display: flex;
 }
@@ -50,7 +54,7 @@ ul {
   margin-right: 5px;
 }
 #app .overHead-section .overHead-container .boxR .contacts-data:hover {
-  text-decoration: underline;
+  color: #00a6a6;
 }
 #app .overHead-section .overHead-container .boxR .social a {
   cursor: pointer;
@@ -59,6 +63,7 @@ ul {
   margin-left: 35px;
 }
 #app .overHead-section .overHead-container .boxR .social a:hover {
+  color: #00a6a6;
   transform: scale(1.1);
 }
 #app .navAndJumbotron-section {
@@ -78,6 +83,10 @@ ul {
   background-color: #00000060;
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
   margin: 0 auto;
   width: 1200px;
   display: flex;
@@ -86,7 +95,10 @@ ul {
   padding: 0px 15px;
   height: 100px;
 }
-#app .navAndJumbotron-section .overbox-opacity .navBar-L .brandLogo-part1 {
+#app .navAndJumbotron-section .overbox-opacity .navBar .logo {
+  text-decoration: none;
+}
+#app .navAndJumbotron-section .overbox-opacity .navBar .logo .brandLogo-part1 {
   display: inline-block;
   background-color: #00a6a636;
   padding-left: 25px;
@@ -94,14 +106,14 @@ ul {
   border-bottom-left-radius: 30px;
   line-height: 40px;
 }
-#app .navAndJumbotron-section .overbox-opacity .navBar-L .brandLogo-part1 .text-brandpart1 {
+#app .navAndJumbotron-section .overbox-opacity .navBar .logo .brandLogo-part1 .text-brandpart1 {
   text-align: right;
   color: #00a6a6;
   font-weight: 900;
   letter-spacing: 5px;
   font-size: 15px;
 }
-#app .navAndJumbotron-section .overbox-opacity .navBar-L .brandLogo-part2 {
+#app .navAndJumbotron-section .overbox-opacity .navBar .logo .brandLogo-part2 {
   color: #f9f9f9;
   font-weight: 900;
   letter-spacing: 5px;
@@ -134,6 +146,7 @@ ul {
   transform: scale(1.1);
 }
 #app .navAndJumbotron-section .overbox-opacity .navBar-R .button-solid {
+  text-decoration: none;
   background-color: #058283;
   color: #f9f9f9;
   padding: 10px;
@@ -167,6 +180,7 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-solid {
   display: inline-block;
+  text-decoration: none;
   background-color: #058283;
   color: #f9f9f9;
   padding: 10px;
@@ -180,6 +194,7 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-transparent {
   display: inline-block;
+  text-decoration: none;
   background-color: transparent;
   border: 1px solid #058283;
   color: #f9f9f9;
@@ -372,6 +387,8 @@ ul {
   position: relative;
 }
 #app .area-services-section .centralBox .titleButtonSection .button-box .button-transparent {
+  text-decoration: none;
+  text-decoration: none;
   background-color: transparent;
   border: 1px solid #058283;
   color: #f9f9f9;
@@ -597,7 +614,7 @@ ul {
   font-size: 40px;
 }
 #app .news-section .central-box .titleButtonSection .textServices-block .title-wordColorChange {
-  color: #f9f9f9;
+  color: #058283;
   background-color: #00a6a636;
   border-radius: 5px;
   padding: 5px;
@@ -606,6 +623,7 @@ ul {
   color: #c0c3cf;
 }
 #app .news-section .central-box .titleButtonSection .button-solid {
+  text-decoration: none;
   background-color: #058283;
   color: #f9f9f9;
   padding: 10px;
@@ -712,6 +730,7 @@ ul {
   color: #c0c3cf;
 }
 #app .subscribe-section .central-box .subscribeInput-section .button-solid {
+  text-decoration: none;
   background-color: #058283;
   color: #f9f9f9;
   padding: 10px;
@@ -814,6 +833,7 @@ ul {
   outline: none;
 }
 #app .form-section .central-box .containerL .button-solid {
+  text-decoration: none;
   background-color: #058283;
   color: #f9f9f9;
   padding: 10px;
@@ -870,6 +890,7 @@ ul {
   padding-top: 10px;
 }
 #app .form-section .central-box .containerR .maplink .button-transparent {
+  text-decoration: none;
   background-color: transparent;
   border: 1px solid #058283;
   color: #058283;
@@ -929,15 +950,22 @@ ul {
   content: "";
   margin-right: 10px;
 }
-#app .footer-copyr-section .central-box .footer-card ul li:hover {
+#app .footer-copyr-section .central-box .footer-card ul li a {
+  color: #c0c3cf;
+  text-decoration: none;
+}
+#app .footer-copyr-section .central-box .footer-card ul li:hover, #app .footer-copyr-section .central-box .footer-card ul li:hover a {
   cursor: pointer;
-  transform: scale(1.1);
+  color: #00a6a6;
 }
 #app .footer-copyr-section .central-box .footer-card.brand {
   background-color: transparent;
   padding: 10px;
 }
-#app .footer-copyr-section .central-box .footer-card.brand .brandLogo-part1 {
+#app .footer-copyr-section .central-box .footer-card.brand .logo {
+  text-decoration: none;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .logo .brandLogo-part1 {
   display: inline-block;
   background-color: #00a6a636;
   padding-left: 25px;
@@ -945,14 +973,14 @@ ul {
   border-bottom-left-radius: 30px;
   line-height: 40px;
 }
-#app .footer-copyr-section .central-box .footer-card.brand .brandLogo-part1 .text-brandpart1 {
+#app .footer-copyr-section .central-box .footer-card.brand .logo .brandLogo-part1 .text-brandpart1 {
   text-align: right;
   color: #00a6a6;
   font-weight: 900;
   letter-spacing: 5px;
   font-size: 15px;
 }
-#app .footer-copyr-section .central-box .footer-card.brand .brandLogo-part2 {
+#app .footer-copyr-section .central-box .footer-card.brand .logo .brandLogo-part2 {
   color: #f9f9f9;
   font-weight: 900;
   letter-spacing: 5px;
@@ -973,8 +1001,13 @@ ul {
   margin-right: 15px;
   margin-bottom: 25px;
 }
-#app .footer-copyr-section .central-box .footer-card.brand .contacts-box span:hover {
-  text-decoration: underline;
+#app .footer-copyr-section .central-box .footer-card.brand .contacts-box a {
+  color: #c0c3cf;
+  text-decoration: none;
+}
+#app .footer-copyr-section .central-box .footer-card.brand .contacts-box:hover, #app .footer-copyr-section .central-box .footer-card.brand .contacts-box:hover a {
+  color: #00a6a6;
+  cursor: pointer;
 }
 #app .footer-copyr-section .central-box .footer-card.brand .address-box {
   color: #c0c3cf;
@@ -987,10 +1020,11 @@ ul {
   color: #c0c3cf;
   text-decoration: none;
 }
-#app .footer-copyr-section .central-box .footer-card.brand .address-box a:hover {
-  text-decoration: underline;
+#app .footer-copyr-section .central-box .footer-card.brand .address-box:hover, #app .footer-copyr-section .central-box .footer-card.brand .address-box:hover a {
+  color: #00a6a6;
 }
 #app .footer-copyr-section .central-box .footer-card.brand .button-box .button-transparent {
+  text-decoration: none;
   background-color: transparent;
   border: 1px solid #058283;
   color: #f9f9f9;
@@ -1021,5 +1055,5 @@ ul {
   font-size: 12px;
 }
 #app .footer-copyr-section .copyright-section .central-box .changeColor {
-  color: #058283;
+  color: #00a6a6;
 }
