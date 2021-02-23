@@ -349,10 +349,6 @@
       <!--SUBSCRIBE SECTION-->
       <div class="subscribe-section">
         <div class="central-box">
-          <div class="">
-
-          </div>
-
           <div class="textTitle-section">
             <div class="textTeam-block">
               <div class="top-title">
@@ -419,16 +415,15 @@
                 <div class="input-withIcon" @click="menuVisible('moreInfo')">
                   <input type="text" placeholder="More info" :value="userMoreInfo">
                   <i class="fas fa-chevron-down"></i>
-                  <div class="dropDownMenu" v-if="isMenuVisible('moreInfo')">
+                  <div class="dropDownMenu" 
+                  v-if="isMenuVisible('moreInfo')">
                     <ul>
                       <li v-for="element in moreInfo" @click="userSelect(element)">
                         {{element}}
                       </li>
                     </ul>
-
                   </div>
                 </div>
-
               </div>
               <div class="input-message">
                 <textarea name="message" class="message" cols="30" rows="10" placeholder="Message" v-model="userMsg"></textarea>
@@ -548,10 +543,8 @@
                   Condings
                 </span>.
               </span>
-
             </div>
           </div>
-
         </div>
       </div> 
       <!--FOOTER & COPYRIGHT-->
