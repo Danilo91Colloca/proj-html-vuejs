@@ -248,13 +248,15 @@ new Vue({
     formUserData : [],
 
     //assume il valore che il listener in mounted manda alla funzione scroll
-    scrollPosition : 0
-   
-
+    scrollPosition : null
+    
   },
   mounted () {
     //segnala che sta avvenendo lo scroll della window del browser
-    window.addEventListener('scroll', this.isScrolling)
+    window.addEventListener('scroll', this.isScrolling);
+    //al caricamento della pagina attiva la funzione che genera i num i results
+    this.resultsNumDynamic();
+    
   },
   methods: {
     //inserire trattino prima di un elemento generato in v-for che non si trovi in prima posizione
@@ -275,11 +277,11 @@ new Vue({
             if(num === nMax) {
               clearInterval(countIn)
             } 
-          }, 5)
+          }, 3)
         }
       });
     },
-    //funzione che salva i dati inseriti nella newsletter
+    //funzione che "salva" i dati inseriti nella newsletter
     postSubscription : function() {
       let name = this.subscriptName;
       let mail = this.subscriptMail;
@@ -295,7 +297,8 @@ new Vue({
         this.subscriptMail = '';
       }
     },
-        //da implementare con delle verifiche di inserimento
+    //funzione che "salva" i dati del form
+    //da implementare con delle verifiche di inserimento
     postFormMsg : function() { 
       let name = this.userName;
       let email = this.userMail;
@@ -321,6 +324,14 @@ new Vue({
       //invia al dato scrollPosition il numero di pixell scrollati 
       this.scrollPosition = window.scrollY;
       // console.log(this.scrollPosition)
+    },
+
+    //funzione che attiva le animazioni dei numeri al caricamento della pagina
+    resultsNumDynamic : function() {
+      this.numGenerator(128, 0);
+      this.numGenerator(230, 1);
+      this.numGenerator(517, 2);
+      this.numGenerator(94, 3);
     }
   }
 })
