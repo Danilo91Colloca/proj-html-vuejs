@@ -284,8 +284,11 @@ new Vue({
     //segnala che sta avvenendo lo scroll della window del browser
     window.addEventListener('scroll', this.isScrolling);
     //al caricamento della pagina attiva la funzione che genera i num i results
-    this.resultsNumDynamic();
+    // this.resultsNumDynamic();
     
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.isScrolling);
   },
   methods: {
     //inserire trattino prima di un elemento generato in v-for che non si trovi in prima posizione
@@ -362,13 +365,12 @@ new Vue({
       //invia al dato scrollPosition il numero di pixell scrollati 
       this.scrollPosition = window.scrollY;
       // console.log(this.scrollPosition)
-    },
-    //funzione che attiva le animazioni dei numeri al caricamento della pagina
-    resultsNumDynamic : function() {
-      this.numGenerator(128, 0);
-      this.numGenerator(230, 1);
-      this.numGenerator(517, 2);
-      this.numGenerator(94, 3);
+    if (window.scrollY >=  1270 &&  window.scrollY <=  1275 ) {
+        this.numGenerator(128, 0);
+        this.numGenerator(230, 1);
+        this.numGenerator(517, 2);
+        this.numGenerator(94, 3);
+      }
     },
     menuVisible : function(idx){ //cambia i data nell'oggetto active
     this.active.index = idx;

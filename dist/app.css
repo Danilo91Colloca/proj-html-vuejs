@@ -41,7 +41,7 @@ ul {
   margin-left: 4px;
 }
 #app .overHead-section .overHead-container .boxL .workdays:hover {
-  color: #41c457;
+  color: #00a6a6;
   cursor: pointer;
 }
 #app .overHead-section .overHead-container .boxR {
@@ -58,7 +58,7 @@ ul {
   margin-right: 5px;
 }
 #app .overHead-section .overHead-container .boxR .contacts-data:hover {
-  color: #41c457;
+  color: #00a6a6;
 }
 #app .overHead-section .overHead-container .boxR .social a {
   cursor: pointer;
@@ -67,7 +67,7 @@ ul {
   margin-left: 35px;
 }
 #app .overHead-section .overHead-container .boxR .social a:hover {
-  color: #41c457;
+  color: #00a6a6;
   transform: scale(1.1);
 }
 #app .scrollNav {
@@ -105,7 +105,7 @@ ul {
 }
 #app nav .navBar .logo .brandLogo-part1 .text-brandpart1 {
   text-align: right;
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 900;
   letter-spacing: 5px;
   font-size: 15px;
@@ -135,7 +135,7 @@ ul {
 }
 #app nav .navBar-R .menuNav-box .navUl li a:hover {
   cursor: pointer;
-  color: #41c457;
+  color: #00a6a6;
 }
 #app nav .navBar-R .menuNav-box .userIcon {
   margin-right: 25px;
@@ -145,7 +145,7 @@ ul {
 #app nav .navBar-R .menuNav-box .userIcon:hover {
   cursor: pointer;
   transform: scale(1.1);
-  color: #41c457;
+  color: #00a6a6;
 }
 #app nav .navBar-R .button-solid {
   text-decoration: none;
@@ -157,7 +157,7 @@ ul {
 }
 #app nav .navBar-R .button-solid:hover {
   cursor: pointer;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .navAndJumbotron-section {
   width: 100vw;
@@ -208,7 +208,7 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-solid:hover {
   cursor: pointer;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-transparent {
   display: inline-block;
@@ -222,7 +222,7 @@ ul {
 }
 #app .navAndJumbotron-section .overbox-opacity .jumbotronTextButton-container .button-box .button-transparent:hover {
   cursor: pointer;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .introVideo-section {
   width: 100vw;
@@ -246,7 +246,7 @@ ul {
   text-align: center;
 }
 #app .introVideo-section .pagecenter-videoSection .textMov-block .top-title {
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -318,7 +318,7 @@ ul {
   text-align: center;
 }
 #app .result-section .overbox-opacity .textResult-block .top-title {
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -341,7 +341,7 @@ ul {
   width: 1200px;
 }
 #app .result-section .overbox-opacity .textResult-block .result-box-container .box-result .result {
-  color: #41c457;
+  color: #00a6a6;
   font-size: 35px;
   font-weight: bolder;
   margin-bottom: 30px;
@@ -382,7 +382,7 @@ ul {
   width: 820px;
 }
 #app .area-services-section .centralBox .titleButtonSection .textServices-block .top-title {
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -421,7 +421,7 @@ ul {
 }
 #app .area-services-section .centralBox .titleButtonSection .button-box .button-transparent:hover {
   cursor: pointer;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .area-services-section .centralBox .services-box-container {
   display: flex;
@@ -442,12 +442,12 @@ ul {
   margin-bottom: 20px;
 }
 #app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconSymbol {
-  color: #41c457;
+  color: #00a6a6;
   font-size: 30px;
 }
 #app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconArrow a {
   text-decoration: none;
-  color: #41c457;
+  color: #00a6a6;
   font-size: 18px;
 }
 #app .area-services-section .centralBox .services-box-container .services-box .servicesSymbols .iconArrow a:hover {
@@ -498,7 +498,7 @@ ul {
   height: 100%;
 }
 #app .team-section .central-box .textAndTeam-container .textTeam-block .top-title {
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -565,14 +565,14 @@ ul {
   background-color: #00a6a636;
 }
 #app .team-section .central-box .textAndTeam-container .team-container .team-box .data .social-contacts a:hover {
-  color: #41c457;
+  color: #00a6a6;
   background-color: #058283;
   transform: scale(1.1);
 }
 #app .team-section .central-box .testimonial-container {
   width: 30%;
   height: 500px;
-  background-color: #41c457;
+  background-color: #00a6a6;
   border-radius: 4px;
   position: absolute;
   right: 0;
@@ -622,7 +622,7 @@ ul {
   width: 820px;
 }
 #app .news-section .central-box .titleButtonSection .textServices-block .top-title {
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -655,7 +655,7 @@ ul {
 }
 #app .news-section .central-box .titleButtonSection .button-solid:hover {
   cursor: pointer;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .news-section .central-box .boxNews-container {
   display: flex;
@@ -712,7 +712,7 @@ ul {
   width: 50%;
 }
 #app .subscribe-section .central-box .textTitle-section .top-title {
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -761,7 +761,7 @@ ul {
 }
 #app .subscribe-section .central-box .subscribeInput-section .button-solid:hover {
   cursor: pointer;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .form-section {
   width: 100vw;
@@ -785,7 +785,7 @@ ul {
   margin-bottom: 60px;
 }
 #app .form-section .central-box .containerL .textTitle-section .top-title {
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -833,7 +833,7 @@ ul {
   cursor: pointer;
 }
 #app .form-section .central-box .containerL .form-container .input-row .input-withIcon .dropDownMenu li:hover {
-  color: #41c457;
+  color: #00a6a6;
 }
 #app .form-section .central-box .containerL .form-container .input-row .input-withIcon img {
   position: absolute;
@@ -881,7 +881,7 @@ ul {
 }
 #app .form-section .central-box .containerL .button-solid:hover {
   cursor: pointer;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .form-section .central-box .containerR {
   width: 40%;
@@ -914,8 +914,9 @@ ul {
 }
 #app .form-section .central-box .containerR .contacts:hover i,
 #app .form-section .central-box .containerR .address:hover i {
-  color: #41c457;
+  color: #00a6a6;
   background-color: #058283;
+  cursor: pointer;
 }
 #app .form-section .central-box .containerR .contacts:hover span,
 #app .form-section .central-box .containerR .address:hover span {
@@ -939,7 +940,7 @@ ul {
 #app .form-section .central-box .containerR .maplink .button-transparent:hover {
   cursor: pointer;
   color: #f9f9f9;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .footer-copyr-section {
   position: relative;
@@ -991,7 +992,7 @@ ul {
 }
 #app .footer-copyr-section .central-box .footer-card ul li:hover, #app .footer-copyr-section .central-box .footer-card ul li:hover a {
   cursor: pointer;
-  color: #41c457;
+  color: #00a6a6;
 }
 #app .footer-copyr-section .central-box .footer-card.brand {
   background-color: transparent;
@@ -1010,7 +1011,7 @@ ul {
 }
 #app .footer-copyr-section .central-box .footer-card.brand .logo .brandLogo-part1 .text-brandpart1 {
   text-align: right;
-  color: #41c457;
+  color: #00a6a6;
   font-weight: 900;
   letter-spacing: 5px;
   font-size: 15px;
@@ -1041,7 +1042,7 @@ ul {
   text-decoration: none;
 }
 #app .footer-copyr-section .central-box .footer-card.brand .contacts-box:hover, #app .footer-copyr-section .central-box .footer-card.brand .contacts-box:hover a {
-  color: #41c457;
+  color: #00a6a6;
   cursor: pointer;
 }
 #app .footer-copyr-section .central-box .footer-card.brand .address-box {
@@ -1056,7 +1057,7 @@ ul {
   text-decoration: none;
 }
 #app .footer-copyr-section .central-box .footer-card.brand .address-box:hover, #app .footer-copyr-section .central-box .footer-card.brand .address-box:hover a {
-  color: #41c457;
+  color: #00a6a6;
 }
 #app .footer-copyr-section .central-box .footer-card.brand .button-box .button-transparent {
   text-decoration: none;
@@ -1071,7 +1072,7 @@ ul {
 }
 #app .footer-copyr-section .central-box .footer-card.brand .button-box .button-transparent:hover {
   cursor: pointer;
-  background-color: #41c457;
+  background-color: #00a6a6;
 }
 #app .footer-copyr-section .copyright-section {
   position: absolute;
@@ -1090,5 +1091,5 @@ ul {
   font-size: 12px;
 }
 #app .footer-copyr-section .copyright-section .central-box .changeColor {
-  color: #41c457;
+  color: #00a6a6;
 }
